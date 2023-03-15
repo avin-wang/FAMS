@@ -1,0 +1,3380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<China>
+  <province id="28" name="广东">
+    <city id="2801" name="广州">
+      <country id="280101" name="广州" cityCode="101280101"/>
+      <country id="280102" name="番禺" cityCode="101280102"/>
+      <country id="280103" name="从化" cityCode="101280103"/>
+      <country id="280104" name="增城" cityCode="101280104"/>
+      <country id="280105" name="花都" cityCode="101280105"/>
+    </city>
+    <city id="2802" name="韶关">
+      <country id="280201" name="韶关" cityCode="101280201"/>
+      <country id="280202" name="乳源" cityCode="101280202"/>
+      <country id="280203" name="始兴" cityCode="101280203"/>
+      <country id="280204" name="翁源" cityCode="101280204"/>
+      <country id="280205" name="乐昌" cityCode="101280205"/>
+      <country id="280206" name="仁化" cityCode="101280206"/>
+      <country id="280207" name="南雄" cityCode="101280207"/>
+      <country id="280208" name="新丰" cityCode="101280208"/>
+      <country id="280209" name="曲江" cityCode="101280209"/>
+      <country id="280210" name="浈江" cityCode="101280210"/>
+      <country id="280211" name="武江" cityCode="101280211"/>
+    </city>
+    <city id="2803" name="惠州">
+      <country id="280301" name="惠州" cityCode="101280301"/>
+      <country id="280302" name="博罗" cityCode="101280302"/>
+      <country id="280303" name="惠阳" cityCode="101280303"/>
+      <country id="280304" name="惠东" cityCode="101280304"/>
+      <country id="280305" name="龙门" cityCode="101280305"/>
+    </city>
+    <city id="2804" name="梅州">
+      <country id="280401" name="梅州" cityCode="101280401"/>
+      <country id="280402" name="兴宁" cityCode="101280402"/>
+      <country id="280403" name="蕉岭" cityCode="101280403"/>
+      <country id="280404" name="大埔" cityCode="101280404"/>
+      <country id="280405" name="丰顺" cityCode="101280406"/>
+      <country id="280406" name="平远" cityCode="101280407"/>
+      <country id="280407" name="五华" cityCode="101280408"/>
+      <country id="280408" name="梅县" cityCode="101280409"/>
+    </city>
+    <city id="2805" name="汕头">
+      <country id="280501" name="汕头" cityCode="101280501"/>
+      <country id="280502" name="潮阳" cityCode="101280502"/>
+      <country id="280503" name="澄海" cityCode="101280503"/>
+      <country id="280504" name="南澳" cityCode="101280504"/>
+    </city>
+    <city id="2806" name="深圳">
+      <country id="280601" name="深圳" cityCode="101280601"/>
+      <country id="280602" name="罗湖" cityCode="101280602"/>
+      <country id="280603" name="福田" cityCode="101280603"/>
+      <country id="280604" name="南山" cityCode="101280604"/>
+      <country id="280605" name="宝安" cityCode="101280605"/>
+      <country id="280606" name="龙岗" cityCode="101280606"/>
+      <country id="280607" name="盐田" cityCode="101280607"/>
+    </city>
+    <city id="2807" name="珠海">
+      <country id="280701" name="珠海" cityCode="101280701"/>
+      <country id="280702" name="斗门" cityCode="101280702"/>
+      <country id="280703" name="金湾" cityCode="101280703"/>
+    </city>
+    <city id="2808" name="佛山">
+      <country id="280801" name="佛山" cityCode="101280800"/>
+      <country id="280802" name="顺德" cityCode="101280801"/>
+      <country id="280803" name="三水" cityCode="101280802"/>
+      <country id="280804" name="南海" cityCode="101280803"/>
+      <country id="280805" name="高明" cityCode="101280804"/>
+    </city>
+    <city id="2809" name="肇庆">
+      <country id="280901" name="肇庆" cityCode="101280901"/>
+      <country id="280902" name="广宁" cityCode="101280902"/>
+      <country id="280903" name="四会" cityCode="101280903"/>
+      <country id="280904" name="德庆" cityCode="101280905"/>
+      <country id="280905" name="怀集" cityCode="101280906"/>
+      <country id="280906" name="封开" cityCode="101280907"/>
+      <country id="280907" name="高要" cityCode="101280908"/>
+    </city>
+    <city id="2810" name="湛江">
+      <country id="281001" name="湛江" cityCode="101281001"/>
+      <country id="281002" name="吴川" cityCode="101281002"/>
+      <country id="281003" name="雷州" cityCode="101281003"/>
+      <country id="281004" name="徐闻" cityCode="101281004"/>
+      <country id="281005" name="廉江" cityCode="101281005"/>
+      <country id="281006" name="赤坎" cityCode="101281006"/>
+      <country id="281007" name="遂溪" cityCode="101281007"/>
+      <country id="281008" name="坡头" cityCode="101281008"/>
+      <country id="281009" name="霞山" cityCode="101281009"/>
+      <country id="281010" name="麻章" cityCode="101281010"/>
+    </city>
+    <city id="2811" name="江门">
+      <country id="281101" name="江门" cityCode="101281101"/>
+      <country id="281102" name="开平" cityCode="101281103"/>
+      <country id="281103" name="新会" cityCode="101281104"/>
+      <country id="281104" name="恩平" cityCode="101281105"/>
+      <country id="281105" name="台山" cityCode="101281106"/>
+      <country id="281106" name="蓬江" cityCode="101281107"/>
+      <country id="281107" name="鹤山" cityCode="101281108"/>
+      <country id="281108" name="江海" cityCode="101281109"/>
+    </city>
+    <city id="2812" name="河源">
+      <country id="281201" name="河源" cityCode="101281201"/>
+      <country id="281202" name="紫金" cityCode="101281202"/>
+      <country id="281203" name="连平" cityCode="101281203"/>
+      <country id="281204" name="和平" cityCode="101281204"/>
+      <country id="281205" name="龙川" cityCode="101281205"/>
+      <country id="281206" name="东源" cityCode="101281206"/>
+    </city>
+    <city id="2813" name="清远">
+      <country id="281301" name="清远" cityCode="101281301"/>
+      <country id="281302" name="连南" cityCode="101281302"/>
+      <country id="281303" name="连州" cityCode="101281303"/>
+      <country id="281304" name="连山" cityCode="101281304"/>
+      <country id="281305" name="阳山" cityCode="101281305"/>
+      <country id="281306" name="佛冈" cityCode="101281306"/>
+      <country id="281307" name="英德" cityCode="101281307"/>
+      <country id="281308" name="清新" cityCode="101281308"/>
+    </city>
+    <city id="2814" name="云浮">
+      <country id="281401" name="云浮" cityCode="101281401"/>
+      <country id="281402" name="罗定" cityCode="101281402"/>
+      <country id="281403" name="新兴" cityCode="101281403"/>
+      <country id="281404" name="郁南" cityCode="101281404"/>
+      <country id="281405" name="云安" cityCode="101281406"/>
+    </city>
+    <city id="2815" name="潮州">
+      <country id="281501" name="潮州" cityCode="101281501"/>
+      <country id="281502" name="饶平" cityCode="101281502"/>
+      <country id="281503" name="潮安" cityCode="101281503"/>
+    </city>
+    <city id="2816" name="东莞">
+      <country id="281601" name="东莞" cityCode="101281601"/>
+    </city>
+    <city id="2817" name="中山">
+      <country id="281701" name="中山" cityCode="101281701"/>
+    </city>
+    <city id="2818" name="阳江">
+      <country id="281801" name="阳江" cityCode="101281801"/>
+      <country id="281802" name="阳春" cityCode="101281802"/>
+      <country id="281803" name="阳东" cityCode="101281803"/>
+      <country id="281804" name="阳西" cityCode="101281804"/>
+    </city>
+    <city id="2819" name="揭阳">
+      <country id="281901" name="揭阳" cityCode="101281901"/>
+      <country id="281902" name="揭西" cityCode="101281902"/>
+      <country id="281903" name="普宁" cityCode="101281903"/>
+      <country id="281904" name="惠来" cityCode="101281904"/>
+      <country id="281905" name="揭东" cityCode="101281905"/>
+    </city>
+    <city id="2820" name="茂名">
+      <country id="282001" name="茂名" cityCode="101282001"/>
+      <country id="282002" name="高州" cityCode="101282002"/>
+      <country id="282003" name="化州" cityCode="101282003"/>
+      <country id="282004" name="电白" cityCode="101282004"/>
+      <country id="282005" name="信宜" cityCode="101282005"/>
+      <country id="282006" name="茂港" cityCode="101282006"/>
+    </city>
+    <city id="2821" name="汕尾">
+      <country id="282101" name="汕尾" cityCode="101282101"/>
+      <country id="282102" name="海丰" cityCode="101282102"/>
+      <country id="282103" name="陆丰" cityCode="101282103"/>
+      <country id="282104" name="陆河" cityCode="101282104"/>
+    </city>
+  </province>
+  <province id="30" name="广西">
+    <city id="3001" name="南宁">
+      <country id="300101" name="南宁" cityCode="101300101"/>
+      <country id="300102" name="邕宁" cityCode="101300103"/>
+      <country id="300103" name="横县" cityCode="101300104"/>
+      <country id="300104" name="隆安" cityCode="101300105"/>
+      <country id="300105" name="马山" cityCode="101300106"/>
+      <country id="300106" name="上林" cityCode="101300107"/>
+      <country id="300107" name="武鸣" cityCode="101300108"/>
+      <country id="300108" name="宾阳" cityCode="101300109"/>
+    </city>
+    <city id="3002" name="崇左">
+      <country id="300201" name="崇左" cityCode="101300201"/>
+      <country id="300202" name="天等" cityCode="101300202"/>
+      <country id="300203" name="龙州" cityCode="101300203"/>
+      <country id="300204" name="凭祥" cityCode="101300204"/>
+      <country id="300205" name="大新" cityCode="101300205"/>
+      <country id="300206" name="扶绥" cityCode="101300206"/>
+      <country id="300207" name="宁明" cityCode="101300207"/>
+    </city>
+    <city id="3003" name="柳州">
+      <country id="300301" name="柳州" cityCode="101300301"/>
+      <country id="300302" name="柳城" cityCode="101300302"/>
+      <country id="300303" name="鹿寨" cityCode="101300304"/>
+      <country id="300304" name="柳江" cityCode="101300305"/>
+      <country id="300305" name="融安" cityCode="101300306"/>
+      <country id="300306" name="融水" cityCode="101300307"/>
+      <country id="300307" name="三江" cityCode="101300308"/>
+    </city>
+    <city id="3004" name="来宾">
+      <country id="300401" name="来宾" cityCode="101300401"/>
+      <country id="300402" name="忻城" cityCode="101300402"/>
+      <country id="300403" name="金秀" cityCode="101300403"/>
+      <country id="300404" name="象州" cityCode="101300404"/>
+      <country id="300405" name="武宣" cityCode="101300405"/>
+      <country id="300406" name="合山" cityCode="101300406"/>
+    </city>
+    <city id="3005" name="桂林">
+      <country id="300501" name="桂林" cityCode="101300501"/>
+      <country id="300502" name="龙胜" cityCode="101300503"/>
+      <country id="300503" name="永福" cityCode="101300504"/>
+      <country id="300504" name="临桂" cityCode="101300505"/>
+      <country id="300505" name="兴安" cityCode="101300506"/>
+      <country id="300506" name="灵川" cityCode="101300507"/>
+      <country id="300507" name="全州" cityCode="101300508"/>
+      <country id="300508" name="灌阳" cityCode="101300509"/>
+      <country id="300509" name="阳朔" cityCode="101300510"/>
+      <country id="300510" name="恭城" cityCode="101300511"/>
+      <country id="300511" name="平乐" cityCode="101300512"/>
+      <country id="300512" name="荔浦" cityCode="101300513"/>
+      <country id="300513" name="资源" cityCode="101300514"/>
+    </city>
+    <city id="3006" name="梧州">
+      <country id="300601" name="梧州" cityCode="101300601"/>
+      <country id="300602" name="藤县" cityCode="101300602"/>
+      <country id="300603" name="苍梧" cityCode="101300604"/>
+      <country id="300604" name="蒙山" cityCode="101300605"/>
+      <country id="300605" name="岑溪" cityCode="101300606"/>
+    </city>
+    <city id="3007" name="贺州">
+      <country id="300701" name="贺州" cityCode="101300701"/>
+      <country id="300702" name="昭平" cityCode="101300702"/>
+      <country id="300703" name="富川" cityCode="101300703"/>
+      <country id="300704" name="钟山" cityCode="101300704"/>
+    </city>
+    <city id="3008" name="贵港">
+      <country id="300801" name="贵港" cityCode="101300801"/>
+      <country id="300802" name="桂平" cityCode="101300802"/>
+      <country id="300803" name="平南" cityCode="101300803"/>
+    </city>
+    <city id="3009" name="玉林">
+      <country id="300901" name="玉林" cityCode="101300901"/>
+      <country id="300902" name="博白" cityCode="101300902"/>
+      <country id="300903" name="北流" cityCode="101300903"/>
+      <country id="300904" name="容县" cityCode="101300904"/>
+      <country id="300905" name="陆川" cityCode="101300905"/>
+      <country id="300906" name="兴业" cityCode="101300906"/>
+    </city>
+    <city id="3010" name="百色">
+      <country id="301001" name="百色" cityCode="101301001"/>
+      <country id="301002" name="那坡" cityCode="101301002"/>
+      <country id="301003" name="田阳" cityCode="101301003"/>
+      <country id="301004" name="德保" cityCode="101301004"/>
+      <country id="301005" name="靖西" cityCode="101301005"/>
+      <country id="301006" name="田东" cityCode="101301006"/>
+      <country id="301007" name="平果" cityCode="101301007"/>
+      <country id="301008" name="隆林" cityCode="101301008"/>
+      <country id="301009" name="西林" cityCode="101301009"/>
+      <country id="301010" name="乐业" cityCode="101301010"/>
+      <country id="301011" name="凌云" cityCode="101301011"/>
+      <country id="301012" name="田林" cityCode="101301012"/>
+    </city>
+    <city id="3011" name="钦州">
+      <country id="301101" name="钦州" cityCode="101301101"/>
+      <country id="301102" name="浦北" cityCode="101301102"/>
+      <country id="301103" name="灵山" cityCode="101301103"/>
+    </city>
+    <city id="3012" name="河池">
+      <country id="301201" name="河池" cityCode="101301201"/>
+      <country id="301202" name="天峨" cityCode="101301202"/>
+      <country id="301203" name="东兰" cityCode="101301203"/>
+      <country id="301204" name="巴马" cityCode="101301204"/>
+      <country id="301205" name="环江" cityCode="101301205"/>
+      <country id="301206" name="罗城" cityCode="101301206"/>
+      <country id="301207" name="宜州" cityCode="101301207"/>
+      <country id="301208" name="凤山" cityCode="101301208"/>
+      <country id="301209" name="南丹" cityCode="101301209"/>
+      <country id="301210" name="都安" cityCode="101301210"/>
+      <country id="301211" name="大化" cityCode="101301211"/>
+    </city>
+    <city id="3013" name="北海">
+      <country id="301301" name="北海" cityCode="101301301"/>
+      <country id="301302" name="合浦" cityCode="101301302"/>
+      <country id="301303" name="涠洲岛" cityCode="101301303"/>
+    </city>
+    <city id="3014" name="防城港">
+      <country id="301401" name="防城港" cityCode="101301401"/>
+      <country id="301402" name="上思" cityCode="101301402"/>
+      <country id="301403" name="东兴" cityCode="101301403"/>
+      <country id="301404" name="防城" cityCode="101301405"/>
+    </city>
+  </province>
+  <province id="32" name="香港">
+    <city id="3201" name="香港">
+      <country id="320101" name="香港" cityCode="101320101"/>
+      <country id="320102" name="九龙" cityCode="101320102"/>
+      <country id="320103" name="新界" cityCode="101320103"/>
+    </city>
+  </province>
+  <province id="33" name="澳门">
+    <city id="3301" name="澳门">
+      <country id="330101" name="澳门" cityCode="101330101"/>
+      <country id="330102" name="氹仔岛" cityCode="101330102"/>
+      <country id="330103" name="路环岛" cityCode="101330103"/>
+    </city>
+  </province>
+  <province id="34" name="台湾">
+    <city id="3401" name="台北">
+      <country id="340101" name="台北" cityCode="101340101"/>
+      <country id="340102" name="桃园" cityCode="101340102"/>
+      <country id="340103" name="新竹" cityCode="101340103"/>
+      <country id="340104" name="宜兰" cityCode="101340104"/>
+    </city>
+    <city id="3402" name="高雄">
+      <country id="340201" name="高雄" cityCode="101340201"/>
+      <country id="340202" name="嘉义" cityCode="101340202"/>
+      <country id="340203" name="台南" cityCode="101340203"/>
+      <country id="340204" name="台东" cityCode="101340204"/>
+      <country id="340205" name="屏东" cityCode="101340205"/>
+    </city>
+    <city id="3403" name="台中">
+      <country id="340301" name="台中" cityCode="101340401"/>
+      <country id="340302" name="苗栗" cityCode="101340402"/>
+      <country id="340303" name="彰化" cityCode="101340403"/>
+      <country id="340304" name="南投" cityCode="101340404"/>
+      <country id="340305" name="花莲" cityCode="101340405"/>
+      <country id="340306" name="云林" cityCode="101340406"/>
+    </city>
+  </province>
+  <province id="25" name="湖南">
+    <city id="2501" name="长沙">
+      <country id="250101" name="长沙" cityCode="101250101"/>
+      <country id="250102" name="宁乡" cityCode="101250102"/>
+      <country id="250103" name="浏阳" cityCode="101250103"/>
+      <country id="250104" name="马坡岭" cityCode="101250104"/>
+      <country id="250105" name="望城" cityCode="101250105"/>
+    </city>
+    <city id="2502" name="湘潭">
+      <country id="250201" name="湘潭" cityCode="101250201"/>
+      <country id="250202" name="韶山" cityCode="101250202"/>
+      <country id="250203" name="湘乡" cityCode="101250203"/>
+    </city>
+    <city id="2503" name="株洲">
+      <country id="250301" name="株洲" cityCode="101250301"/>
+      <country id="250302" name="攸县" cityCode="101250302"/>
+      <country id="250303" name="醴陵" cityCode="101250303"/>
+      <country id="250304" name="茶陵" cityCode="101250305"/>
+      <country id="250305" name="炎陵" cityCode="101250306"/>
+    </city>
+    <city id="2504" name="衡阳">
+      <country id="250401" name="衡阳" cityCode="101250401"/>
+      <country id="250402" name="衡山" cityCode="101250402"/>
+      <country id="250403" name="衡东" cityCode="101250403"/>
+      <country id="250404" name="祁东" cityCode="101250404"/>
+      <country id="250405" name="衡阳县" cityCode="101250405"/>
+      <country id="250406" name="常宁" cityCode="101250406"/>
+      <country id="250407" name="衡南" cityCode="101250407"/>
+      <country id="250408" name="耒阳" cityCode="101250408"/>
+      <country id="250409" name="南岳" cityCode="101250409"/>
+    </city>
+    <city id="2505" name="郴州">
+      <country id="250501" name="郴州" cityCode="101250501"/>
+      <country id="250502" name="桂阳" cityCode="101250502"/>
+      <country id="250503" name="嘉禾" cityCode="101250503"/>
+      <country id="250504" name="宜章" cityCode="101250504"/>
+      <country id="250505" name="临武" cityCode="101250505"/>
+      <country id="250506" name="资兴" cityCode="101250507"/>
+      <country id="250507" name="汝城" cityCode="101250508"/>
+      <country id="250508" name="安仁" cityCode="101250509"/>
+      <country id="250509" name="永兴" cityCode="101250510"/>
+      <country id="250510" name="桂东" cityCode="101250511"/>
+      <country id="250511" name="苏仙" cityCode="101250512"/>
+    </city>
+    <city id="2506" name="常德">
+      <country id="250601" name="常德" cityCode="101250601"/>
+      <country id="250602" name="安乡" cityCode="101250602"/>
+      <country id="250603" name="桃源" cityCode="101250603"/>
+      <country id="250604" name="汉寿" cityCode="101250604"/>
+      <country id="250605" name="澧县" cityCode="101250605"/>
+      <country id="250606" name="临澧" cityCode="101250606"/>
+      <country id="250607" name="石门" cityCode="101250607"/>
+      <country id="250608" name="津市" cityCode="101250608"/>
+    </city>
+    <city id="2507" name="益阳">
+      <country id="250701" name="益阳" cityCode="101250700"/>
+      <country id="250702" name="赫山区" cityCode="101250701"/>
+      <country id="250703" name="南县" cityCode="101250702"/>
+      <country id="250704" name="桃江" cityCode="101250703"/>
+      <country id="250705" name="安化" cityCode="101250704"/>
+      <country id="250706" name="沅江" cityCode="101250705"/>
+    </city>
+    <city id="2508" name="娄底">
+      <country id="250801" name="娄底" cityCode="101250801"/>
+      <country id="250802" name="双峰" cityCode="101250802"/>
+      <country id="250803" name="冷水江" cityCode="101250803"/>
+      <country id="250804" name="新化" cityCode="101250805"/>
+      <country id="250805" name="涟源" cityCode="101250806"/>
+    </city>
+    <city id="2509" name="邵阳">
+      <country id="250901" name="邵阳" cityCode="101250901"/>
+      <country id="250902" name="隆回" cityCode="101250902"/>
+      <country id="250903" name="洞口" cityCode="101250903"/>
+      <country id="250904" name="新邵" cityCode="101250904"/>
+      <country id="250905" name="邵东" cityCode="101250905"/>
+      <country id="250906" name="绥宁" cityCode="101250906"/>
+      <country id="250907" name="新宁" cityCode="101250907"/>
+      <country id="250908" name="武冈" cityCode="101250908"/>
+      <country id="250909" name="城步" cityCode="101250909"/>
+      <country id="250910" name="邵阳县" cityCode="101250910"/>
+    </city>
+    <city id="2510" name="岳阳">
+      <country id="251001" name="岳阳" cityCode="101251001"/>
+      <country id="251002" name="华容" cityCode="101251002"/>
+      <country id="251003" name="湘阴" cityCode="101251003"/>
+      <country id="251004" name="汨罗" cityCode="101251004"/>
+      <country id="251005" name="平江" cityCode="101251005"/>
+      <country id="251006" name="临湘" cityCode="101251006"/>
+    </city>
+    <city id="2511" name="张家界">
+      <country id="251101" name="张家界" cityCode="101251101"/>
+      <country id="251102" name="桑植" cityCode="101251102"/>
+      <country id="251103" name="慈利" cityCode="101251103"/>
+      <country id="251104" name="武陵源" cityCode="101251104"/>
+    </city>
+    <city id="2512" name="怀化">
+      <country id="251201" name="怀化" cityCode="101251201"/>
+      <country id="251202" name="沅陵" cityCode="101251203"/>
+      <country id="251203" name="辰溪" cityCode="101251204"/>
+      <country id="251204" name="靖州" cityCode="101251205"/>
+      <country id="251205" name="会同" cityCode="101251206"/>
+      <country id="251206" name="通道" cityCode="101251207"/>
+      <country id="251207" name="麻阳" cityCode="101251208"/>
+      <country id="251208" name="新晃" cityCode="101251209"/>
+      <country id="251209" name="芷江" cityCode="101251210"/>
+      <country id="251210" name="溆浦" cityCode="101251211"/>
+      <country id="251211" name="中方" cityCode="101251212"/>
+      <country id="251212" name="洪江" cityCode="101251213"/>
+    </city>
+    <city id="2513" name="永州">
+      <country id="251301" name="永州" cityCode="101251401"/>
+      <country id="251302" name="祁阳" cityCode="101251402"/>
+      <country id="251303" name="东安" cityCode="101251403"/>
+      <country id="251304" name="双牌" cityCode="101251404"/>
+      <country id="251305" name="道县" cityCode="101251405"/>
+      <country id="251306" name="宁远" cityCode="101251406"/>
+      <country id="251307" name="江永" cityCode="101251407"/>
+      <country id="251308" name="蓝山" cityCode="101251408"/>
+      <country id="251309" name="新田" cityCode="101251409"/>
+      <country id="251310" name="江华" cityCode="101251410"/>
+      <country id="251311" name="冷水滩" cityCode="101251411"/>
+    </city>
+    <city id="2514" name="湘西">
+      <country id="251401" name="吉首" cityCode="101251501"/>
+      <country id="251402" name="保靖" cityCode="101251502"/>
+      <country id="251403" name="永顺" cityCode="101251503"/>
+      <country id="251404" name="古丈" cityCode="101251504"/>
+      <country id="251405" name="凤凰" cityCode="101251505"/>
+      <country id="251406" name="泸溪" cityCode="101251506"/>
+      <country id="251407" name="龙山" cityCode="101251507"/>
+      <country id="251408" name="花垣" cityCode="101251508"/>
+    </city>
+  </province>
+  <province id="20" name="湖北">
+    <city id="2001" name="武汉">
+      <country id="200101" name="武汉" cityCode="101200101"/>
+      <country id="200102" name="蔡甸" cityCode="101200102"/>
+      <country id="200103" name="黄陂" cityCode="101200103"/>
+      <country id="200104" name="新洲" cityCode="101200104"/>
+      <country id="200105" name="江夏" cityCode="101200105"/>
+      <country id="200106" name="东西湖" cityCode="101200106"/>
+    </city>
+    <city id="2002" name="襄阳">
+      <country id="200201" name="襄阳" cityCode="101200201"/>
+      <country id="200202" name="襄州" cityCode="101200202"/>
+      <country id="200203" name="保康" cityCode="101200203"/>
+      <country id="200204" name="南漳" cityCode="101200204"/>
+      <country id="200205" name="宜城" cityCode="101200205"/>
+      <country id="200206" name="老河口" cityCode="101200206"/>
+      <country id="200207" name="谷城" cityCode="101200207"/>
+      <country id="200208" name="枣阳" cityCode="101200208"/>
+    </city>
+    <city id="2003" name="鄂州">
+      <country id="200301" name="鄂州" cityCode="101200301"/>
+      <country id="200302" name="梁子湖" cityCode="101200302"/>
+    </city>
+    <city id="2004" name="孝感">
+      <country id="200401" name="孝感" cityCode="101200401"/>
+      <country id="200402" name="安陆" cityCode="101200402"/>
+      <country id="200403" name="云梦" cityCode="101200403"/>
+      <country id="200404" name="大悟" cityCode="101200404"/>
+      <country id="200405" name="应城" cityCode="101200405"/>
+      <country id="200406" name="汉川" cityCode="101200406"/>
+      <country id="200407" name="孝昌" cityCode="101200407"/>
+    </city>
+    <city id="2005" name="黄冈">
+      <country id="200501" name="黄冈" cityCode="101200501"/>
+      <country id="200502" name="红安" cityCode="101200502"/>
+      <country id="200503" name="麻城" cityCode="101200503"/>
+      <country id="200504" name="罗田" cityCode="101200504"/>
+      <country id="200505" name="英山" cityCode="101200505"/>
+      <country id="200506" name="浠水" cityCode="101200506"/>
+      <country id="200507" name="蕲春" cityCode="101200507"/>
+      <country id="200508" name="黄梅" cityCode="101200508"/>
+      <country id="200509" name="武穴" cityCode="101200509"/>
+      <country id="200510" name="团风" cityCode="101200510"/>
+    </city>
+    <city id="2006" name="黄石">
+      <country id="200601" name="黄石" cityCode="101200601"/>
+      <country id="200602" name="大冶" cityCode="101200602"/>
+      <country id="200603" name="阳新" cityCode="101200603"/>
+      <country id="200604" name="铁山" cityCode="101200604"/>
+      <country id="200605" name="下陆" cityCode="101200605"/>
+      <country id="200606" name="西塞山" cityCode="101200606"/>
+    </city>
+    <city id="2007" name="咸宁">
+      <country id="200701" name="咸宁" cityCode="101200701"/>
+      <country id="200702" name="赤壁" cityCode="101200702"/>
+      <country id="200703" name="嘉鱼" cityCode="101200703"/>
+      <country id="200704" name="崇阳" cityCode="101200704"/>
+      <country id="200705" name="通城" cityCode="101200705"/>
+      <country id="200706" name="通山" cityCode="101200706"/>
+    </city>
+    <city id="2008" name="荆州">
+      <country id="200801" name="荆州" cityCode="101200801"/>
+      <country id="200802" name="江陵" cityCode="101200802"/>
+      <country id="200803" name="公安" cityCode="101200803"/>
+      <country id="200804" name="石首" cityCode="101200804"/>
+      <country id="200805" name="监利" cityCode="101200805"/>
+      <country id="200806" name="洪湖" cityCode="101200806"/>
+      <country id="200807" name="松滋" cityCode="101200807"/>
+      <country id="200808" name="沙市" cityCode="101201406"/>
+    </city>
+    <city id="2009" name="宜昌">
+      <country id="200901" name="宜昌" cityCode="101200901"/>
+      <country id="200902" name="远安" cityCode="101200902"/>
+      <country id="200903" name="秭归" cityCode="101200903"/>
+      <country id="200904" name="兴山" cityCode="101200904"/>
+      <country id="200905" name="五峰" cityCode="101200906"/>
+      <country id="200906" name="当阳" cityCode="101200907"/>
+      <country id="200907" name="长阳" cityCode="101200908"/>
+      <country id="200908" name="宜都" cityCode="101200909"/>
+      <country id="200909" name="枝江" cityCode="101200910"/>
+      <country id="200910" name="三峡" cityCode="101200911"/>
+      <country id="200911" name="夷陵" cityCode="101200912"/>
+    </city>
+    <city id="2010" name="恩施">
+      <country id="201001" name="恩施" cityCode="101201001"/>
+      <country id="201002" name="利川" cityCode="101201002"/>
+      <country id="201003" name="建始" cityCode="101201003"/>
+      <country id="201004" name="咸丰" cityCode="101201004"/>
+      <country id="201005" name="宣恩" cityCode="101201005"/>
+      <country id="201006" name="鹤峰" cityCode="101201006"/>
+      <country id="201007" name="来凤" cityCode="101201007"/>
+      <country id="201008" name="巴东" cityCode="101201008"/>
+    </city>
+    <city id="2011" name="十堰">
+      <country id="201101" name="十堰" cityCode="101201101"/>
+      <country id="201102" name="竹溪" cityCode="101201102"/>
+      <country id="201103" name="郧西" cityCode="101201103"/>
+      <country id="201104" name="郧县" cityCode="101201104"/>
+      <country id="201105" name="竹山" cityCode="101201105"/>
+      <country id="201106" name="房县" cityCode="101201106"/>
+      <country id="201107" name="丹江口" cityCode="101201107"/>
+      <country id="201108" name="茅箭" cityCode="101201108"/>
+      <country id="201109" name="张湾" cityCode="101201109"/>
+    </city>
+    <city id="2012" name="神农架">
+      <country id="201201" name="神农架" cityCode="101201201"/>
+    </city>
+    <city id="2013" name="随州">
+      <country id="201301" name="随州" cityCode="101201301"/>
+      <country id="201302" name="广水" cityCode="101201302"/>
+    </city>
+    <city id="2014" name="荆门">
+      <country id="201401" name="荆门" cityCode="101201401"/>
+      <country id="201402" name="钟祥" cityCode="101201402"/>
+      <country id="201403" name="京山" cityCode="101201403"/>
+      <country id="201404" name="掇刀" cityCode="101201404"/>
+      <country id="201405" name="沙洋" cityCode="101201405"/>
+    </city>
+    <city id="2015" name="天门">
+      <country id="201501" name="天门" cityCode="101201501"/>
+    </city>
+    <city id="2016" name="仙桃">
+      <country id="201601" name="仙桃" cityCode="101201601"/>
+    </city>
+    <city id="2017" name="潜江">
+      <country id="201701" name="潜江" cityCode="101201701"/>
+    </city>
+  </province>
+  <province id="21" name="浙江">
+    <city id="2101" name="杭州">
+      <country id="210101" name="杭州" cityCode="101210101"/>
+      <country id="210102" name="萧山" cityCode="101210102"/>
+      <country id="210103" name="桐庐" cityCode="101210103"/>
+      <country id="210104" name="淳安" cityCode="101210104"/>
+      <country id="210105" name="建德" cityCode="101210105"/>
+      <country id="210106" name="余杭" cityCode="101210106"/>
+      <country id="210107" name="临安" cityCode="101210107"/>
+      <country id="210108" name="富阳" cityCode="101210108"/>
+    </city>
+    <city id="2102" name="湖州">
+      <country id="210201" name="湖州" cityCode="101210201"/>
+      <country id="210202" name="长兴" cityCode="101210202"/>
+      <country id="210203" name="安吉" cityCode="101210203"/>
+      <country id="210204" name="德清" cityCode="101210204"/>
+    </city>
+    <city id="2103" name="嘉兴">
+      <country id="210301" name="嘉兴" cityCode="101210301"/>
+      <country id="210302" name="嘉善" cityCode="101210302"/>
+      <country id="210303" name="海宁" cityCode="101210303"/>
+      <country id="210304" name="桐乡" cityCode="101210304"/>
+      <country id="210305" name="平湖" cityCode="101210305"/>
+      <country id="210306" name="海盐" cityCode="101210306"/>
+    </city>
+    <city id="2104" name="宁波">
+      <country id="210401" name="宁波" cityCode="101210401"/>
+      <country id="210402" name="慈溪" cityCode="101210403"/>
+      <country id="210403" name="余姚" cityCode="101210404"/>
+      <country id="210404" name="奉化" cityCode="101210405"/>
+      <country id="210405" name="象山" cityCode="101210406"/>
+      <country id="210406" name="宁海" cityCode="101210408"/>
+      <country id="210407" name="北仑" cityCode="101210410"/>
+      <country id="210408" name="鄞州" cityCode="101210411"/>
+      <country id="210409" name="镇海" cityCode="101210412"/>
+    </city>
+    <city id="2105" name="绍兴">
+      <country id="210501" name="绍兴" cityCode="101210501"/>
+      <country id="210502" name="诸暨" cityCode="101210502"/>
+      <country id="210503" name="上虞" cityCode="101210503"/>
+      <country id="210504" name="新昌" cityCode="101210504"/>
+      <country id="210505" name="嵊州" cityCode="101210505"/>
+    </city>
+    <city id="2106" name="台州">
+      <country id="210601" name="台州" cityCode="101210601"/>
+      <country id="210602" name="玉环" cityCode="101210603"/>
+      <country id="210603" name="三门" cityCode="101210604"/>
+      <country id="210604" name="天台" cityCode="101210605"/>
+      <country id="210605" name="仙居" cityCode="101210606"/>
+      <country id="210606" name="温岭" cityCode="101210607"/>
+      <country id="210607" name="洪家" cityCode="101210609"/>
+      <country id="210608" name="临海" cityCode="101210610"/>
+      <country id="210609" name="椒江" cityCode="101210611"/>
+      <country id="210610" name="黄岩" cityCode="101210612"/>
+      <country id="210611" name="路桥" cityCode="101210613"/>
+    </city>
+    <city id="2107" name="温州">
+      <country id="210701" name="温州" cityCode="101210701"/>
+      <country id="210702" name="泰顺" cityCode="101210702"/>
+      <country id="210703" name="文成" cityCode="101210703"/>
+      <country id="210704" name="平阳" cityCode="101210704"/>
+      <country id="210705" name="瑞安" cityCode="101210705"/>
+      <country id="210706" name="洞头" cityCode="101210706"/>
+      <country id="210707" name="乐清" cityCode="101210707"/>
+      <country id="210708" name="永嘉" cityCode="101210708"/>
+      <country id="210709" name="苍南" cityCode="101210709"/>
+    </city>
+    <city id="2108" name="丽水">
+      <country id="210801" name="丽水" cityCode="101210801"/>
+      <country id="210802" name="遂昌" cityCode="101210802"/>
+      <country id="210803" name="龙泉" cityCode="101210803"/>
+      <country id="210804" name="缙云" cityCode="101210804"/>
+      <country id="210805" name="青田" cityCode="101210805"/>
+      <country id="210806" name="云和" cityCode="101210806"/>
+      <country id="210807" name="庆元" cityCode="101210807"/>
+      <country id="210808" name="松阳" cityCode="101210808"/>
+      <country id="210809" name="景宁" cityCode="101210809"/>
+    </city>
+    <city id="2109" name="金华">
+      <country id="210901" name="金华" cityCode="101210901"/>
+      <country id="210902" name="浦江" cityCode="101210902"/>
+      <country id="210903" name="兰溪" cityCode="101210903"/>
+      <country id="210904" name="义乌" cityCode="101210904"/>
+      <country id="210905" name="东阳" cityCode="101210905"/>
+      <country id="210906" name="武义" cityCode="101210906"/>
+      <country id="210907" name="永康" cityCode="101210907"/>
+      <country id="210908" name="磐安" cityCode="101210908"/>
+    </city>
+    <city id="2110" name="衢州">
+      <country id="211001" name="衢州" cityCode="101211001"/>
+      <country id="211002" name="常山" cityCode="101211002"/>
+      <country id="211003" name="开化" cityCode="101211003"/>
+      <country id="211004" name="龙游" cityCode="101211004"/>
+      <country id="211005" name="江山" cityCode="101211005"/>
+      <country id="211006" name="衢江" cityCode="101211006"/>
+    </city>
+    <city id="2111" name="舟山">
+      <country id="211101" name="舟山" cityCode="101211101"/>
+      <country id="211102" name="嵊泗" cityCode="101211102"/>
+      <country id="211103" name="岱山" cityCode="101211104"/>
+      <country id="211104" name="普陀" cityCode="101211105"/>
+      <country id="211105" name="定海" cityCode="101211106"/>
+    </city>
+  </province>
+  <province id="23" name="福建">
+    <city id="2301" name="福州">
+      <country id="230101" name="福州" cityCode="101230101"/>
+      <country id="230102" name="闽清" cityCode="101230102"/>
+      <country id="230103" name="闽侯" cityCode="101230103"/>
+      <country id="230104" name="罗源" cityCode="101230104"/>
+      <country id="230105" name="连江" cityCode="101230105"/>
+      <country id="230106" name="永泰" cityCode="101230107"/>
+      <country id="230107" name="平潭" cityCode="101230108"/>
+      <country id="230108" name="长乐" cityCode="101230110"/>
+      <country id="230109" name="福清" cityCode="101230111"/>
+    </city>
+    <city id="2302" name="厦门">
+      <country id="230201" name="厦门" cityCode="101230201"/>
+      <country id="230202" name="同安" cityCode="101230202"/>
+    </city>
+    <city id="2303" name="宁德">
+      <country id="230301" name="宁德" cityCode="101230301"/>
+      <country id="230302" name="古田" cityCode="101230302"/>
+      <country id="230303" name="霞浦" cityCode="101230303"/>
+      <country id="230304" name="寿宁" cityCode="101230304"/>
+      <country id="230305" name="周宁" cityCode="101230305"/>
+      <country id="230306" name="福安" cityCode="101230306"/>
+      <country id="230307" name="柘荣" cityCode="101230307"/>
+      <country id="230308" name="福鼎" cityCode="101230308"/>
+      <country id="230309" name="屏南" cityCode="101230309"/>
+    </city>
+    <city id="2304" name="莆田">
+      <country id="230401" name="莆田" cityCode="101230401"/>
+      <country id="230402" name="仙游" cityCode="101230402"/>
+      <country id="230403" name="秀屿港" cityCode="101230403"/>
+      <country id="230404" name="涵江" cityCode="101230404"/>
+      <country id="230405" name="秀屿" cityCode="101230405"/>
+      <country id="230406" name="荔城" cityCode="101230406"/>
+      <country id="230407" name="城厢" cityCode="101230407"/>
+    </city>
+    <city id="2305" name="泉州">
+      <country id="230501" name="泉州" cityCode="101230501"/>
+      <country id="230502" name="安溪" cityCode="101230502"/>
+      <country id="230503" name="永春" cityCode="101230504"/>
+      <country id="230504" name="德化" cityCode="101230505"/>
+      <country id="230505" name="南安" cityCode="101230506"/>
+      <country id="230506" name="崇武" cityCode="101230507"/>
+      <country id="230507" name="惠安" cityCode="101230508"/>
+      <country id="230508" name="晋江" cityCode="101230509"/>
+      <country id="230509" name="石狮" cityCode="101230510"/>
+    </city>
+    <city id="2306" name="漳州">
+      <country id="230601" name="漳州" cityCode="101230601"/>
+      <country id="230602" name="长泰" cityCode="101230602"/>
+      <country id="230603" name="南靖" cityCode="101230603"/>
+      <country id="230604" name="平和" cityCode="101230604"/>
+      <country id="230605" name="龙海" cityCode="101230605"/>
+      <country id="230606" name="漳浦" cityCode="101230606"/>
+      <country id="230607" name="诏安" cityCode="101230607"/>
+      <country id="230608" name="东山" cityCode="101230608"/>
+      <country id="230609" name="云霄" cityCode="101230609"/>
+      <country id="230610" name="华安" cityCode="101230610"/>
+    </city>
+    <city id="2307" name="龙岩">
+      <country id="230701" name="龙岩" cityCode="101230701"/>
+      <country id="230702" name="长汀" cityCode="101230702"/>
+      <country id="230703" name="连城" cityCode="101230703"/>
+      <country id="230704" name="武平" cityCode="101230704"/>
+      <country id="230705" name="上杭" cityCode="101230705"/>
+      <country id="230706" name="永定" cityCode="101230706"/>
+      <country id="230707" name="漳平" cityCode="101230707"/>
+    </city>
+    <city id="2308" name="三明">
+      <country id="230801" name="三明" cityCode="101230801"/>
+      <country id="230802" name="宁化" cityCode="101230802"/>
+      <country id="230803" name="清流" cityCode="101230803"/>
+      <country id="230804" name="泰宁" cityCode="101230804"/>
+      <country id="230805" name="将乐" cityCode="101230805"/>
+      <country id="230806" name="建宁" cityCode="101230806"/>
+      <country id="230807" name="明溪" cityCode="101230807"/>
+      <country id="230808" name="沙县" cityCode="101230808"/>
+      <country id="230809" name="尤溪" cityCode="101230809"/>
+      <country id="230810" name="永安" cityCode="101230810"/>
+      <country id="230811" name="大田" cityCode="101230811"/>
+    </city>
+    <city id="2309" name="南平">
+      <country id="230901" name="南平" cityCode="101230901"/>
+      <country id="230902" name="顺昌" cityCode="101230902"/>
+      <country id="230903" name="光泽" cityCode="101230903"/>
+      <country id="230904" name="邵武" cityCode="101230904"/>
+      <country id="230905" name="武夷山" cityCode="101230905"/>
+      <country id="230906" name="浦城" cityCode="101230906"/>
+      <country id="230907" name="建阳" cityCode="101230907"/>
+      <country id="230908" name="松溪" cityCode="101230908"/>
+      <country id="230909" name="政和" cityCode="101230909"/>
+      <country id="230910" name="建瓯" cityCode="101230910"/>
+    </city>
+  </province>
+  <province id="22" name="安徽">
+    <city id="2201" name="合肥">
+      <country id="220101" name="合肥" cityCode="101220101"/>
+      <country id="220102" name="长丰" cityCode="101220102"/>
+      <country id="220103" name="肥东" cityCode="101220103"/>
+      <country id="220104" name="肥西" cityCode="101220104"/>
+    </city>
+    <city id="2202" name="蚌埠">
+      <country id="220201" name="蚌埠" cityCode="101220201"/>
+      <country id="220202" name="怀远" cityCode="101220202"/>
+      <country id="220203" name="固镇" cityCode="101220203"/>
+      <country id="220204" name="五河" cityCode="101220204"/>
+    </city>
+    <city id="2203" name="芜湖">
+      <country id="220301" name="芜湖" cityCode="101220301"/>
+      <country id="220302" name="繁昌" cityCode="101220302"/>
+      <country id="220303" name="芜湖县" cityCode="101220303"/>
+      <country id="220304" name="南陵" cityCode="101220304"/>
+    </city>
+    <city id="2204" name="淮南">
+      <country id="220401" name="淮南" cityCode="101220401"/>
+      <country id="220402" name="凤台" cityCode="101220402"/>
+      <country id="220403" name="潘集" cityCode="101220403"/>
+    </city>
+    <city id="2205" name="马鞍山">
+      <country id="220501" name="马鞍山" cityCode="101220501"/>
+      <country id="220502" name="当涂" cityCode="101220502"/>
+    </city>
+    <city id="2206" name="安庆">
+      <country id="220601" name="安庆" cityCode="101220601"/>
+      <country id="220602" name="枞阳" cityCode="101220602"/>
+      <country id="220603" name="太湖" cityCode="101220603"/>
+      <country id="220604" name="潜山" cityCode="101220604"/>
+      <country id="220605" name="怀宁" cityCode="101220605"/>
+      <country id="220606" name="宿松" cityCode="101220606"/>
+      <country id="220607" name="望江" cityCode="101220607"/>
+      <country id="220608" name="岳西" cityCode="101220608"/>
+      <country id="220609" name="桐城" cityCode="101220609"/>
+    </city>
+    <city id="2207" name="宿州">
+      <country id="220701" name="宿州" cityCode="101220701"/>
+      <country id="220702" name="砀山" cityCode="101220702"/>
+      <country id="220703" name="灵璧" cityCode="101220703"/>
+      <country id="220704" name="泗县" cityCode="101220704"/>
+      <country id="220705" name="萧县" cityCode="101220705"/>
+    </city>
+    <city id="2208" name="阜阳">
+      <country id="220801" name="阜阳" cityCode="101220801"/>
+      <country id="220802" name="阜南" cityCode="101220802"/>
+      <country id="220803" name="颍上" cityCode="101220803"/>
+      <country id="220804" name="临泉" cityCode="101220804"/>
+      <country id="220805" name="界首" cityCode="101220805"/>
+      <country id="220806" name="太和" cityCode="101220806"/>
+    </city>
+    <city id="2209" name="亳州">
+      <country id="220901" name="亳州" cityCode="101220901"/>
+      <country id="220902" name="涡阳" cityCode="101220902"/>
+      <country id="220903" name="利辛" cityCode="101220903"/>
+      <country id="220904" name="蒙城" cityCode="101220904"/>
+    </city>
+    <city id="2210" name="黄山">
+      <country id="221001" name="黄山市" cityCode="101221001"/>
+      <country id="221002" name="黄山区" cityCode="101221002"/>
+      <country id="221003" name="屯溪" cityCode="101221003"/>
+      <country id="221004" name="祁门" cityCode="101221004"/>
+      <country id="221005" name="黟县" cityCode="101221005"/>
+      <country id="221006" name="歙县" cityCode="101221006"/>
+      <country id="221007" name="休宁" cityCode="101221007"/>
+      <country id="221008" name="黄山风景区" cityCode="101221008"/>
+    </city>
+    <city id="2211" name="滁州">
+      <country id="221101" name="滁州" cityCode="101221101"/>
+      <country id="221102" name="凤阳" cityCode="101221102"/>
+      <country id="221103" name="明光" cityCode="101221103"/>
+      <country id="221104" name="定远" cityCode="101221104"/>
+      <country id="221105" name="全椒" cityCode="101221105"/>
+      <country id="221106" name="来安" cityCode="101221106"/>
+      <country id="221107" name="天长" cityCode="101221107"/>
+    </city>
+    <city id="2212" name="淮北">
+      <country id="221201" name="淮北" cityCode="101221201"/>
+      <country id="221202" name="濉溪" cityCode="101221202"/>
+    </city>
+    <city id="2213" name="铜陵">
+      <country id="221301" name="铜陵" cityCode="101221301"/>
+    </city>
+    <city id="2214" name="宣城">
+      <country id="221401" name="宣城" cityCode="101221401"/>
+      <country id="221402" name="泾县" cityCode="101221402"/>
+      <country id="221403" name="旌德" cityCode="101221403"/>
+      <country id="221404" name="宁国" cityCode="101221404"/>
+      <country id="221405" name="绩溪" cityCode="101221405"/>
+      <country id="221406" name="广德" cityCode="101221406"/>
+      <country id="221407" name="郎溪" cityCode="101221407"/>
+    </city>
+    <city id="2215" name="六安">
+      <country id="221501" name="六安" cityCode="101221501"/>
+      <country id="221502" name="霍邱" cityCode="101221502"/>
+      <country id="221503" name="寿县" cityCode="101221503"/>
+      <country id="221504" name="金寨" cityCode="101221505"/>
+      <country id="221505" name="霍山" cityCode="101221506"/>
+      <country id="221506" name="舒城" cityCode="101221507"/>
+    </city>
+    <city id="2216" name="巢湖">
+      <country id="221601" name="巢湖" cityCode="101221601"/>
+      <country id="221602" name="庐江" cityCode="101221602"/>
+      <country id="221603" name="无为" cityCode="101221603"/>
+      <country id="221604" name="含山" cityCode="101221604"/>
+      <country id="221605" name="和县" cityCode="101221605"/>
+    </city>
+    <city id="2217" name="池州">
+      <country id="221701" name="池州" cityCode="101221701"/>
+      <country id="221702" name="东至" cityCode="101221702"/>
+      <country id="221703" name="青阳" cityCode="101221703"/>
+      <country id="221704" name="九华山" cityCode="101221704"/>
+      <country id="221705" name="石台" cityCode="101221705"/>
+    </city>
+  </province>
+  <province id="24" name="江西">
+    <city id="2401" name="南昌">
+      <country id="240101" name="南昌" cityCode="101240101"/>
+      <country id="240102" name="新建" cityCode="101240102"/>
+      <country id="240103" name="南昌县" cityCode="101240103"/>
+      <country id="240104" name="安义" cityCode="101240104"/>
+      <country id="240105" name="进贤" cityCode="101240105"/>
+    </city>
+    <city id="2402" name="九江">
+      <country id="240201" name="九江" cityCode="101240201"/>
+      <country id="240202" name="瑞昌" cityCode="101240202"/>
+      <country id="240203" name="庐山" cityCode="101240203"/>
+      <country id="240204" name="武宁" cityCode="101240204"/>
+      <country id="240205" name="德安" cityCode="101240205"/>
+      <country id="240206" name="永修" cityCode="101240206"/>
+      <country id="240207" name="湖口" cityCode="101240207"/>
+      <country id="240208" name="彭泽" cityCode="101240208"/>
+      <country id="240209" name="星子" cityCode="101240209"/>
+      <country id="240210" name="都昌" cityCode="101240210"/>
+      <country id="240211" name="修水" cityCode="101240212"/>
+    </city>
+    <city id="2403" name="上饶">
+      <country id="240301" name="上饶" cityCode="101240301"/>
+      <country id="240302" name="鄱阳" cityCode="101240302"/>
+      <country id="240303" name="婺源" cityCode="101240303"/>
+      <country id="240304" name="余干" cityCode="101240305"/>
+      <country id="240305" name="万年" cityCode="101240306"/>
+      <country id="240306" name="德兴" cityCode="101240307"/>
+      <country id="240307" name="上饶县" cityCode="101240308"/>
+      <country id="240308" name="弋阳" cityCode="101240309"/>
+      <country id="240309" name="横峰" cityCode="101240310"/>
+      <country id="240310" name="铅山" cityCode="101240311"/>
+      <country id="240311" name="玉山" cityCode="101240312"/>
+      <country id="240312" name="广丰" cityCode="101240313"/>
+    </city>
+    <city id="2404" name="抚州">
+      <country id="240401" name="抚州" cityCode="101240401"/>
+      <country id="240402" name="广昌" cityCode="101240402"/>
+      <country id="240403" name="乐安" cityCode="101240403"/>
+      <country id="240404" name="崇仁" cityCode="101240404"/>
+      <country id="240405" name="金溪" cityCode="101240405"/>
+      <country id="240406" name="资溪" cityCode="101240406"/>
+      <country id="240407" name="宜黄" cityCode="101240407"/>
+      <country id="240408" name="南城" cityCode="101240408"/>
+      <country id="240409" name="南丰" cityCode="101240409"/>
+      <country id="240410" name="黎川" cityCode="101240410"/>
+      <country id="240411" name="东乡" cityCode="101240411"/>
+    </city>
+    <city id="2405" name="宜春">
+      <country id="240501" name="宜春" cityCode="101240501"/>
+      <country id="240502" name="铜鼓" cityCode="101240502"/>
+      <country id="240503" name="宜丰" cityCode="101240503"/>
+      <country id="240504" name="万载" cityCode="101240504"/>
+      <country id="240505" name="上高" cityCode="101240505"/>
+      <country id="240506" name="靖安" cityCode="101240506"/>
+      <country id="240507" name="奉新" cityCode="101240507"/>
+      <country id="240508" name="高安" cityCode="101240508"/>
+      <country id="240509" name="樟树" cityCode="101240509"/>
+      <country id="240510" name="丰城" cityCode="101240510"/>
+    </city>
+    <city id="2406" name="吉安">
+      <country id="240601" name="吉安" cityCode="101240601"/>
+      <country id="240602" name="吉安县" cityCode="101240602"/>
+      <country id="240603" name="吉水" cityCode="101240603"/>
+      <country id="240604" name="新干" cityCode="101240604"/>
+      <country id="240605" name="峡江" cityCode="101240605"/>
+      <country id="240606" name="永丰" cityCode="101240606"/>
+      <country id="240607" name="永新" cityCode="101240607"/>
+      <country id="240608" name="井冈山" cityCode="101240608"/>
+      <country id="240609" name="万安" cityCode="101240609"/>
+      <country id="240610" name="遂川" cityCode="101240610"/>
+      <country id="240611" name="泰和" cityCode="101240611"/>
+      <country id="240612" name="安福" cityCode="101240612"/>
+      <country id="240613" name="宁冈" cityCode="101240613"/>
+    </city>
+    <city id="2407" name="赣州">
+      <country id="240701" name="赣州" cityCode="101240701"/>
+      <country id="240702" name="崇义" cityCode="101240702"/>
+      <country id="240703" name="上犹" cityCode="101240703"/>
+      <country id="240704" name="南康" cityCode="101240704"/>
+      <country id="240705" name="大余" cityCode="101240705"/>
+      <country id="240706" name="信丰" cityCode="101240706"/>
+      <country id="240707" name="宁都" cityCode="101240707"/>
+      <country id="240708" name="石城" cityCode="101240708"/>
+      <country id="240709" name="瑞金" cityCode="101240709"/>
+      <country id="240710" name="于都" cityCode="101240710"/>
+      <country id="240711" name="会昌" cityCode="101240711"/>
+      <country id="240712" name="安远" cityCode="101240712"/>
+      <country id="240713" name="全南" cityCode="101240713"/>
+      <country id="240714" name="龙南" cityCode="101240714"/>
+      <country id="240715" name="定南" cityCode="101240715"/>
+      <country id="240716" name="寻乌" cityCode="101240716"/>
+      <country id="240717" name="兴国" cityCode="101240717"/>
+      <country id="240718" name="赣县" cityCode="101240718"/>
+    </city>
+    <city id="2408" name="景德镇">
+      <country id="240801" name="景德镇" cityCode="101240801"/>
+      <country id="240802" name="乐平" cityCode="101240802"/>
+      <country id="240803" name="浮梁" cityCode="101240803"/>
+    </city>
+    <city id="2409" name="萍乡">
+      <country id="240901" name="萍乡" cityCode="101240901"/>
+      <country id="240902" name="莲花" cityCode="101240902"/>
+      <country id="240903" name="上栗" cityCode="101240903"/>
+      <country id="240904" name="安源" cityCode="101240904"/>
+      <country id="240905" name="芦溪" cityCode="101240905"/>
+      <country id="240906" name="湘东" cityCode="101240906"/>
+    </city>
+    <city id="2410" name="新余">
+      <country id="241001" name="新余" cityCode="101241001"/>
+      <country id="241002" name="分宜" cityCode="101241002"/>
+    </city>
+    <city id="2411" name="鹰潭">
+      <country id="241101" name="鹰潭" cityCode="101241101"/>
+      <country id="241102" name="余江" cityCode="101241102"/>
+      <country id="241103" name="贵溪" cityCode="101241103"/>
+    </city>
+  </province>
+  <province id="18" name="河南">
+    <city id="1801" name="郑州">
+      <country id="180101" name="郑州" cityCode="101180101"/>
+      <country id="180102" name="巩义" cityCode="101180102"/>
+      <country id="180103" name="荥阳" cityCode="101180103"/>
+      <country id="180104" name="登封" cityCode="101180104"/>
+      <country id="180105" name="新密" cityCode="101180105"/>
+      <country id="180106" name="新郑" cityCode="101180106"/>
+      <country id="180107" name="中牟" cityCode="101180107"/>
+      <country id="180108" name="上街" cityCode="101180108"/>
+    </city>
+    <city id="1802" name="安阳">
+      <country id="180201" name="安阳" cityCode="101180201"/>
+      <country id="180202" name="汤阴" cityCode="101180202"/>
+      <country id="180203" name="滑县" cityCode="101180203"/>
+      <country id="180204" name="内黄" cityCode="101180204"/>
+      <country id="180205" name="林州" cityCode="101180205"/>
+    </city>
+    <city id="1803" name="新乡">
+      <country id="180301" name="新乡" cityCode="101180301"/>
+      <country id="180302" name="获嘉" cityCode="101180302"/>
+      <country id="180303" name="原阳" cityCode="101180303"/>
+      <country id="180304" name="辉县" cityCode="101180304"/>
+      <country id="180305" name="卫辉" cityCode="101180305"/>
+      <country id="180306" name="延津" cityCode="101180306"/>
+      <country id="180307" name="封丘" cityCode="101180307"/>
+      <country id="180308" name="长垣" cityCode="101180308"/>
+    </city>
+    <city id="1804" name="许昌">
+      <country id="180401" name="许昌" cityCode="101180401"/>
+      <country id="180402" name="鄢陵" cityCode="101180402"/>
+      <country id="180403" name="襄城" cityCode="101180403"/>
+      <country id="180404" name="长葛" cityCode="101180404"/>
+      <country id="180405" name="禹州" cityCode="101180405"/>
+    </city>
+    <city id="1805" name="平顶山">
+      <country id="180501" name="平顶山" cityCode="101180501"/>
+      <country id="180502" name="郏县" cityCode="101180502"/>
+      <country id="180503" name="宝丰" cityCode="101180503"/>
+      <country id="180504" name="汝州" cityCode="101180504"/>
+      <country id="180505" name="叶县" cityCode="101180505"/>
+      <country id="180506" name="舞钢" cityCode="101180506"/>
+      <country id="180507" name="鲁山" cityCode="101180507"/>
+      <country id="180508" name="石龙" cityCode="101180508"/>
+    </city>
+    <city id="1806" name="信阳">
+      <country id="180601" name="信阳" cityCode="101180601"/>
+      <country id="180602" name="息县" cityCode="101180602"/>
+      <country id="180603" name="罗山" cityCode="101180603"/>
+      <country id="180604" name="光山" cityCode="101180604"/>
+      <country id="180605" name="新县" cityCode="101180605"/>
+      <country id="180606" name="淮滨" cityCode="101180606"/>
+      <country id="180607" name="潢川" cityCode="101180607"/>
+      <country id="180608" name="固始" cityCode="101180608"/>
+      <country id="180609" name="商城" cityCode="101180609"/>
+    </city>
+    <city id="1807" name="南阳">
+      <country id="180701" name="南阳" cityCode="101180701"/>
+      <country id="180702" name="南召" cityCode="101180702"/>
+      <country id="180703" name="方城" cityCode="101180703"/>
+      <country id="180704" name="社旗" cityCode="101180704"/>
+      <country id="180705" name="西峡" cityCode="101180705"/>
+      <country id="180706" name="内乡" cityCode="101180706"/>
+      <country id="180707" name="镇平" cityCode="101180707"/>
+      <country id="180708" name="淅川" cityCode="101180708"/>
+      <country id="180709" name="新野" cityCode="101180709"/>
+      <country id="180710" name="唐河" cityCode="101180710"/>
+      <country id="180711" name="邓州" cityCode="101180711"/>
+      <country id="180712" name="桐柏" cityCode="101180712"/>
+    </city>
+    <city id="1808" name="开封">
+      <country id="180801" name="开封" cityCode="101180801"/>
+      <country id="180802" name="杞县" cityCode="101180802"/>
+      <country id="180803" name="尉氏" cityCode="101180803"/>
+      <country id="180804" name="通许" cityCode="101180804"/>
+      <country id="180805" name="兰考" cityCode="101180805"/>
+    </city>
+    <city id="1809" name="洛阳">
+      <country id="180901" name="洛阳" cityCode="101180901"/>
+      <country id="180902" name="新安" cityCode="101180902"/>
+      <country id="180903" name="孟津" cityCode="101180903"/>
+      <country id="180904" name="宜阳" cityCode="101180904"/>
+      <country id="180905" name="洛宁" cityCode="101180905"/>
+      <country id="180906" name="伊川" cityCode="101180906"/>
+      <country id="180907" name="嵩县" cityCode="101180907"/>
+      <country id="180908" name="偃师" cityCode="101180908"/>
+      <country id="180909" name="栾川" cityCode="101180909"/>
+      <country id="180910" name="汝阳" cityCode="101180910"/>
+      <country id="180911" name="吉利" cityCode="101180911"/>
+    </city>
+    <city id="1810" name="商丘">
+      <country id="181001" name="商丘" cityCode="101181001"/>
+      <country id="181002" name="睢县" cityCode="101181003"/>
+      <country id="181003" name="民权" cityCode="101181004"/>
+      <country id="181004" name="虞城" cityCode="101181005"/>
+      <country id="181005" name="柘城" cityCode="101181006"/>
+      <country id="181006" name="宁陵" cityCode="101181007"/>
+      <country id="181007" name="夏邑" cityCode="101181008"/>
+      <country id="181008" name="永城" cityCode="101181009"/>
+    </city>
+    <city id="1811" name="焦作">
+      <country id="181101" name="焦作" cityCode="101181101"/>
+      <country id="181102" name="修武" cityCode="101181102"/>
+      <country id="181103" name="武陟" cityCode="101181103"/>
+      <country id="181104" name="沁阳" cityCode="101181104"/>
+      <country id="181105" name="博爱" cityCode="101181106"/>
+      <country id="181106" name="温县" cityCode="101181107"/>
+      <country id="181107" name="孟州" cityCode="101181108"/>
+    </city>
+    <city id="1812" name="鹤壁">
+      <country id="181201" name="鹤壁" cityCode="101181201"/>
+      <country id="181202" name="浚县" cityCode="101181202"/>
+      <country id="181203" name="淇县" cityCode="101181203"/>
+    </city>
+    <city id="1813" name="濮阳">
+      <country id="181301" name="濮阳" cityCode="101181301"/>
+      <country id="181302" name="台前" cityCode="101181302"/>
+      <country id="181303" name="南乐" cityCode="101181303"/>
+      <country id="181304" name="清丰" cityCode="101181304"/>
+      <country id="181305" name="范县" cityCode="101181305"/>
+    </city>
+    <city id="1814" name="周口">
+      <country id="181401" name="周口" cityCode="101181401"/>
+      <country id="181402" name="扶沟" cityCode="101181402"/>
+      <country id="181403" name="太康" cityCode="101181403"/>
+      <country id="181404" name="淮阳" cityCode="101181404"/>
+      <country id="181405" name="西华" cityCode="101181405"/>
+      <country id="181406" name="商水" cityCode="101181406"/>
+      <country id="181407" name="项城" cityCode="101181407"/>
+      <country id="181408" name="郸城" cityCode="101181408"/>
+      <country id="181409" name="鹿邑" cityCode="101181409"/>
+      <country id="181410" name="沈丘" cityCode="101181410"/>
+    </city>
+    <city id="1815" name="漯河">
+      <country id="181501" name="漯河" cityCode="101181501"/>
+      <country id="181502" name="临颍" cityCode="101181502"/>
+      <country id="181503" name="舞阳" cityCode="101181503"/>
+    </city>
+    <city id="1816" name="驻马店">
+      <country id="181601" name="驻马店" cityCode="101181601"/>
+      <country id="181602" name="西平" cityCode="101181602"/>
+      <country id="181603" name="遂平" cityCode="101181603"/>
+      <country id="181604" name="上蔡" cityCode="101181604"/>
+      <country id="181605" name="汝南" cityCode="101181605"/>
+      <country id="181606" name="泌阳" cityCode="101181606"/>
+      <country id="181607" name="平舆" cityCode="101181607"/>
+      <country id="181608" name="新蔡" cityCode="101181608"/>
+      <country id="181609" name="确山" cityCode="101181609"/>
+      <country id="181610" name="正阳" cityCode="101181610"/>
+    </city>
+    <city id="1817" name="三门峡">
+      <country id="181701" name="三门峡" cityCode="101181701"/>
+      <country id="181702" name="灵宝" cityCode="101181702"/>
+      <country id="181703" name="渑池" cityCode="101181703"/>
+      <country id="181704" name="卢氏" cityCode="101181704"/>
+      <country id="181705" name="义马" cityCode="101181705"/>
+      <country id="181706" name="陕县" cityCode="101181706"/>
+    </city>
+    <city id="1818" name="济源">
+      <country id="181801" name="济源" cityCode="101181801"/>
+    </city>
+  </province>
+  <province id="09" name="河北">
+    <city id="0901" name="石家庄">
+      <country id="090101" name="石家庄" cityCode="101090101"/>
+      <country id="090102" name="井陉" cityCode="101090102"/>
+      <country id="090103" name="正定" cityCode="101090103"/>
+      <country id="090104" name="栾城" cityCode="101090104"/>
+      <country id="090105" name="行唐" cityCode="101090105"/>
+      <country id="090106" name="灵寿" cityCode="101090106"/>
+      <country id="090107" name="高邑" cityCode="101090107"/>
+      <country id="090108" name="深泽" cityCode="101090108"/>
+      <country id="090109" name="赞皇" cityCode="101090109"/>
+      <country id="090110" name="无极" cityCode="101090110"/>
+      <country id="090111" name="平山" cityCode="101090111"/>
+      <country id="090112" name="元氏" cityCode="101090112"/>
+      <country id="090113" name="赵县" cityCode="101090113"/>
+      <country id="090114" name="辛集" cityCode="101090114"/>
+      <country id="090115" name="藁城" cityCode="101090115"/>
+      <country id="090116" name="晋州" cityCode="101090116"/>
+      <country id="090117" name="新乐" cityCode="101090117"/>
+      <country id="090118" name="鹿泉" cityCode="101090118"/>
+    </city>
+    <city id="0902" name="保定">
+      <country id="090201" name="保定" cityCode="101090201"/>
+      <country id="090202" name="满城" cityCode="101090202"/>
+      <country id="090203" name="阜平" cityCode="101090203"/>
+      <country id="090204" name="徐水" cityCode="101090204"/>
+      <country id="090205" name="唐县" cityCode="101090205"/>
+      <country id="090206" name="高阳" cityCode="101090206"/>
+      <country id="090207" name="容城" cityCode="101090207"/>
+      <country id="090208" name="涞源" cityCode="101090209"/>
+      <country id="090209" name="望都" cityCode="101090210"/>
+      <country id="090210" name="安新" cityCode="101090211"/>
+      <country id="090211" name="易县" cityCode="101090212"/>
+      <country id="090212" name="曲阳" cityCode="101090214"/>
+      <country id="090213" name="蠡县" cityCode="101090215"/>
+      <country id="090214" name="顺平" cityCode="101090216"/>
+      <country id="090215" name="雄县" cityCode="101090217"/>
+      <country id="090216" name="涿州" cityCode="101090218"/>
+      <country id="090217" name="定州" cityCode="101090219"/>
+      <country id="090218" name="安国" cityCode="101090220"/>
+      <country id="090219" name="高碑店" cityCode="101090221"/>
+      <country id="090220" name="涞水" cityCode="101090222"/>
+      <country id="090221" name="定兴" cityCode="101090223"/>
+      <country id="090222" name="清苑" cityCode="101090224"/>
+      <country id="090223" name="博野" cityCode="101090225"/>
+    </city>
+    <city id="0903" name="张家口">
+      <country id="090301" name="张家口" cityCode="101090301"/>
+      <country id="090302" name="宣化" cityCode="101090302"/>
+      <country id="090303" name="张北" cityCode="101090303"/>
+      <country id="090304" name="康保" cityCode="101090304"/>
+      <country id="090305" name="沽源" cityCode="101090305"/>
+      <country id="090306" name="尚义" cityCode="101090306"/>
+      <country id="090307" name="蔚县" cityCode="101090307"/>
+      <country id="090308" name="阳原" cityCode="101090308"/>
+      <country id="090309" name="怀安" cityCode="101090309"/>
+      <country id="090310" name="万全" cityCode="101090310"/>
+      <country id="090311" name="怀来" cityCode="101090311"/>
+      <country id="090312" name="涿鹿" cityCode="101090312"/>
+      <country id="090313" name="赤城" cityCode="101090313"/>
+      <country id="090314" name="崇礼" cityCode="101090314"/>
+    </city>
+    <city id="0904" name="承德">
+      <country id="090401" name="承德" cityCode="101090402"/>
+      <country id="090402" name="承德县" cityCode="101090403"/>
+      <country id="090403" name="兴隆" cityCode="101090404"/>
+      <country id="090404" name="平泉" cityCode="101090405"/>
+      <country id="090405" name="滦平" cityCode="101090406"/>
+      <country id="090406" name="隆化" cityCode="101090407"/>
+      <country id="090407" name="丰宁" cityCode="101090408"/>
+      <country id="090408" name="宽城" cityCode="101090409"/>
+      <country id="090409" name="围场" cityCode="101090410"/>
+    </city>
+    <city id="0905" name="唐山">
+      <country id="090501" name="唐山" cityCode="101090501"/>
+      <country id="090502" name="丰南" cityCode="101090502"/>
+      <country id="090503" name="丰润" cityCode="101090503"/>
+      <country id="090504" name="滦县" cityCode="101090504"/>
+      <country id="090505" name="滦南" cityCode="101090505"/>
+      <country id="090506" name="乐亭" cityCode="101090506"/>
+      <country id="090507" name="迁西" cityCode="101090507"/>
+      <country id="090508" name="玉田" cityCode="101090508"/>
+      <country id="090509" name="唐海" cityCode="101090509"/>
+      <country id="090510" name="遵化" cityCode="101090510"/>
+      <country id="090511" name="迁安" cityCode="101090511"/>
+      <country id="090512" name="曹妃甸" cityCode="101090512"/>
+    </city>
+    <city id="0906" name="廊坊">
+      <country id="090601" name="廊坊" cityCode="101090601"/>
+      <country id="090602" name="固安" cityCode="101090602"/>
+      <country id="090603" name="永清" cityCode="101090603"/>
+      <country id="090604" name="香河" cityCode="101090604"/>
+      <country id="090605" name="大城" cityCode="101090605"/>
+      <country id="090606" name="文安" cityCode="101090606"/>
+      <country id="090607" name="大厂" cityCode="101090607"/>
+      <country id="090608" name="霸州" cityCode="101090608"/>
+      <country id="090609" name="三河" cityCode="101090609"/>
+    </city>
+    <city id="0907" name="沧州">
+      <country id="090701" name="沧州" cityCode="101090701"/>
+      <country id="090702" name="青县" cityCode="101090702"/>
+      <country id="090703" name="东光" cityCode="101090703"/>
+      <country id="090704" name="海兴" cityCode="101090704"/>
+      <country id="090705" name="盐山" cityCode="101090705"/>
+      <country id="090706" name="肃宁" cityCode="101090706"/>
+      <country id="090707" name="南皮" cityCode="101090707"/>
+      <country id="090708" name="吴桥" cityCode="101090708"/>
+      <country id="090709" name="献县" cityCode="101090709"/>
+      <country id="090710" name="孟村" cityCode="101090710"/>
+      <country id="090711" name="泊头" cityCode="101090711"/>
+      <country id="090712" name="任丘" cityCode="101090712"/>
+      <country id="090713" name="黄骅" cityCode="101090713"/>
+      <country id="090714" name="河间" cityCode="101090714"/>
+      <country id="090715" name="沧县" cityCode="101090716"/>
+    </city>
+    <city id="0908" name="衡水">
+      <country id="090801" name="衡水" cityCode="101090801"/>
+      <country id="090802" name="枣强" cityCode="101090802"/>
+      <country id="090803" name="武邑" cityCode="101090803"/>
+      <country id="090804" name="武强" cityCode="101090804"/>
+      <country id="090805" name="饶阳" cityCode="101090805"/>
+      <country id="090806" name="安平" cityCode="101090806"/>
+      <country id="090807" name="故城" cityCode="101090807"/>
+      <country id="090808" name="景县" cityCode="101090808"/>
+      <country id="090809" name="阜城" cityCode="101090809"/>
+      <country id="090810" name="冀州" cityCode="101090810"/>
+      <country id="090811" name="深州" cityCode="101090811"/>
+    </city>
+    <city id="0909" name="邢台">
+      <country id="090901" name="邢台" cityCode="101090901"/>
+      <country id="090902" name="临城" cityCode="101090902"/>
+      <country id="090903" name="内丘" cityCode="101090904"/>
+      <country id="090904" name="柏乡" cityCode="101090905"/>
+      <country id="090905" name="隆尧" cityCode="101090906"/>
+      <country id="090906" name="南和" cityCode="101090907"/>
+      <country id="090907" name="宁晋" cityCode="101090908"/>
+      <country id="090908" name="巨鹿" cityCode="101090909"/>
+      <country id="090909" name="新河" cityCode="101090910"/>
+      <country id="090910" name="广宗" cityCode="101090911"/>
+      <country id="090911" name="平乡" cityCode="101090912"/>
+      <country id="090912" name="威县" cityCode="101090913"/>
+      <country id="090913" name="清河" cityCode="101090914"/>
+      <country id="090914" name="临西" cityCode="101090915"/>
+      <country id="090915" name="南宫" cityCode="101090916"/>
+      <country id="090916" name="沙河" cityCode="101090917"/>
+      <country id="090917" name="任县" cityCode="101090918"/>
+    </city>
+    <city id="0910" name="邯郸">
+      <country id="091001" name="邯郸" cityCode="101091001"/>
+      <country id="091002" name="峰峰" cityCode="101091002"/>
+      <country id="091003" name="临漳" cityCode="101091003"/>
+      <country id="091004" name="成安" cityCode="101091004"/>
+      <country id="091005" name="大名" cityCode="101091005"/>
+      <country id="091006" name="涉县" cityCode="101091006"/>
+      <country id="091007" name="磁县" cityCode="101091007"/>
+      <country id="091008" name="肥乡" cityCode="101091008"/>
+      <country id="091009" name="永年" cityCode="101091009"/>
+      <country id="091010" name="邱县" cityCode="101091010"/>
+      <country id="091011" name="鸡泽" cityCode="101091011"/>
+      <country id="091012" name="广平" cityCode="101091012"/>
+      <country id="091013" name="馆陶" cityCode="101091013"/>
+      <country id="091014" name="魏县" cityCode="101091014"/>
+      <country id="091015" name="曲周" cityCode="101091015"/>
+      <country id="091016" name="武安" cityCode="101091016"/>
+    </city>
+    <city id="0911" name="秦皇岛">
+      <country id="091101" name="秦皇岛" cityCode="101091101"/>
+      <country id="091102" name="青龙" cityCode="101091102"/>
+      <country id="091103" name="昌黎" cityCode="101091103"/>
+      <country id="091104" name="抚宁" cityCode="101091104"/>
+      <country id="091105" name="卢龙" cityCode="101091105"/>
+      <country id="091106" name="北戴河" cityCode="101091106"/>
+    </city>
+  </province>
+  <province id="31" name="海南">
+    <city id="3101" name="海口">
+      <country id="310101" name="海口" cityCode="101310101"/>
+    </city>
+    <city id="3102" name="三亚">
+      <country id="310201" name="三亚" cityCode="101310201"/>
+    </city>
+    <city id="3103" name="东方">
+      <country id="310301" name="东方" cityCode="101310202"/>
+    </city>
+    <city id="3104" name="临高">
+      <country id="310401" name="临高" cityCode="101310203"/>
+    </city>
+    <city id="3105" name="澄迈">
+      <country id="310501" name="澄迈" cityCode="101310204"/>
+    </city>
+    <city id="3106" name="儋州">
+      <country id="310601" name="儋州" cityCode="101310205"/>
+    </city>
+    <city id="3107" name="昌江">
+      <country id="310701" name="昌江" cityCode="101310206"/>
+    </city>
+    <city id="3108" name="白沙">
+      <country id="310801" name="白沙" cityCode="101310207"/>
+    </city>
+    <city id="3109" name="琼中">
+      <country id="310901" name="琼中" cityCode="101310208"/>
+    </city>
+    <city id="3110" name="定安">
+      <country id="311001" name="定安" cityCode="101310209"/>
+    </city>
+    <city id="3111" name="屯昌">
+      <country id="311101" name="屯昌" cityCode="101310210"/>
+    </city>
+    <city id="3112" name="琼海">
+      <country id="311201" name="琼海" cityCode="101310211"/>
+    </city>
+    <city id="3113" name="文昌">
+      <country id="311301" name="文昌" cityCode="101310212"/>
+    </city>
+    <city id="3114" name="保亭">
+      <country id="311401" name="保亭" cityCode="101310214"/>
+    </city>
+    <city id="3115" name="万宁">
+      <country id="311501" name="万宁" cityCode="101310215"/>
+    </city>
+    <city id="3116" name="陵水">
+      <country id="311601" name="陵水" cityCode="101310216"/>
+    </city>
+    <city id="3117" name="西沙">
+      <country id="311701" name="西沙" cityCode="101310217"/>
+    </city>
+    <city id="3118" name="南沙">
+      <country id="311801" name="南沙" cityCode="101310220"/>
+    </city>
+    <city id="3119" name="乐东">
+      <country id="311901" name="乐东" cityCode="101310221"/>
+    </city>
+    <city id="3120" name="五指山">
+      <country id="312001" name="五指山" cityCode="101310222"/>
+    </city>
+  </province>
+  <province id="29" name="云南">
+    <city id="2901" name="昆明">
+      <country id="290101" name="昆明" cityCode="101290101"/>
+      <country id="290102" name="东川" cityCode="101290103"/>
+      <country id="290103" name="寻甸" cityCode="101290104"/>
+      <country id="290104" name="晋宁" cityCode="101290105"/>
+      <country id="290105" name="宜良" cityCode="101290106"/>
+      <country id="290106" name="石林" cityCode="101290107"/>
+      <country id="290107" name="呈贡" cityCode="101290108"/>
+      <country id="290108" name="富民" cityCode="101290109"/>
+      <country id="290109" name="嵩明" cityCode="101290110"/>
+      <country id="290110" name="禄劝" cityCode="101290111"/>
+      <country id="290111" name="安宁" cityCode="101290112"/>
+      <country id="290112" name="太华山" cityCode="101290113"/>
+    </city>
+    <city id="2902" name="大理">
+      <country id="290201" name="大理" cityCode="101290201"/>
+      <country id="290202" name="云龙" cityCode="101290202"/>
+      <country id="290203" name="漾濞" cityCode="101290203"/>
+      <country id="290204" name="永平" cityCode="101290204"/>
+      <country id="290205" name="宾川" cityCode="101290205"/>
+      <country id="290206" name="弥渡" cityCode="101290206"/>
+      <country id="290207" name="祥云" cityCode="101290207"/>
+      <country id="290208" name="巍山" cityCode="101290208"/>
+      <country id="290209" name="剑川" cityCode="101290209"/>
+      <country id="290210" name="洱源" cityCode="101290210"/>
+      <country id="290211" name="鹤庆" cityCode="101290211"/>
+      <country id="290212" name="南涧" cityCode="101290212"/>
+    </city>
+    <city id="2903" name="红河">
+      <country id="290301" name="红河" cityCode="101290301"/>
+      <country id="290302" name="石屏" cityCode="101290302"/>
+      <country id="290303" name="建水" cityCode="101290303"/>
+      <country id="290304" name="弥勒" cityCode="101290304"/>
+      <country id="290305" name="元阳" cityCode="101290305"/>
+      <country id="290306" name="绿春" cityCode="101290306"/>
+      <country id="290307" name="开远" cityCode="101290307"/>
+      <country id="290308" name="个旧" cityCode="101290308"/>
+      <country id="290309" name="蒙自" cityCode="101290309"/>
+      <country id="290310" name="屏边" cityCode="101290310"/>
+      <country id="290311" name="泸西" cityCode="101290311"/>
+      <country id="290312" name="金平" cityCode="101290312"/>
+      <country id="290313" name="河口" cityCode="101290313"/>
+    </city>
+    <city id="2904" name="曲靖">
+      <country id="290401" name="曲靖" cityCode="101290401"/>
+      <country id="290402" name="沾益" cityCode="101290402"/>
+      <country id="290403" name="陆良" cityCode="101290403"/>
+      <country id="290404" name="富源" cityCode="101290404"/>
+      <country id="290405" name="马龙" cityCode="101290405"/>
+      <country id="290406" name="师宗" cityCode="101290406"/>
+      <country id="290407" name="罗平" cityCode="101290407"/>
+      <country id="290408" name="会泽" cityCode="101290408"/>
+      <country id="290409" name="宣威" cityCode="101290409"/>
+    </city>
+    <city id="2905" name="保山">
+      <country id="290501" name="保山" cityCode="101290501"/>
+      <country id="290502" name="龙陵" cityCode="101290503"/>
+      <country id="290503" name="施甸" cityCode="101290504"/>
+      <country id="290504" name="昌宁" cityCode="101290505"/>
+      <country id="290505" name="腾冲" cityCode="101290506"/>
+    </city>
+    <city id="2906" name="文山">
+      <country id="290601" name="文山" cityCode="101290601"/>
+      <country id="290602" name="西畴" cityCode="101290602"/>
+      <country id="290603" name="马关" cityCode="101290603"/>
+      <country id="290604" name="麻栗坡" cityCode="101290604"/>
+      <country id="290605" name="砚山" cityCode="101290605"/>
+      <country id="290606" name="丘北" cityCode="101290606"/>
+      <country id="290607" name="广南" cityCode="101290607"/>
+      <country id="290608" name="富宁" cityCode="101290608"/>
+    </city>
+    <city id="2907" name="玉溪">
+      <country id="290701" name="玉溪" cityCode="101290701"/>
+      <country id="290702" name="澄江" cityCode="101290702"/>
+      <country id="290703" name="江川" cityCode="101290703"/>
+      <country id="290704" name="通海" cityCode="101290704"/>
+      <country id="290705" name="华宁" cityCode="101290705"/>
+      <country id="290706" name="新平" cityCode="101290706"/>
+      <country id="290707" name="易门" cityCode="101290707"/>
+      <country id="290708" name="峨山" cityCode="101290708"/>
+      <country id="290709" name="元江" cityCode="101290709"/>
+    </city>
+    <city id="2908" name="楚雄">
+      <country id="290801" name="楚雄" cityCode="101290801"/>
+      <country id="290802" name="大姚" cityCode="101290802"/>
+      <country id="290803" name="元谋" cityCode="101290803"/>
+      <country id="290804" name="姚安" cityCode="101290804"/>
+      <country id="290805" name="牟定" cityCode="101290805"/>
+      <country id="290806" name="南华" cityCode="101290806"/>
+      <country id="290807" name="武定" cityCode="101290807"/>
+      <country id="290808" name="禄丰" cityCode="101290808"/>
+      <country id="290809" name="双柏" cityCode="101290809"/>
+      <country id="290810" name="永仁" cityCode="101290810"/>
+    </city>
+    <city id="2909" name="普洱">
+      <country id="290901" name="普洱" cityCode="101290901"/>
+      <country id="290902" name="景谷" cityCode="101290902"/>
+      <country id="290903" name="景东" cityCode="101290903"/>
+      <country id="290904" name="澜沧" cityCode="101290904"/>
+      <country id="290905" name="墨江" cityCode="101290906"/>
+      <country id="290906" name="江城" cityCode="101290907"/>
+      <country id="290907" name="孟连" cityCode="101290908"/>
+      <country id="290908" name="西盟" cityCode="101290909"/>
+      <country id="290909" name="镇沅" cityCode="101290911"/>
+      <country id="290910" name="宁洱" cityCode="101290912"/>
+    </city>
+    <city id="2910" name="昭通">
+      <country id="291001" name="昭通" cityCode="101291001"/>
+      <country id="291002" name="鲁甸" cityCode="101291002"/>
+      <country id="291003" name="彝良" cityCode="101291003"/>
+      <country id="291004" name="镇雄" cityCode="101291004"/>
+      <country id="291005" name="威信" cityCode="101291005"/>
+      <country id="291006" name="巧家" cityCode="101291006"/>
+      <country id="291007" name="绥江" cityCode="101291007"/>
+      <country id="291008" name="永善" cityCode="101291008"/>
+      <country id="291009" name="盐津" cityCode="101291009"/>
+      <country id="291010" name="大关" cityCode="101291010"/>
+      <country id="291011" name="水富" cityCode="101291011"/>
+    </city>
+    <city id="2911" name="临沧">
+      <country id="291101" name="临沧" cityCode="101291101"/>
+      <country id="291102" name="沧源" cityCode="101291102"/>
+      <country id="291103" name="耿马" cityCode="101291103"/>
+      <country id="291104" name="双江" cityCode="101291104"/>
+      <country id="291105" name="凤庆" cityCode="101291105"/>
+      <country id="291106" name="永德" cityCode="101291106"/>
+      <country id="291107" name="云县" cityCode="101291107"/>
+      <country id="291108" name="镇康" cityCode="101291108"/>
+    </city>
+    <city id="2912" name="怒江">
+      <country id="291201" name="怒江" cityCode="101291201"/>
+      <country id="291202" name="福贡" cityCode="101291203"/>
+      <country id="291203" name="兰坪" cityCode="101291204"/>
+      <country id="291204" name="泸水" cityCode="101291205"/>
+      <country id="291205" name="六库" cityCode="101291206"/>
+      <country id="291206" name="贡山" cityCode="101291207"/>
+    </city>
+    <city id="2913" name="迪庆">
+      <country id="291301" name="香格里拉" cityCode="101291301"/>
+      <country id="291302" name="德钦" cityCode="101291302"/>
+      <country id="291303" name="维西" cityCode="101291303"/>
+      <country id="291304" name="中甸" cityCode="101291304"/>
+    </city>
+    <city id="2914" name="丽江">
+      <country id="291401" name="丽江" cityCode="101291401"/>
+      <country id="291402" name="永胜" cityCode="101291402"/>
+      <country id="291403" name="华坪" cityCode="101291403"/>
+      <country id="291404" name="宁蒗" cityCode="101291404"/>
+    </city>
+    <city id="2915" name="德宏">
+      <country id="291501" name="德宏" cityCode="101291501"/>
+      <country id="291502" name="陇川" cityCode="101291503"/>
+      <country id="291503" name="盈江" cityCode="101291504"/>
+      <country id="291504" name="瑞丽" cityCode="101291506"/>
+      <country id="291505" name="梁河" cityCode="101291507"/>
+      <country id="291506" name="潞西" cityCode="101291508"/>
+    </city>
+    <city id="2916" name="西双版纳">
+      <country id="291601" name="景洪" cityCode="101291601"/>
+      <country id="291602" name="勐海" cityCode="101291603"/>
+      <country id="291603" name="勐腊" cityCode="101291605"/>
+    </city>
+  </province>
+  <province id="01" name="北京">
+    <city id="0101" name="北京">
+      <country id="010101" name="北京" cityCode="101010100"/>
+      <country id="010102" name="海淀" cityCode="101010200"/>
+      <country id="010103" name="朝阳" cityCode="101010300"/>
+      <country id="010104" name="顺义" cityCode="101010400"/>
+      <country id="010105" name="怀柔" cityCode="101010500"/>
+      <country id="010106" name="通州" cityCode="101010600"/>
+      <country id="010107" name="昌平" cityCode="101010700"/>
+      <country id="010108" name="延庆" cityCode="101010800"/>
+      <country id="010109" name="丰台" cityCode="101010900"/>
+      <country id="010110" name="石景山" cityCode="101011000"/>
+      <country id="010111" name="大兴" cityCode="101011100"/>
+      <country id="010112" name="房山" cityCode="101011200"/>
+      <country id="010113" name="密云" cityCode="101011300"/>
+      <country id="010114" name="门头沟" cityCode="101011400"/>
+      <country id="010115" name="平谷" cityCode="101011500"/>
+    </city>
+  </province>
+  <province id="02" name="上海">
+    <city id="0201" name="上海">
+      <country id="020101" name="上海" cityCode="101020100"/>
+      <country id="020102" name="闵行" cityCode="101020200"/>
+      <country id="020103" name="宝山" cityCode="101020300"/>
+      <country id="020104" name="嘉定" cityCode="101020500"/>
+      <country id="020105" name="浦东南汇" cityCode="101020600"/>
+      <country id="020106" name="金山" cityCode="101020700"/>
+      <country id="020107" name="青浦" cityCode="101020800"/>
+      <country id="020108" name="松江" cityCode="101020900"/>
+      <country id="020109" name="奉贤" cityCode="101021000"/>
+      <country id="020110" name="崇明" cityCode="101021100"/>
+      <country id="020111" name="徐家汇" cityCode="101021200"/>
+      <country id="020112" name="浦东" cityCode="101021300"/>
+    </city>
+  </province>
+  <province id="03" name="天津">
+    <city id="0301" name="天津">
+      <country id="030101" name="天津" cityCode="101030100"/>
+      <country id="030102" name="武清" cityCode="101030200"/>
+      <country id="030103" name="宝坻" cityCode="101030300"/>
+      <country id="030104" name="东丽" cityCode="101030400"/>
+      <country id="030105" name="西青" cityCode="101030500"/>
+      <country id="030106" name="北辰" cityCode="101030600"/>
+      <country id="030107" name="宁河" cityCode="101030700"/>
+      <country id="030108" name="汉沽" cityCode="101030800"/>
+      <country id="030109" name="静海" cityCode="101030900"/>
+      <country id="030110" name="津南" cityCode="101031000"/>
+      <country id="030111" name="塘沽" cityCode="101031100"/>
+      <country id="030112" name="大港" cityCode="101031200"/>
+      <country id="030113" name="蓟县" cityCode="101031400"/>
+    </city>
+  </province>
+  <province id="04" name="重庆">
+    <city id="0401" name="重庆">
+      <country id="040101" name="重庆" cityCode="101040100"/>
+      <country id="040102" name="永川" cityCode="101040200"/>
+      <country id="040103" name="合川" cityCode="101040300"/>
+      <country id="040104" name="南川" cityCode="101040400"/>
+      <country id="040105" name="江津" cityCode="101040500"/>
+      <country id="040106" name="万盛" cityCode="101040600"/>
+      <country id="040107" name="渝北" cityCode="101040700"/>
+      <country id="040108" name="北碚" cityCode="101040800"/>
+      <country id="040109" name="巴南" cityCode="101040900"/>
+      <country id="040110" name="长寿" cityCode="101041000"/>
+      <country id="040111" name="黔江" cityCode="101041100"/>
+      <country id="040112" name="万州" cityCode="101041300"/>
+      <country id="040113" name="涪陵" cityCode="101041400"/>
+      <country id="040114" name="开县" cityCode="101041500"/>
+      <country id="040115" name="城口" cityCode="101041600"/>
+      <country id="040116" name="云阳" cityCode="101041700"/>
+      <country id="040117" name="巫溪" cityCode="101041800"/>
+      <country id="040118" name="奉节" cityCode="101041900"/>
+      <country id="040119" name="巫山" cityCode="101042000"/>
+      <country id="040120" name="潼南" cityCode="101042100"/>
+      <country id="040121" name="垫江" cityCode="101042200"/>
+      <country id="040122" name="梁平" cityCode="101042300"/>
+      <country id="040123" name="忠县" cityCode="101042400"/>
+      <country id="040124" name="石柱" cityCode="101042500"/>
+      <country id="040125" name="大足" cityCode="101042600"/>
+      <country id="040126" name="荣昌" cityCode="101042700"/>
+      <country id="040127" name="铜梁" cityCode="101042800"/>
+      <country id="040128" name="璧山" cityCode="101042900"/>
+      <country id="040129" name="丰都" cityCode="101043000"/>
+      <country id="040130" name="武隆" cityCode="101043100"/>
+      <country id="040131" name="彭水" cityCode="101043200"/>
+      <country id="040132" name="綦江" cityCode="101043300"/>
+      <country id="040133" name="酉阳" cityCode="101043400"/>
+      <country id="040134" name="秀山" cityCode="101043600"/>
+    </city>
+  </province>
+  <province id="05" name="黑龙江">
+    <city id="0501" name="哈尔滨">
+      <country id="050101" name="哈尔滨" cityCode="101050101"/>
+      <country id="050102" name="双城" cityCode="101050102"/>
+      <country id="050103" name="呼兰" cityCode="101050103"/>
+      <country id="050104" name="阿城" cityCode="101050104"/>
+      <country id="050105" name="宾县" cityCode="101050105"/>
+      <country id="050106" name="依兰" cityCode="101050106"/>
+      <country id="050107" name="巴彦" cityCode="101050107"/>
+      <country id="050108" name="通河" cityCode="101050108"/>
+      <country id="050109" name="方正" cityCode="101050109"/>
+      <country id="050110" name="延寿" cityCode="101050110"/>
+      <country id="050111" name="尚志" cityCode="101050111"/>
+      <country id="050112" name="五常" cityCode="101050112"/>
+      <country id="050113" name="木兰" cityCode="101050113"/>
+    </city>
+    <city id="0502" name="齐齐哈尔">
+      <country id="050201" name="齐齐哈尔" cityCode="101050201"/>
+      <country id="050202" name="讷河" cityCode="101050202"/>
+      <country id="050203" name="龙江" cityCode="101050203"/>
+      <country id="050204" name="甘南" cityCode="101050204"/>
+      <country id="050205" name="富裕" cityCode="101050205"/>
+      <country id="050206" name="依安" cityCode="101050206"/>
+      <country id="050207" name="拜泉" cityCode="101050207"/>
+      <country id="050208" name="克山" cityCode="101050208"/>
+      <country id="050209" name="克东" cityCode="101050209"/>
+      <country id="050210" name="泰来" cityCode="101050210"/>
+    </city>
+    <city id="0503" name="牡丹江">
+      <country id="050301" name="牡丹江" cityCode="101050301"/>
+      <country id="050302" name="海林" cityCode="101050302"/>
+      <country id="050303" name="穆棱" cityCode="101050303"/>
+      <country id="050304" name="林口" cityCode="101050304"/>
+      <country id="050305" name="绥芬河" cityCode="101050305"/>
+      <country id="050306" name="宁安" cityCode="101050306"/>
+      <country id="050307" name="东宁" cityCode="101050307"/>
+    </city>
+    <city id="0504" name="佳木斯">
+      <country id="050401" name="佳木斯" cityCode="101050401"/>
+      <country id="050402" name="汤原" cityCode="101050402"/>
+      <country id="050403" name="抚远" cityCode="101050403"/>
+      <country id="050404" name="桦川" cityCode="101050404"/>
+      <country id="050405" name="桦南" cityCode="101050405"/>
+      <country id="050406" name="同江" cityCode="101050406"/>
+      <country id="050407" name="富锦" cityCode="101050407"/>
+    </city>
+    <city id="0505" name="绥化">
+      <country id="050501" name="绥化" cityCode="101050501"/>
+      <country id="050502" name="肇东" cityCode="101050502"/>
+      <country id="050503" name="安达" cityCode="101050503"/>
+      <country id="050504" name="海伦" cityCode="101050504"/>
+      <country id="050505" name="明水" cityCode="101050505"/>
+      <country id="050506" name="望奎" cityCode="101050506"/>
+      <country id="050507" name="兰西" cityCode="101050507"/>
+      <country id="050508" name="青冈" cityCode="101050508"/>
+      <country id="050509" name="庆安" cityCode="101050509"/>
+      <country id="050510" name="绥棱" cityCode="101050510"/>
+    </city>
+    <city id="0506" name="黑河">
+      <country id="050601" name="黑河" cityCode="101050601"/>
+      <country id="050602" name="嫩江" cityCode="101050602"/>
+      <country id="050603" name="孙吴" cityCode="101050603"/>
+      <country id="050604" name="逊克" cityCode="101050604"/>
+      <country id="050605" name="五大连池" cityCode="101050605"/>
+      <country id="050606" name="北安" cityCode="101050606"/>
+    </city>
+    <city id="0507" name="大兴安岭">
+      <country id="050701" name="大兴安岭" cityCode="101050701"/>
+      <country id="050702" name="塔河" cityCode="101050702"/>
+      <country id="050703" name="漠河" cityCode="101050703"/>
+      <country id="050704" name="呼玛" cityCode="101050704"/>
+      <country id="050705" name="呼中" cityCode="101050705"/>
+      <country id="050706" name="新林" cityCode="101050706"/>
+      <country id="050707" name="加格达奇" cityCode="101050708"/>
+    </city>
+    <city id="0508" name="伊春">
+      <country id="050801" name="伊春" cityCode="101050801"/>
+      <country id="050802" name="乌伊岭" cityCode="101050802"/>
+      <country id="050803" name="五营" cityCode="101050803"/>
+      <country id="050804" name="铁力" cityCode="101050804"/>
+      <country id="050805" name="嘉荫" cityCode="101050805"/>
+    </city>
+    <city id="0509" name="大庆">
+      <country id="050901" name="大庆" cityCode="101050901"/>
+      <country id="050902" name="林甸" cityCode="101050902"/>
+      <country id="050903" name="肇州" cityCode="101050903"/>
+      <country id="050904" name="肇源" cityCode="101050904"/>
+      <country id="050905" name="杜尔伯特" cityCode="101050905"/>
+    </city>
+    <city id="0510" name="七台河">
+      <country id="051001" name="七台河" cityCode="101051002"/>
+      <country id="051002" name="勃利" cityCode="101051003"/>
+    </city>
+    <city id="0511" name="鸡西">
+      <country id="051101" name="鸡西" cityCode="101051101"/>
+      <country id="051102" name="虎林" cityCode="101051102"/>
+      <country id="051103" name="密山" cityCode="101051103"/>
+      <country id="051104" name="鸡东" cityCode="101051104"/>
+    </city>
+    <city id="0512" name="鹤岗">
+      <country id="051201" name="鹤岗" cityCode="101051201"/>
+      <country id="051202" name="绥滨" cityCode="101051202"/>
+      <country id="051203" name="萝北" cityCode="101051203"/>
+    </city>
+    <city id="0513" name="双鸭山">
+      <country id="051301" name="双鸭山" cityCode="101051301"/>
+      <country id="051302" name="集贤" cityCode="101051302"/>
+      <country id="051303" name="宝清" cityCode="101051303"/>
+      <country id="051304" name="饶河" cityCode="101051304"/>
+      <country id="051305" name="友谊" cityCode="101051305"/>
+    </city>
+  </province>
+  <province id="06" name="吉林">
+    <city id="0601" name="长春">
+      <country id="060101" name="长春" cityCode="101060101"/>
+      <country id="060102" name="农安" cityCode="101060102"/>
+      <country id="060103" name="德惠" cityCode="101060103"/>
+      <country id="060104" name="九台" cityCode="101060104"/>
+      <country id="060105" name="榆树" cityCode="101060105"/>
+      <country id="060106" name="双阳" cityCode="101060106"/>
+    </city>
+    <city id="0602" name="吉林">
+      <country id="060201" name="吉林" cityCode="101060201"/>
+      <country id="060202" name="舒兰" cityCode="101060202"/>
+      <country id="060203" name="永吉" cityCode="101060203"/>
+      <country id="060204" name="蛟河" cityCode="101060204"/>
+      <country id="060205" name="磐石" cityCode="101060205"/>
+      <country id="060206" name="桦甸" cityCode="101060206"/>
+    </city>
+    <city id="0603" name="延边">
+      <country id="060301" name="延吉" cityCode="101060301"/>
+      <country id="060302" name="敦化" cityCode="101060302"/>
+      <country id="060303" name="安图" cityCode="101060303"/>
+      <country id="060304" name="汪清" cityCode="101060304"/>
+      <country id="060305" name="和龙" cityCode="101060305"/>
+      <country id="060306" name="龙井" cityCode="101060307"/>
+      <country id="060307" name="珲春" cityCode="101060308"/>
+      <country id="060308" name="图们" cityCode="101060309"/>
+    </city>
+    <city id="0604" name="四平">
+      <country id="060401" name="四平" cityCode="101060401"/>
+      <country id="060402" name="双辽" cityCode="101060402"/>
+      <country id="060403" name="梨树" cityCode="101060403"/>
+      <country id="060404" name="公主岭" cityCode="101060404"/>
+      <country id="060405" name="伊通" cityCode="101060405"/>
+    </city>
+    <city id="0605" name="通化">
+      <country id="060501" name="通化" cityCode="101060501"/>
+      <country id="060502" name="梅河口" cityCode="101060502"/>
+      <country id="060503" name="柳河" cityCode="101060503"/>
+      <country id="060504" name="辉南" cityCode="101060504"/>
+      <country id="060505" name="集安" cityCode="101060505"/>
+      <country id="060506" name="通化县" cityCode="101060506"/>
+    </city>
+    <city id="0606" name="白城">
+      <country id="060601" name="白城" cityCode="101060601"/>
+      <country id="060602" name="洮南" cityCode="101060602"/>
+      <country id="060603" name="大安" cityCode="101060603"/>
+      <country id="060604" name="镇赉" cityCode="101060604"/>
+      <country id="060605" name="通榆" cityCode="101060605"/>
+    </city>
+    <city id="0607" name="辽源">
+      <country id="060701" name="辽源" cityCode="101060701"/>
+      <country id="060702" name="东丰" cityCode="101060702"/>
+      <country id="060703" name="东辽" cityCode="101060703"/>
+    </city>
+    <city id="0608" name="松原">
+      <country id="060801" name="松原" cityCode="101060801"/>
+      <country id="060802" name="乾安" cityCode="101060802"/>
+      <country id="060803" name="前郭" cityCode="101060803"/>
+      <country id="060804" name="长岭" cityCode="101060804"/>
+      <country id="060805" name="扶余" cityCode="101060805"/>
+    </city>
+    <city id="0609" name="白山">
+      <country id="060901" name="白山" cityCode="101060901"/>
+      <country id="060902" name="靖宇" cityCode="101060902"/>
+      <country id="060903" name="临江" cityCode="101060903"/>
+      <country id="060904" name="东岗" cityCode="101060904"/>
+      <country id="060905" name="长白" cityCode="101060905"/>
+      <country id="060906" name="抚松" cityCode="101060906"/>
+      <country id="060907" name="江源" cityCode="101060907"/>
+    </city>
+  </province>
+  <province id="07" name="辽宁">
+    <city id="0701" name="沈阳">
+      <country id="070101" name="沈阳" cityCode="101070101"/>
+      <country id="070102" name="辽中" cityCode="101070103"/>
+      <country id="070103" name="康平" cityCode="101070104"/>
+      <country id="070104" name="法库" cityCode="101070105"/>
+      <country id="070105" name="新民" cityCode="101070106"/>
+    </city>
+    <city id="0702" name="大连">
+      <country id="070201" name="大连" cityCode="101070201"/>
+      <country id="070202" name="瓦房店" cityCode="101070202"/>
+      <country id="070203" name="金州" cityCode="101070203"/>
+      <country id="070204" name="普兰店" cityCode="101070204"/>
+      <country id="070205" name="旅顺" cityCode="101070205"/>
+      <country id="070206" name="长海" cityCode="101070206"/>
+      <country id="070207" name="庄河" cityCode="101070207"/>
+    </city>
+    <city id="0703" name="鞍山">
+      <country id="070301" name="鞍山" cityCode="101070301"/>
+      <country id="070302" name="台安" cityCode="101070302"/>
+      <country id="070303" name="岫岩" cityCode="101070303"/>
+      <country id="070304" name="海城" cityCode="101070304"/>
+    </city>
+    <city id="0704" name="抚顺">
+      <country id="070401" name="抚顺" cityCode="101070401"/>
+      <country id="070402" name="新宾" cityCode="101070402"/>
+      <country id="070403" name="清原" cityCode="101070403"/>
+      <country id="070404" name="章党" cityCode="101070404"/>
+    </city>
+    <city id="0705" name="本溪">
+      <country id="070501" name="本溪" cityCode="101070501"/>
+      <country id="070502" name="本溪县" cityCode="101070502"/>
+      <country id="070503" name="桓仁" cityCode="101070504"/>
+    </city>
+    <city id="0706" name="丹东">
+      <country id="070601" name="丹东" cityCode="101070601"/>
+      <country id="070602" name="凤城" cityCode="101070602"/>
+      <country id="070603" name="宽甸" cityCode="101070603"/>
+      <country id="070604" name="东港" cityCode="101070604"/>
+    </city>
+    <city id="0707" name="锦州">
+      <country id="070701" name="锦州" cityCode="101070701"/>
+      <country id="070702" name="凌海" cityCode="101070702"/>
+      <country id="070703" name="义县" cityCode="101070704"/>
+      <country id="070704" name="黑山" cityCode="101070705"/>
+      <country id="070705" name="北镇" cityCode="101070706"/>
+    </city>
+    <city id="0708" name="营口">
+      <country id="070801" name="营口" cityCode="101070801"/>
+      <country id="070802" name="大石桥" cityCode="101070802"/>
+      <country id="070803" name="盖州" cityCode="101070803"/>
+    </city>
+    <city id="0709" name="阜新">
+      <country id="070901" name="阜新" cityCode="101070901"/>
+      <country id="070902" name="彰武" cityCode="101070902"/>
+    </city>
+    <city id="0710" name="辽阳">
+      <country id="071001" name="辽阳" cityCode="101071001"/>
+      <country id="071002" name="辽阳县" cityCode="101071002"/>
+      <country id="071003" name="灯塔" cityCode="101071003"/>
+      <country id="071004" name="弓长岭" cityCode="101071004"/>
+    </city>
+    <city id="0711" name="铁岭">
+      <country id="071101" name="铁岭" cityCode="101071101"/>
+      <country id="071102" name="开原" cityCode="101071102"/>
+      <country id="071103" name="昌图" cityCode="101071103"/>
+      <country id="071104" name="西丰" cityCode="101071104"/>
+      <country id="071105" name="调兵山" cityCode="101071105"/>
+    </city>
+    <city id="0712" name="朝阳">
+      <country id="071201" name="朝阳" cityCode="101071201"/>
+      <country id="071202" name="凌源" cityCode="101071203"/>
+      <country id="071203" name="喀左" cityCode="101071204"/>
+      <country id="071204" name="北票" cityCode="101071205"/>
+      <country id="071205" name="建平县" cityCode="101071207"/>
+    </city>
+    <city id="0713" name="盘锦">
+      <country id="071301" name="盘锦" cityCode="101071301"/>
+      <country id="071302" name="大洼" cityCode="101071302"/>
+      <country id="071303" name="盘山" cityCode="101071303"/>
+    </city>
+    <city id="0714" name="葫芦岛">
+      <country id="071401" name="葫芦岛" cityCode="101071401"/>
+      <country id="071402" name="建昌" cityCode="101071402"/>
+      <country id="071403" name="绥中" cityCode="101071403"/>
+      <country id="071404" name="兴城" cityCode="101071404"/>
+    </city>
+  </province>
+  <province id="08" name="内蒙古">
+    <city id="0801" name="呼和浩特">
+      <country id="080101" name="呼和浩特" cityCode="101080101"/>
+      <country id="080102" name="土左旗" cityCode="101080102"/>
+      <country id="080103" name="托县" cityCode="101080103"/>
+      <country id="080104" name="和林" cityCode="101080104"/>
+      <country id="080105" name="清水河" cityCode="101080105"/>
+      <country id="080106" name="呼市郊区" cityCode="101080106"/>
+      <country id="080107" name="武川" cityCode="101080107"/>
+    </city>
+    <city id="0802" name="包头">
+      <country id="080201" name="包头" cityCode="101080201"/>
+      <country id="080202" name="白云鄂博" cityCode="101080202"/>
+      <country id="080203" name="满都拉" cityCode="101080203"/>
+      <country id="080204" name="土右旗" cityCode="101080204"/>
+      <country id="080205" name="固阳" cityCode="101080205"/>
+      <country id="080206" name="达茂旗" cityCode="101080206"/>
+      <country id="080207" name="希拉穆仁" cityCode="101080207"/>
+    </city>
+    <city id="0803" name="乌海">
+      <country id="080301" name="乌海" cityCode="101080301"/>
+    </city>
+    <city id="0804" name="乌兰察布">
+      <country id="080401" name="集宁" cityCode="101080401"/>
+      <country id="080402" name="卓资" cityCode="101080402"/>
+      <country id="080403" name="化德" cityCode="101080403"/>
+      <country id="080404" name="商都" cityCode="101080404"/>
+      <country id="080405" name="兴和" cityCode="101080406"/>
+      <country id="080406" name="凉城" cityCode="101080407"/>
+      <country id="080407" name="察右前旗" cityCode="101080408"/>
+      <country id="080408" name="察右中旗" cityCode="101080409"/>
+      <country id="080409" name="察右后旗" cityCode="101080410"/>
+      <country id="080410" name="四子王旗" cityCode="101080411"/>
+      <country id="080411" name="丰镇" cityCode="101080412"/>
+    </city>
+    <city id="0805" name="通辽">
+      <country id="080501" name="通辽" cityCode="101080501"/>
+      <country id="080502" name="舍伯吐" cityCode="101080502"/>
+      <country id="080503" name="科左中旗" cityCode="101080503"/>
+      <country id="080504" name="科左后旗" cityCode="101080504"/>
+      <country id="080505" name="青龙山" cityCode="101080505"/>
+      <country id="080506" name="开鲁" cityCode="101080506"/>
+      <country id="080507" name="库伦" cityCode="101080507"/>
+      <country id="080508" name="奈曼" cityCode="101080508"/>
+      <country id="080509" name="扎鲁特" cityCode="101080509"/>
+      <country id="080510" name="巴雅尔吐胡硕" cityCode="101080511"/>
+      <country id="080511" name="霍林郭勒" cityCode="101081108"/>
+    </city>
+    <city id="0806" name="赤峰">
+      <country id="080601" name="赤峰" cityCode="101080601"/>
+      <country id="080602" name="阿鲁旗" cityCode="101080603"/>
+      <country id="080603" name="浩尔吐" cityCode="101080604"/>
+      <country id="080604" name="巴林左旗" cityCode="101080605"/>
+      <country id="080605" name="巴林右旗" cityCode="101080606"/>
+      <country id="080606" name="林西" cityCode="101080607"/>
+      <country id="080607" name="克什克腾" cityCode="101080608"/>
+      <country id="080608" name="翁牛特" cityCode="101080609"/>
+      <country id="080609" name="岗子" cityCode="101080610"/>
+      <country id="080610" name="喀喇沁" cityCode="101080611"/>
+      <country id="080611" name="八里罕" cityCode="101080612"/>
+      <country id="080612" name="宁城" cityCode="101080613"/>
+      <country id="080613" name="敖汉" cityCode="101080614"/>
+      <country id="080614" name="宝国吐" cityCode="101080615"/>
+    </city>
+    <city id="0807" name="鄂尔多斯">
+      <country id="080701" name="鄂尔多斯" cityCode="101080701"/>
+      <country id="080702" name="达拉特" cityCode="101080703"/>
+      <country id="080703" name="准格尔" cityCode="101080704"/>
+      <country id="080704" name="鄂前旗" cityCode="101080705"/>
+      <country id="080705" name="河南" cityCode="101080706"/>
+      <country id="080706" name="伊克乌素" cityCode="101080707"/>
+      <country id="080707" name="鄂托克" cityCode="101080708"/>
+      <country id="080708" name="杭锦旗" cityCode="101080709"/>
+      <country id="080709" name="乌审旗" cityCode="101080710"/>
+      <country id="080710" name="伊金霍洛" cityCode="101080711"/>
+      <country id="080711" name="乌审召" cityCode="101080712"/>
+      <country id="080712" name="东胜" cityCode="101080713"/>
+    </city>
+    <city id="0808" name="巴彦淖尔">
+      <country id="080801" name="临河" cityCode="101080801"/>
+      <country id="080802" name="五原" cityCode="101080802"/>
+      <country id="080803" name="磴口" cityCode="101080803"/>
+      <country id="080804" name="乌前旗" cityCode="101080804"/>
+      <country id="080805" name="大佘太" cityCode="101080805"/>
+      <country id="080806" name="乌中旗" cityCode="101080806"/>
+      <country id="080807" name="乌后旗" cityCode="101080807"/>
+      <country id="080808" name="海力素" cityCode="101080808"/>
+      <country id="080809" name="那仁宝力格" cityCode="101080809"/>
+      <country id="080810" name="杭锦后旗" cityCode="101080810"/>
+    </city>
+    <city id="0809" name="锡林郭勒">
+      <country id="080901" name="锡林浩特" cityCode="101080901"/>
+      <country id="080902" name="二连浩特" cityCode="101080903"/>
+      <country id="080903" name="阿巴嘎" cityCode="101080904"/>
+      <country id="080904" name="苏左旗" cityCode="101080906"/>
+      <country id="080905" name="苏右旗" cityCode="101080907"/>
+      <country id="080906" name="朱日和" cityCode="101080908"/>
+      <country id="080907" name="东乌旗" cityCode="101080909"/>
+      <country id="080908" name="西乌旗" cityCode="101080910"/>
+      <country id="080909" name="太仆寺" cityCode="101080911"/>
+      <country id="080910" name="镶黄旗" cityCode="101080912"/>
+      <country id="080911" name="正镶白旗" cityCode="101080913"/>
+      <country id="080912" name="正蓝旗" cityCode="101080914"/>
+      <country id="080913" name="多伦" cityCode="101080915"/>
+      <country id="080914" name="博克图" cityCode="101080916"/>
+      <country id="080915" name="乌拉盖" cityCode="101080917"/>
+    </city>
+    <city id="0810" name="呼伦贝尔">
+      <country id="081001" name="海拉尔" cityCode="101081001"/>
+      <country id="081002" name="小二沟" cityCode="101081002"/>
+      <country id="081003" name="阿荣旗" cityCode="101081003"/>
+      <country id="081004" name="莫力达瓦" cityCode="101081004"/>
+      <country id="081005" name="鄂伦春旗" cityCode="101081005"/>
+      <country id="081006" name="鄂温克旗" cityCode="101081006"/>
+      <country id="081007" name="陈旗" cityCode="101081007"/>
+      <country id="081008" name="新左旗" cityCode="101081008"/>
+      <country id="081009" name="新右旗" cityCode="101081009"/>
+      <country id="081010" name="满洲里" cityCode="101081010"/>
+      <country id="081011" name="牙克石" cityCode="101081011"/>
+      <country id="081012" name="扎兰屯" cityCode="101081012"/>
+      <country id="081013" name="额尔古纳" cityCode="101081014"/>
+      <country id="081014" name="根河" cityCode="101081015"/>
+      <country id="081015" name="图里河" cityCode="101081016"/>
+    </city>
+    <city id="0811" name="兴安盟">
+      <country id="081101" name="高力板" cityCode="101080510"/>
+      <country id="081102" name="乌兰浩特" cityCode="101081101"/>
+      <country id="081103" name="阿尔山" cityCode="101081102"/>
+      <country id="081104" name="科右中旗" cityCode="101081103"/>
+      <country id="081105" name="胡尔勒" cityCode="101081104"/>
+      <country id="081106" name="扎赉特" cityCode="101081105"/>
+      <country id="081107" name="索伦" cityCode="101081106"/>
+      <country id="081108" name="突泉" cityCode="101081107"/>
+      <country id="081109" name="科右前旗" cityCode="101081109"/>
+    </city>
+    <city id="0812" name="阿拉善盟">
+      <country id="081201" name="阿左旗" cityCode="101081201"/>
+      <country id="081202" name="阿右旗" cityCode="101081202"/>
+      <country id="081203" name="额济纳" cityCode="101081203"/>
+      <country id="081204" name="拐子湖" cityCode="101081204"/>
+      <country id="081205" name="吉兰太" cityCode="101081205"/>
+      <country id="081206" name="锡林高勒" cityCode="101081206"/>
+      <country id="081207" name="头道湖" cityCode="101081207"/>
+      <country id="081208" name="中泉子" cityCode="101081208"/>
+      <country id="081209" name="诺尔公" cityCode="101081209"/>
+      <country id="081210" name="雅布赖" cityCode="101081210"/>
+      <country id="081211" name="乌斯泰" cityCode="101081211"/>
+      <country id="081212" name="孪井滩" cityCode="101081212"/>
+    </city>
+  </province> 
+  <province id="10" name="山西">
+    <city id="1001" name="太原">
+      <country id="100101" name="太原" cityCode="101100101"/>
+      <country id="100102" name="清徐" cityCode="101100102"/>
+      <country id="100103" name="阳曲" cityCode="101100103"/>
+      <country id="100104" name="娄烦" cityCode="101100104"/>
+      <country id="100105" name="古交" cityCode="101100105"/>
+      <country id="100106" name="尖草坪区" cityCode="101100106"/>
+      <country id="100107" name="小店区" cityCode="101100107"/>
+    </city>
+    <city id="1002" name="大同">
+      <country id="100201" name="大同" cityCode="101100201"/>
+      <country id="100202" name="阳高" cityCode="101100202"/>
+      <country id="100203" name="大同县" cityCode="101100203"/>
+      <country id="100204" name="天镇" cityCode="101100204"/>
+      <country id="100205" name="广灵" cityCode="101100205"/>
+      <country id="100206" name="灵丘" cityCode="101100206"/>
+      <country id="100207" name="浑源" cityCode="101100207"/>
+      <country id="100208" name="左云" cityCode="101100208"/>
+    </city>
+    <city id="1003" name="阳泉">
+      <country id="100301" name="阳泉" cityCode="101100301"/>
+      <country id="100302" name="盂县" cityCode="101100302"/>
+      <country id="100303" name="平定" cityCode="101100303"/>
+    </city>
+    <city id="1004" name="晋中">
+      <country id="100401" name="晋中" cityCode="101100401"/>
+      <country id="100402" name="榆次" cityCode="101100402"/>
+      <country id="100403" name="榆社" cityCode="101100403"/>
+      <country id="100404" name="左权" cityCode="101100404"/>
+      <country id="100405" name="和顺" cityCode="101100405"/>
+      <country id="100406" name="昔阳" cityCode="101100406"/>
+      <country id="100407" name="寿阳" cityCode="101100407"/>
+      <country id="100408" name="太谷" cityCode="101100408"/>
+      <country id="100409" name="祁县" cityCode="101100409"/>
+      <country id="100410" name="平遥" cityCode="101100410"/>
+      <country id="100411" name="灵石" cityCode="101100411"/>
+      <country id="100412" name="介休" cityCode="101100412"/>
+    </city>
+    <city id="1005" name="长治">
+      <country id="100501" name="长治" cityCode="101100501"/>
+      <country id="100502" name="黎城" cityCode="101100502"/>
+      <country id="100503" name="屯留" cityCode="101100503"/>
+      <country id="100504" name="潞城" cityCode="101100504"/>
+      <country id="100505" name="襄垣" cityCode="101100505"/>
+      <country id="100506" name="平顺" cityCode="101100506"/>
+      <country id="100507" name="武乡" cityCode="101100507"/>
+      <country id="100508" name="沁县" cityCode="101100508"/>
+      <country id="100509" name="长子" cityCode="101100509"/>
+      <country id="100510" name="沁源" cityCode="101100510"/>
+      <country id="100511" name="壶关" cityCode="101100511"/>
+    </city>
+    <city id="1006" name="晋城">
+      <country id="100601" name="晋城" cityCode="101100601"/>
+      <country id="100602" name="沁水" cityCode="101100602"/>
+      <country id="100603" name="阳城" cityCode="101100603"/>
+      <country id="100604" name="陵川" cityCode="101100604"/>
+      <country id="100605" name="高平" cityCode="101100605"/>
+      <country id="100606" name="泽州" cityCode="101100606"/>
+    </city>
+    <city id="1007" name="临汾">
+      <country id="100701" name="临汾" cityCode="101100701"/>
+      <country id="100702" name="曲沃" cityCode="101100702"/>
+      <country id="100703" name="永和" cityCode="101100703"/>
+      <country id="100704" name="隰县" cityCode="101100704"/>
+      <country id="100705" name="大宁" cityCode="101100705"/>
+      <country id="100706" name="吉县" cityCode="101100706"/>
+      <country id="100707" name="襄汾" cityCode="101100707"/>
+      <country id="100708" name="蒲县" cityCode="101100708"/>
+      <country id="100709" name="汾西" cityCode="101100709"/>
+      <country id="100710" name="洪洞" cityCode="101100710"/>
+      <country id="100711" name="霍州" cityCode="101100711"/>
+      <country id="100712" name="乡宁" cityCode="101100712"/>
+      <country id="100713" name="翼城" cityCode="101100713"/>
+      <country id="100714" name="侯马" cityCode="101100714"/>
+      <country id="100715" name="浮山" cityCode="101100715"/>
+      <country id="100716" name="安泽" cityCode="101100716"/>
+      <country id="100717" name="古县" cityCode="101100717"/>
+    </city>
+    <city id="1008" name="运城">
+      <country id="100801" name="运城" cityCode="101100801"/>
+      <country id="100802" name="临猗" cityCode="101100802"/>
+      <country id="100803" name="稷山" cityCode="101100803"/>
+      <country id="100804" name="万荣" cityCode="101100804"/>
+      <country id="100805" name="河津" cityCode="101100805"/>
+      <country id="100806" name="新绛" cityCode="101100806"/>
+      <country id="100807" name="绛县" cityCode="101100807"/>
+      <country id="100808" name="闻喜" cityCode="101100808"/>
+      <country id="100809" name="垣曲" cityCode="101100809"/>
+      <country id="100810" name="永济" cityCode="101100810"/>
+      <country id="100811" name="芮城" cityCode="101100811"/>
+      <country id="100812" name="夏县" cityCode="101100812"/>
+      <country id="100813" name="平陆" cityCode="101100813"/>
+    </city>
+    <city id="1009" name="朔州">
+      <country id="100901" name="朔州" cityCode="101100901"/>
+      <country id="100902" name="平鲁" cityCode="101100902"/>
+      <country id="100903" name="山阴" cityCode="101100903"/>
+      <country id="100904" name="右玉" cityCode="101100904"/>
+      <country id="100905" name="应县" cityCode="101100905"/>
+      <country id="100906" name="怀仁" cityCode="101100906"/>
+    </city>
+    <city id="1010" name="忻州">
+      <country id="101001" name="忻州" cityCode="101101001"/>
+      <country id="101002" name="定襄" cityCode="101101002"/>
+      <country id="101003" name="五台县" cityCode="101101003"/>
+      <country id="101004" name="河曲" cityCode="101101004"/>
+      <country id="101005" name="偏关" cityCode="101101005"/>
+      <country id="101006" name="神池" cityCode="101101006"/>
+      <country id="101007" name="宁武" cityCode="101101007"/>
+      <country id="101008" name="代县" cityCode="101101008"/>
+      <country id="101009" name="繁峙" cityCode="101101009"/>
+      <country id="101010" name="五台山" cityCode="101101010"/>
+      <country id="101011" name="保德" cityCode="101101011"/>
+      <country id="101012" name="静乐" cityCode="101101012"/>
+      <country id="101013" name="岢岚" cityCode="101101013"/>
+      <country id="101014" name="五寨" cityCode="101101014"/>
+      <country id="101015" name="原平" cityCode="101101015"/>
+    </city>
+    <city id="1011" name="吕梁">
+      <country id="101101" name="吕梁" cityCode="101101100"/>
+      <country id="101102" name="离石" cityCode="101101101"/>
+      <country id="101103" name="临县" cityCode="101101102"/>
+      <country id="101104" name="兴县" cityCode="101101103"/>
+      <country id="101105" name="岚县" cityCode="101101104"/>
+      <country id="101106" name="柳林" cityCode="101101105"/>
+      <country id="101107" name="石楼" cityCode="101101106"/>
+      <country id="101108" name="方山" cityCode="101101107"/>
+      <country id="101109" name="交口" cityCode="101101108"/>
+      <country id="101110" name="中阳" cityCode="101101109"/>
+      <country id="101111" name="孝义" cityCode="101101110"/>
+      <country id="101112" name="汾阳" cityCode="101101111"/>
+      <country id="101113" name="文水" cityCode="101101112"/>
+      <country id="101114" name="交城" cityCode="101101113"/>
+    </city>
+  </province>
+  <province id="11" name="陕西">
+    <city id="1101" name="西安">
+      <country id="110101" name="西安" cityCode="101110101"/>
+      <country id="110102" name="长安" cityCode="101110102"/>
+      <country id="110103" name="临潼" cityCode="101110103"/>
+      <country id="110104" name="蓝田" cityCode="101110104"/>
+      <country id="110105" name="周至" cityCode="101110105"/>
+      <country id="110106" name="户县" cityCode="101110106"/>
+      <country id="110107" name="高陵" cityCode="101110107"/>
+    </city>
+    <city id="1102" name="咸阳">
+      <country id="110201" name="咸阳" cityCode="101110200"/>
+      <country id="110202" name="三原" cityCode="101110201"/>
+      <country id="110203" name="礼泉" cityCode="101110202"/>
+      <country id="110204" name="永寿" cityCode="101110203"/>
+      <country id="110205" name="淳化" cityCode="101110204"/>
+      <country id="110206" name="泾阳" cityCode="101110205"/>
+      <country id="110207" name="武功" cityCode="101110206"/>
+      <country id="110208" name="乾县" cityCode="101110207"/>
+      <country id="110209" name="彬县" cityCode="101110208"/>
+      <country id="110210" name="长武" cityCode="101110209"/>
+      <country id="110211" name="旬邑" cityCode="101110210"/>
+      <country id="110212" name="兴平" cityCode="101110211"/>
+    </city>
+    <city id="1103" name="延安">
+      <country id="110301" name="延安" cityCode="101110300"/>
+      <country id="110302" name="延长" cityCode="101110301"/>
+      <country id="110303" name="延川" cityCode="101110302"/>
+      <country id="110304" name="子长" cityCode="101110303"/>
+      <country id="110305" name="宜川" cityCode="101110304"/>
+      <country id="110306" name="富县" cityCode="101110305"/>
+      <country id="110307" name="志丹" cityCode="101110306"/>
+      <country id="110308" name="安塞" cityCode="101110307"/>
+      <country id="110309" name="甘泉" cityCode="101110308"/>
+      <country id="110310" name="洛川" cityCode="101110309"/>
+      <country id="110311" name="黄陵" cityCode="101110310"/>
+      <country id="110312" name="黄龙" cityCode="101110311"/>
+      <country id="110313" name="吴起" cityCode="101110312"/>
+    </city>
+    <city id="1104" name="榆林">
+      <country id="110401" name="榆林" cityCode="101110401"/>
+      <country id="110402" name="府谷" cityCode="101110402"/>
+      <country id="110403" name="神木" cityCode="101110403"/>
+      <country id="110404" name="佳县" cityCode="101110404"/>
+      <country id="110405" name="定边" cityCode="101110405"/>
+      <country id="110406" name="靖边" cityCode="101110406"/>
+      <country id="110407" name="横山" cityCode="101110407"/>
+      <country id="110408" name="米脂" cityCode="101110408"/>
+      <country id="110409" name="子洲" cityCode="101110409"/>
+      <country id="110410" name="绥德" cityCode="101110410"/>
+      <country id="110411" name="吴堡" cityCode="101110411"/>
+      <country id="110412" name="清涧" cityCode="101110412"/>
+      <country id="110413" name="榆阳" cityCode="101110413"/>
+    </city>
+    <city id="1105" name="渭南">
+      <country id="110501" name="渭南" cityCode="101110501"/>
+      <country id="110502" name="华县" cityCode="101110502"/>
+      <country id="110503" name="潼关" cityCode="101110503"/>
+      <country id="110504" name="大荔" cityCode="101110504"/>
+      <country id="110505" name="白水" cityCode="101110505"/>
+      <country id="110506" name="富平" cityCode="101110506"/>
+      <country id="110507" name="蒲城" cityCode="101110507"/>
+      <country id="110508" name="澄城" cityCode="101110508"/>
+      <country id="110509" name="合阳" cityCode="101110509"/>
+      <country id="110510" name="韩城" cityCode="101110510"/>
+      <country id="110511" name="华阴" cityCode="101110511"/>
+    </city>
+    <city id="1106" name="商洛">
+      <country id="110601" name="商洛" cityCode="101110601"/>
+      <country id="110602" name="洛南" cityCode="101110602"/>
+      <country id="110603" name="柞水" cityCode="101110603"/>
+      <country id="110604" name="商州" cityCode="101110604"/>
+      <country id="110605" name="镇安" cityCode="101110605"/>
+      <country id="110606" name="丹凤" cityCode="101110606"/>
+      <country id="110607" name="商南" cityCode="101110607"/>
+      <country id="110608" name="山阳" cityCode="101110608"/>
+    </city>
+    <city id="1107" name="安康">
+      <country id="110701" name="安康" cityCode="101110701"/>
+      <country id="110702" name="紫阳" cityCode="101110702"/>
+      <country id="110703" name="石泉" cityCode="101110703"/>
+      <country id="110704" name="汉阴" cityCode="101110704"/>
+      <country id="110705" name="旬阳" cityCode="101110705"/>
+      <country id="110706" name="岚皋" cityCode="101110706"/>
+      <country id="110707" name="平利" cityCode="101110707"/>
+      <country id="110708" name="白河" cityCode="101110708"/>
+      <country id="110709" name="镇坪" cityCode="101110709"/>
+      <country id="110710" name="宁陕" cityCode="101110710"/>
+    </city>
+    <city id="1108" name="汉中">
+      <country id="110801" name="汉中" cityCode="101110801"/>
+      <country id="110802" name="略阳" cityCode="101110802"/>
+      <country id="110803" name="勉县" cityCode="101110803"/>
+      <country id="110804" name="留坝" cityCode="101110804"/>
+      <country id="110805" name="洋县" cityCode="101110805"/>
+      <country id="110806" name="城固" cityCode="101110806"/>
+      <country id="110807" name="西乡" cityCode="101110807"/>
+      <country id="110808" name="佛坪" cityCode="101110808"/>
+      <country id="110809" name="宁强" cityCode="101110809"/>
+      <country id="110810" name="南郑" cityCode="101110810"/>
+      <country id="110811" name="镇巴" cityCode="101110811"/>
+    </city>
+    <city id="1109" name="宝鸡">
+      <country id="110901" name="宝鸡" cityCode="101110901"/>
+      <country id="110902" name="千阳" cityCode="101110903"/>
+      <country id="110903" name="麟游" cityCode="101110904"/>
+      <country id="110904" name="岐山" cityCode="101110905"/>
+      <country id="110905" name="凤翔" cityCode="101110906"/>
+      <country id="110906" name="扶风" cityCode="101110907"/>
+      <country id="110907" name="眉县" cityCode="101110908"/>
+      <country id="110908" name="太白" cityCode="101110909"/>
+      <country id="110909" name="凤县" cityCode="101110910"/>
+      <country id="110910" name="陇县" cityCode="101110911"/>
+      <country id="110911" name="陈仓" cityCode="101110912"/>
+    </city>
+    <city id="1110" name="铜川">
+      <country id="111001" name="铜川" cityCode="101111001"/>
+      <country id="111002" name="耀县" cityCode="101111002"/>
+      <country id="111003" name="宜君" cityCode="101111003"/>
+      <country id="111004" name="耀州" cityCode="101111004"/>
+    </city>
+    <city id="1111" name="杨凌">
+      <country id="111101" name="杨凌" cityCode="101111101"/>
+    </city>
+  </province>
+  <province id="12" name="山东">
+    <city id="1201" name="济南">
+      <country id="120101" name="济南" cityCode="101120101"/>
+      <country id="120102" name="长清" cityCode="101120102"/>
+      <country id="120103" name="商河" cityCode="101120103"/>
+      <country id="120104" name="章丘" cityCode="101120104"/>
+      <country id="120105" name="平阴" cityCode="101120105"/>
+      <country id="120106" name="济阳" cityCode="101120106"/>
+    </city>
+    <city id="1202" name="青岛">
+      <country id="120201" name="青岛" cityCode="101120201"/>
+      <country id="120202" name="崂山" cityCode="101120202"/>
+      <country id="120203" name="即墨" cityCode="101120204"/>
+      <country id="120204" name="胶州" cityCode="101120205"/>
+      <country id="120205" name="胶南" cityCode="101120206"/>
+      <country id="120206" name="莱西" cityCode="101120207"/>
+      <country id="120207" name="平度" cityCode="101120208"/>
+    </city>
+    <city id="1203" name="淄博">
+      <country id="120301" name="淄博" cityCode="101120301"/>
+      <country id="120302" name="淄川" cityCode="101120302"/>
+      <country id="120303" name="博山" cityCode="101120303"/>
+      <country id="120304" name="高青" cityCode="101120304"/>
+      <country id="120305" name="周村" cityCode="101120305"/>
+      <country id="120306" name="沂源" cityCode="101120306"/>
+      <country id="120307" name="桓台" cityCode="101120307"/>
+      <country id="120308" name="临淄" cityCode="101120308"/>
+    </city>
+    <city id="1204" name="德州">
+      <country id="120401" name="德州" cityCode="101120401"/>
+      <country id="120402" name="武城" cityCode="101120402"/>
+      <country id="120403" name="临邑" cityCode="101120403"/>
+      <country id="120404" name="陵县" cityCode="101120404"/>
+      <country id="120405" name="齐河" cityCode="101120405"/>
+      <country id="120406" name="乐陵" cityCode="101120406"/>
+      <country id="120407" name="庆云" cityCode="101120407"/>
+      <country id="120408" name="平原" cityCode="101120408"/>
+      <country id="120409" name="宁津" cityCode="101120409"/>
+      <country id="120410" name="夏津" cityCode="101120410"/>
+      <country id="120411" name="禹城" cityCode="101120411"/>
+    </city>
+    <city id="1205" name="烟台">
+      <country id="120501" name="烟台" cityCode="101120501"/>
+      <country id="120502" name="莱州" cityCode="101120502"/>
+      <country id="120503" name="长岛" cityCode="101120503"/>
+      <country id="120504" name="蓬莱" cityCode="101120504"/>
+      <country id="120505" name="龙口" cityCode="101120505"/>
+      <country id="120506" name="招远" cityCode="101120506"/>
+      <country id="120507" name="栖霞" cityCode="101120507"/>
+      <country id="120508" name="福山" cityCode="101120508"/>
+      <country id="120509" name="牟平" cityCode="101120509"/>
+      <country id="120510" name="莱阳" cityCode="101120510"/>
+      <country id="120511" name="海阳" cityCode="101120511"/>
+    </city>
+    <city id="1206" name="潍坊">
+      <country id="120601" name="潍坊" cityCode="101120601"/>
+      <country id="120602" name="青州" cityCode="101120602"/>
+      <country id="120603" name="寿光" cityCode="101120603"/>
+      <country id="120604" name="临朐" cityCode="101120604"/>
+      <country id="120605" name="昌乐" cityCode="101120605"/>
+      <country id="120606" name="昌邑" cityCode="101120606"/>
+      <country id="120607" name="安丘" cityCode="101120607"/>
+      <country id="120608" name="高密" cityCode="101120608"/>
+      <country id="120609" name="诸城" cityCode="101120609"/>
+    </city>
+    <city id="1207" name="济宁">
+      <country id="120701" name="济宁" cityCode="101120701"/>
+      <country id="120702" name="嘉祥" cityCode="101120702"/>
+      <country id="120703" name="微山" cityCode="101120703"/>
+      <country id="120704" name="鱼台" cityCode="101120704"/>
+      <country id="120705" name="兖州" cityCode="101120705"/>
+      <country id="120706" name="金乡" cityCode="101120706"/>
+      <country id="120707" name="汶上" cityCode="101120707"/>
+      <country id="120708" name="泗水" cityCode="101120708"/>
+      <country id="120709" name="梁山" cityCode="101120709"/>
+      <country id="120710" name="曲阜" cityCode="101120710"/>
+      <country id="120711" name="邹城" cityCode="101120711"/>
+    </city>
+    <city id="1208" name="泰安">
+      <country id="120801" name="泰安" cityCode="101120801"/>
+      <country id="120802" name="新泰" cityCode="101120802"/>
+      <country id="120803" name="肥城" cityCode="101120804"/>
+      <country id="120804" name="东平" cityCode="101120805"/>
+      <country id="120805" name="宁阳" cityCode="101120806"/>
+    </city>
+    <city id="1209" name="临沂">
+      <country id="120901" name="临沂" cityCode="101120901"/>
+      <country id="120902" name="莒南" cityCode="101120902"/>
+      <country id="120903" name="沂南" cityCode="101120903"/>
+      <country id="120904" name="苍山" cityCode="101120904"/>
+      <country id="120905" name="临沭" cityCode="101120905"/>
+      <country id="120906" name="郯城" cityCode="101120906"/>
+      <country id="120907" name="蒙阴" cityCode="101120907"/>
+      <country id="120908" name="平邑" cityCode="101120908"/>
+      <country id="120909" name="费县" cityCode="101120909"/>
+      <country id="120910" name="沂水" cityCode="101120910"/>
+    </city>
+    <city id="1210" name="菏泽">
+      <country id="121001" name="菏泽" cityCode="101121001"/>
+      <country id="121002" name="鄄城" cityCode="101121002"/>
+      <country id="121003" name="郓城" cityCode="101121003"/>
+      <country id="121004" name="东明" cityCode="101121004"/>
+      <country id="121005" name="定陶" cityCode="101121005"/>
+      <country id="121006" name="巨野" cityCode="101121006"/>
+      <country id="121007" name="曹县" cityCode="101121007"/>
+      <country id="121008" name="成武" cityCode="101121008"/>
+      <country id="121009" name="单县" cityCode="101121009"/>
+    </city>
+    <city id="1211" name="滨州">
+      <country id="121101" name="滨州" cityCode="101121101"/>
+      <country id="121102" name="博兴" cityCode="101121102"/>
+      <country id="121103" name="无棣" cityCode="101121103"/>
+      <country id="121104" name="阳信" cityCode="101121104"/>
+      <country id="121105" name="惠民" cityCode="101121105"/>
+      <country id="121106" name="沾化" cityCode="101121106"/>
+      <country id="121107" name="邹平" cityCode="101121107"/>
+    </city>
+    <city id="1212" name="东营">
+      <country id="121201" name="东营" cityCode="101121201"/>
+      <country id="121202" name="河口" cityCode="101121202"/>
+      <country id="121203" name="垦利" cityCode="101121203"/>
+      <country id="121204" name="利津" cityCode="101121204"/>
+      <country id="121205" name="广饶" cityCode="101121205"/>
+    </city>
+    <city id="1213" name="威海">
+      <country id="121301" name="威海" cityCode="101121301"/>
+      <country id="121302" name="文登" cityCode="101121302"/>
+      <country id="121303" name="荣成" cityCode="101121303"/>
+      <country id="121304" name="乳山" cityCode="101121304"/>
+      <country id="121305" name="成山头" cityCode="101121305"/>
+      <country id="121306" name="石岛" cityCode="101121306"/>
+    </city>
+    <city id="1214" name="枣庄">
+      <country id="121401" name="枣庄" cityCode="101121401"/>
+      <country id="121402" name="薛城" cityCode="101121402"/>
+      <country id="121403" name="峄城" cityCode="101121403"/>
+      <country id="121404" name="台儿庄" cityCode="101121404"/>
+      <country id="121405" name="滕州" cityCode="101121405"/>
+    </city>
+    <city id="1215" name="日照">
+      <country id="121501" name="日照" cityCode="101121501"/>
+      <country id="121502" name="五莲" cityCode="101121502"/>
+      <country id="121503" name="莒县" cityCode="101121503"/>
+    </city>
+    <city id="1216" name="莱芜">
+      <country id="121601" name="莱芜" cityCode="101121601"/>
+    </city>
+    <city id="1217" name="聊城">
+      <country id="121701" name="聊城" cityCode="101121701"/>
+      <country id="121702" name="冠县" cityCode="101121702"/>
+      <country id="121703" name="阳谷" cityCode="101121703"/>
+      <country id="121704" name="高唐" cityCode="101121704"/>
+      <country id="121705" name="茌平" cityCode="101121705"/>
+      <country id="121706" name="东阿" cityCode="101121706"/>
+      <country id="121707" name="临清" cityCode="101121707"/>
+      <country id="121708" name="莘县" cityCode="101121709"/>
+    </city>
+  </province>
+  <province id="13" name="新疆">
+    <city id="1301" name="乌鲁木齐">
+      <country id="130101" name="乌鲁木齐" cityCode="101130101"/>
+      <country id="130102" name="小渠子" cityCode="101130103"/>
+      <country id="130103" name="达坂城" cityCode="101130105"/>
+      <country id="130104" name="乌鲁木齐牧试站" cityCode="101130108"/>
+      <country id="130105" name="天池" cityCode="101130109"/>
+      <country id="130106" name="白杨沟" cityCode="101130110"/>
+    </city>
+    <city id="1302" name="克拉玛依">
+      <country id="130201" name="克拉玛依" cityCode="101130201"/>
+      <country id="130202" name="乌尔禾" cityCode="101130202"/>
+      <country id="130203" name="白碱滩" cityCode="101130203"/>
+    </city>
+    <city id="1303" name="石河子">
+      <country id="130301" name="石河子" cityCode="101130301"/>
+      <country id="130302" name="炮台" cityCode="101130302"/>
+      <country id="130303" name="莫索湾" cityCode="101130303"/>
+    </city>
+    <city id="1304" name="昌吉">
+      <country id="130401" name="昌吉" cityCode="101130401"/>
+      <country id="130402" name="呼图壁" cityCode="101130402"/>
+      <country id="130403" name="米泉" cityCode="101130403"/>
+      <country id="130404" name="阜康" cityCode="101130404"/>
+      <country id="130405" name="吉木萨尔" cityCode="101130405"/>
+      <country id="130406" name="奇台" cityCode="101130406"/>
+      <country id="130407" name="玛纳斯" cityCode="101130407"/>
+      <country id="130408" name="木垒" cityCode="101130408"/>
+      <country id="130409" name="蔡家湖" cityCode="101130409"/>
+    </city>
+    <city id="1305" name="吐鲁番">
+      <country id="130501" name="吐鲁番" cityCode="101130501"/>
+      <country id="130502" name="托克逊" cityCode="101130502"/>
+      <country id="130503" name="鄯善" cityCode="101130504"/>
+    </city>
+    <city id="1306" name="巴音郭楞">
+      <country id="130601" name="库尔勒" cityCode="101130601"/>
+      <country id="130602" name="轮台" cityCode="101130602"/>
+      <country id="130603" name="尉犁" cityCode="101130603"/>
+      <country id="130604" name="若羌" cityCode="101130604"/>
+      <country id="130605" name="且末" cityCode="101130605"/>
+      <country id="130606" name="和静" cityCode="101130606"/>
+      <country id="130607" name="焉耆" cityCode="101130607"/>
+      <country id="130608" name="和硕" cityCode="101130608"/>
+      <country id="130609" name="巴音布鲁克" cityCode="101130610"/>
+      <country id="130610" name="铁干里克" cityCode="101130611"/>
+      <country id="130611" name="博湖" cityCode="101130612"/>
+      <country id="130612" name="塔中" cityCode="101130613"/>
+      <country id="130613" name="巴仑台" cityCode="101130614"/>
+    </city>
+    <city id="1307" name="阿拉尔">
+      <country id="130701" name="阿拉尔" cityCode="101130701"/>
+    </city>
+    <city id="1308" name="阿克苏">
+      <country id="130801" name="阿克苏" cityCode="101130801"/>
+      <country id="130802" name="乌什" cityCode="101130802"/>
+      <country id="130803" name="温宿" cityCode="101130803"/>
+      <country id="130804" name="拜城" cityCode="101130804"/>
+      <country id="130805" name="新和" cityCode="101130805"/>
+      <country id="130806" name="沙雅" cityCode="101130806"/>
+      <country id="130807" name="库车" cityCode="101130807"/>
+      <country id="130808" name="柯坪" cityCode="101130808"/>
+      <country id="130809" name="阿瓦提" cityCode="101130809"/>
+    </city>
+    <city id="1309" name="喀什">
+      <country id="130901" name="喀什" cityCode="101130901"/>
+      <country id="130902" name="英吉沙" cityCode="101130902"/>
+      <country id="130903" name="塔什库尔干" cityCode="101130903"/>
+      <country id="130904" name="麦盖提" cityCode="101130904"/>
+      <country id="130905" name="莎车" cityCode="101130905"/>
+      <country id="130906" name="叶城" cityCode="101130906"/>
+      <country id="130907" name="泽普" cityCode="101130907"/>
+      <country id="130908" name="巴楚" cityCode="101130908"/>
+      <country id="130909" name="岳普湖" cityCode="101130909"/>
+      <country id="130910" name="伽师" cityCode="101130910"/>
+      <country id="130911" name="疏附" cityCode="101130911"/>
+      <country id="130912" name="疏勒" cityCode="101130912"/>
+    </city>
+    <city id="1310" name="伊犁">
+      <country id="131001" name="伊宁" cityCode="101131001"/>
+      <country id="131002" name="察布查尔" cityCode="101131002"/>
+      <country id="131003" name="尼勒克" cityCode="101131003"/>
+      <country id="131004" name="伊宁县" cityCode="101131004"/>
+      <country id="131005" name="巩留" cityCode="101131005"/>
+      <country id="131006" name="新源" cityCode="101131006"/>
+      <country id="131007" name="昭苏" cityCode="101131007"/>
+      <country id="131008" name="特克斯" cityCode="101131008"/>
+      <country id="131009" name="霍城" cityCode="101131009"/>
+      <country id="131010" name="霍尔果斯" cityCode="101131010"/>
+      <country id="131011" name="奎屯" cityCode="101131011"/>
+    </city>
+    <city id="1311" name="塔城">
+      <country id="131101" name="塔城" cityCode="101131101"/>
+      <country id="131102" name="裕民" cityCode="101131102"/>
+      <country id="131103" name="额敏" cityCode="101131103"/>
+      <country id="131104" name="和布克赛尔" cityCode="101131104"/>
+      <country id="131105" name="托里" cityCode="101131105"/>
+      <country id="131106" name="乌苏" cityCode="101131106"/>
+      <country id="131107" name="沙湾" cityCode="101131107"/>
+    </city>
+    <city id="1312" name="哈密">
+      <country id="131201" name="哈密" cityCode="101131201"/>
+      <country id="131202" name="巴里坤" cityCode="101131203"/>
+      <country id="131203" name="伊吾" cityCode="101131204"/>
+    </city>
+    <city id="1313" name="和田">
+      <country id="131301" name="和田" cityCode="101131301"/>
+      <country id="131302" name="皮山" cityCode="101131302"/>
+      <country id="131303" name="策勒" cityCode="101131303"/>
+      <country id="131304" name="墨玉" cityCode="101131304"/>
+      <country id="131305" name="洛浦" cityCode="101131305"/>
+      <country id="131306" name="民丰" cityCode="101131306"/>
+      <country id="131307" name="于田" cityCode="101131307"/>
+    </city>
+    <city id="1314" name="阿勒泰">
+      <country id="131401" name="阿勒泰" cityCode="101131401"/>
+      <country id="131402" name="哈巴河" cityCode="101131402"/>
+      <country id="131403" name="吉木乃" cityCode="101131405"/>
+      <country id="131404" name="布尔津" cityCode="101131406"/>
+      <country id="131405" name="福海" cityCode="101131407"/>
+      <country id="131406" name="富蕴" cityCode="101131408"/>
+      <country id="131407" name="青河" cityCode="101131409"/>
+    </city>
+    <city id="1315" name="克州">
+      <country id="131501" name="阿图什" cityCode="101131501"/>
+      <country id="131502" name="乌恰" cityCode="101131502"/>
+      <country id="131503" name="阿克陶" cityCode="101131503"/>
+      <country id="131504" name="阿合奇" cityCode="101131504"/>
+    </city>
+    <city id="1316" name="博尔塔拉">
+      <country id="131601" name="博乐" cityCode="101131601"/>
+      <country id="131602" name="温泉" cityCode="101131602"/>
+      <country id="131603" name="精河" cityCode="101131603"/>
+      <country id="131604" name="阿拉山口" cityCode="101131606"/>
+    </city>
+  </province>
+  <province id="14" name="西藏">
+    <city id="1401" name="拉萨">
+      <country id="140101" name="拉萨" cityCode="101140101"/>
+      <country id="140102" name="当雄" cityCode="101140102"/>
+      <country id="140103" name="尼木" cityCode="101140103"/>
+      <country id="140104" name="林周" cityCode="101140104"/>
+      <country id="140105" name="堆龙德庆" cityCode="101140105"/>
+      <country id="140106" name="曲水" cityCode="101140106"/>
+      <country id="140107" name="达孜" cityCode="101140107"/>
+      <country id="140108" name="墨竹工卡" cityCode="101140108"/>
+    </city>
+    <city id="1402" name="日喀则">
+      <country id="140201" name="日喀则" cityCode="101140201"/>
+      <country id="140202" name="拉孜" cityCode="101140202"/>
+      <country id="140203" name="南木林" cityCode="101140203"/>
+      <country id="140204" name="聂拉木" cityCode="101140204"/>
+      <country id="140205" name="定日" cityCode="101140205"/>
+      <country id="140206" name="江孜" cityCode="101140206"/>
+      <country id="140207" name="帕里" cityCode="101140207"/>
+      <country id="140208" name="仲巴" cityCode="101140208"/>
+      <country id="140209" name="萨嘎" cityCode="101140209"/>
+      <country id="140210" name="吉隆" cityCode="101140210"/>
+      <country id="140211" name="昂仁" cityCode="101140211"/>
+      <country id="140212" name="定结" cityCode="101140212"/>
+      <country id="140213" name="萨迦" cityCode="101140213"/>
+      <country id="140214" name="谢通门" cityCode="101140214"/>
+      <country id="140215" name="岗巴" cityCode="101140216"/>
+      <country id="140216" name="白朗" cityCode="101140217"/>
+      <country id="140217" name="亚东" cityCode="101140218"/>
+      <country id="140218" name="康马" cityCode="101140219"/>
+      <country id="140219" name="仁布" cityCode="101140220"/>
+    </city>
+    <city id="1403" name="山南">
+      <country id="140301" name="山南" cityCode="101140301"/>
+      <country id="140302" name="贡嘎" cityCode="101140302"/>
+      <country id="140303" name="扎囊" cityCode="101140303"/>
+      <country id="140304" name="加查" cityCode="101140304"/>
+      <country id="140305" name="浪卡子" cityCode="101140305"/>
+      <country id="140306" name="错那" cityCode="101140306"/>
+      <country id="140307" name="隆子" cityCode="101140307"/>
+      <country id="140308" name="泽当" cityCode="101140308"/>
+      <country id="140309" name="乃东" cityCode="101140309"/>
+      <country id="140310" name="桑日" cityCode="101140310"/>
+      <country id="140311" name="洛扎" cityCode="101140311"/>
+      <country id="140312" name="措美" cityCode="101140312"/>
+      <country id="140313" name="琼结" cityCode="101140313"/>
+      <country id="140314" name="曲松" cityCode="101140314"/>
+    </city>
+    <city id="1404" name="林芝">
+      <country id="140401" name="林芝" cityCode="101140401"/>
+      <country id="140402" name="波密" cityCode="101140402"/>
+      <country id="140403" name="米林" cityCode="101140403"/>
+      <country id="140404" name="察隅" cityCode="101140404"/>
+      <country id="140405" name="工布江达" cityCode="101140405"/>
+      <country id="140406" name="朗县" cityCode="101140406"/>
+      <country id="140407" name="墨脱" cityCode="101140407"/>
+    </city>
+    <city id="1405" name="昌都">
+      <country id="140501" name="昌都" cityCode="101140501"/>
+      <country id="140502" name="丁青" cityCode="101140502"/>
+      <country id="140503" name="边坝" cityCode="101140503"/>
+      <country id="140504" name="洛隆" cityCode="101140504"/>
+      <country id="140505" name="左贡" cityCode="101140505"/>
+      <country id="140506" name="芒康" cityCode="101140506"/>
+      <country id="140507" name="类乌齐" cityCode="101140507"/>
+      <country id="140508" name="八宿" cityCode="101140508"/>
+      <country id="140509" name="江达" cityCode="101140509"/>
+      <country id="140510" name="察雅" cityCode="101140510"/>
+      <country id="140511" name="贡觉" cityCode="101140511"/>
+    </city>
+    <city id="1406" name="那曲">
+      <country id="140601" name="那曲" cityCode="101140601"/>
+      <country id="140602" name="尼玛" cityCode="101140602"/>
+      <country id="140603" name="嘉黎" cityCode="101140603"/>
+      <country id="140604" name="班戈" cityCode="101140604"/>
+      <country id="140605" name="安多" cityCode="101140605"/>
+      <country id="140606" name="索县" cityCode="101140606"/>
+      <country id="140607" name="聂荣" cityCode="101140607"/>
+      <country id="140608" name="巴青" cityCode="101140608"/>
+      <country id="140609" name="比如" cityCode="101140609"/>
+      <country id="140610" name="双湖" cityCode="101140610"/>
+    </city>
+    <city id="1407" name="阿里">
+      <country id="140701" name="阿里" cityCode="101140701"/>
+      <country id="140702" name="改则" cityCode="101140702"/>
+      <country id="140703" name="申扎" cityCode="101140703"/>
+      <country id="140704" name="狮泉河" cityCode="101140704"/>
+      <country id="140705" name="普兰" cityCode="101140705"/>
+      <country id="140706" name="札达" cityCode="101140706"/>
+      <country id="140707" name="噶尔" cityCode="101140707"/>
+      <country id="140708" name="日土" cityCode="101140708"/>
+      <country id="140709" name="革吉" cityCode="101140709"/>
+      <country id="140710" name="措勤" cityCode="101140710"/>
+    </city>
+  </province>
+  <province id="15" name="青海">
+    <city id="1501" name="西宁">
+      <country id="150101" name="西宁" cityCode="101150101"/>
+      <country id="150102" name="大通" cityCode="101150102"/>
+      <country id="150103" name="湟源" cityCode="101150103"/>
+      <country id="150104" name="湟中" cityCode="101150104"/>
+    </city>
+    <city id="1502" name="海东">
+      <country id="150201" name="海东" cityCode="101150201"/>
+      <country id="150202" name="乐都" cityCode="101150202"/>
+      <country id="150203" name="民和" cityCode="101150203"/>
+      <country id="150204" name="互助" cityCode="101150204"/>
+      <country id="150205" name="化隆" cityCode="101150205"/>
+      <country id="150206" name="循化" cityCode="101150206"/>
+      <country id="150207" name="冷湖" cityCode="101150207"/>
+      <country id="150208" name="平安" cityCode="101150208"/>
+    </city>
+    <city id="1503" name="黄南">
+      <country id="150301" name="黄南" cityCode="101150301"/>
+      <country id="150302" name="尖扎" cityCode="101150302"/>
+      <country id="150303" name="泽库" cityCode="101150303"/>
+      <country id="150304" name="河南" cityCode="101150304"/>
+      <country id="150305" name="同仁" cityCode="101150305"/>
+    </city>
+    <city id="1504" name="海南">
+      <country id="150401" name="海南" cityCode="101150401"/>
+      <country id="150402" name="贵德" cityCode="101150404"/>
+      <country id="150403" name="兴海" cityCode="101150406"/>
+      <country id="150404" name="贵南" cityCode="101150407"/>
+      <country id="150405" name="同德" cityCode="101150408"/>
+      <country id="150406" name="共和" cityCode="101150409"/>
+    </city>
+    <city id="1505" name="果洛">
+      <country id="150501" name="果洛" cityCode="101150501"/>
+      <country id="150502" name="班玛" cityCode="101150502"/>
+      <country id="150503" name="甘德" cityCode="101150503"/>
+      <country id="150504" name="达日" cityCode="101150504"/>
+      <country id="150505" name="久治" cityCode="101150505"/>
+      <country id="150506" name="玛多" cityCode="101150506"/>
+      <country id="150507" name="多县" cityCode="101150507"/>
+      <country id="150508" name="玛沁" cityCode="101150508"/>
+    </city>
+    <city id="1506" name="玉树">
+      <country id="150601" name="玉树" cityCode="101150601"/>
+      <country id="150602" name="称多" cityCode="101150602"/>
+      <country id="150603" name="治多" cityCode="101150603"/>
+      <country id="150604" name="杂多" cityCode="101150604"/>
+      <country id="150605" name="囊谦" cityCode="101150605"/>
+      <country id="150606" name="曲麻莱" cityCode="101150606"/>
+    </city>
+    <city id="1507" name="海西">
+      <country id="150701" name="海西" cityCode="101150701"/>
+      <country id="150702" name="天峻" cityCode="101150708"/>
+      <country id="150703" name="乌兰" cityCode="101150709"/>
+      <country id="150704" name="茫崖" cityCode="101150712"/>
+      <country id="150705" name="大柴旦" cityCode="101150713"/>
+      <country id="150706" name="德令哈" cityCode="101150716"/>
+    </city>
+    <city id="1508" name="海北">
+      <country id="150801" name="海北" cityCode="101150801"/>
+      <country id="150802" name="门源" cityCode="101150802"/>
+      <country id="150803" name="祁连" cityCode="101150803"/>
+      <country id="150804" name="海晏" cityCode="101150804"/>
+      <country id="150805" name="刚察" cityCode="101150806"/>
+    </city>
+    <city id="1509" name="格尔木">
+      <country id="150901" name="格尔木" cityCode="101150901"/>
+      <country id="150902" name="都兰" cityCode="101150902"/>
+    </city>
+  </province>
+  <province id="16" name="甘肃">
+    <city id="1601" name="兰州">
+      <country id="160101" name="兰州" cityCode="101160101"/>
+      <country id="160102" name="皋兰" cityCode="101160102"/>
+      <country id="160103" name="永登" cityCode="101160103"/>
+      <country id="160104" name="榆中" cityCode="101160104"/>
+    </city>
+    <city id="1602" name="定西">
+      <country id="160201" name="定西" cityCode="101160201"/>
+      <country id="160202" name="通渭" cityCode="101160202"/>
+      <country id="160203" name="陇西" cityCode="101160203"/>
+      <country id="160204" name="渭源" cityCode="101160204"/>
+      <country id="160205" name="临洮" cityCode="101160205"/>
+      <country id="160206" name="漳县" cityCode="101160206"/>
+      <country id="160207" name="岷县" cityCode="101160207"/>
+      <country id="160208" name="安定" cityCode="101160208"/>
+    </city>
+    <city id="1603" name="平凉">
+      <country id="160301" name="平凉" cityCode="101160301"/>
+      <country id="160302" name="泾川" cityCode="101160302"/>
+      <country id="160303" name="灵台" cityCode="101160303"/>
+      <country id="160304" name="崇信" cityCode="101160304"/>
+      <country id="160305" name="华亭" cityCode="101160305"/>
+      <country id="160306" name="庄浪" cityCode="101160306"/>
+      <country id="160307" name="静宁" cityCode="101160307"/>
+      <country id="160308" name="崆峒" cityCode="101160308"/>
+    </city>
+    <city id="1604" name="庆阳">
+      <country id="160401" name="西峰" cityCode="101160401"/>
+      <country id="160402" name="环县" cityCode="101160403"/>
+      <country id="160403" name="华池" cityCode="101160404"/>
+      <country id="160404" name="合水" cityCode="101160405"/>
+      <country id="160405" name="正宁" cityCode="101160406"/>
+      <country id="160406" name="宁县" cityCode="101160407"/>
+      <country id="160407" name="镇原" cityCode="101160408"/>
+      <country id="160408" name="庆城" cityCode="101160409"/>
+    </city>
+    <city id="1605" name="武威">
+      <country id="160501" name="武威" cityCode="101160501"/>
+      <country id="160502" name="民勤" cityCode="101160502"/>
+      <country id="160503" name="古浪" cityCode="101160503"/>
+      <country id="160504" name="天祝" cityCode="101160505"/>
+    </city>
+    <city id="1606" name="金昌">
+      <country id="160601" name="金昌" cityCode="101160601"/>
+      <country id="160602" name="永昌" cityCode="101160602"/>
+    </city>
+    <city id="1607" name="张掖">
+      <country id="160701" name="张掖" cityCode="101160701"/>
+      <country id="160702" name="肃南" cityCode="101160702"/>
+      <country id="160703" name="民乐" cityCode="101160703"/>
+      <country id="160704" name="临泽" cityCode="101160704"/>
+      <country id="160705" name="高台" cityCode="101160705"/>
+      <country id="160706" name="山丹" cityCode="101160706"/>
+    </city>
+    <city id="1608" name="酒泉">
+      <country id="160801" name="酒泉" cityCode="101160801"/>
+      <country id="160802" name="金塔" cityCode="101160803"/>
+      <country id="160803" name="阿克塞" cityCode="101160804"/>
+      <country id="160804" name="瓜州" cityCode="101160805"/>
+      <country id="160805" name="肃北" cityCode="101160806"/>
+      <country id="160806" name="玉门" cityCode="101160807"/>
+      <country id="160807" name="敦煌" cityCode="101160808"/>
+    </city>
+    <city id="1609" name="天水">
+      <country id="160901" name="天水" cityCode="101160901"/>
+      <country id="160902" name="清水" cityCode="101160903"/>
+      <country id="160903" name="秦安" cityCode="101160904"/>
+      <country id="160904" name="甘谷" cityCode="101160905"/>
+      <country id="160905" name="武山" cityCode="101160906"/>
+      <country id="160906" name="张家川" cityCode="101160907"/>
+      <country id="160907" name="麦积" cityCode="101160908"/>
+    </city>
+    <city id="1610" name="陇南">
+      <country id="161001" name="武都" cityCode="101161001"/>
+      <country id="161002" name="成县" cityCode="101161002"/>
+      <country id="161003" name="文县" cityCode="101161003"/>
+      <country id="161004" name="宕昌" cityCode="101161004"/>
+      <country id="161005" name="康县" cityCode="101161005"/>
+      <country id="161006" name="西和" cityCode="101161006"/>
+      <country id="161007" name="礼县" cityCode="101161007"/>
+      <country id="161008" name="徽县" cityCode="101161008"/>
+      <country id="161009" name="两当" cityCode="101161009"/>
+    </city>
+    <city id="1611" name="临夏">
+      <country id="161101" name="临夏" cityCode="101161101"/>
+      <country id="161102" name="康乐" cityCode="101161102"/>
+      <country id="161103" name="永靖" cityCode="101161103"/>
+      <country id="161104" name="广河" cityCode="101161104"/>
+      <country id="161105" name="和政" cityCode="101161105"/>
+      <country id="161106" name="东乡" cityCode="101161106"/>
+      <country id="161107" name="积石山" cityCode="101161107"/>
+    </city>
+    <city id="1612" name="甘南">
+      <country id="161201" name="合作" cityCode="101161201"/>
+      <country id="161202" name="临潭" cityCode="101161202"/>
+      <country id="161203" name="卓尼" cityCode="101161203"/>
+      <country id="161204" name="舟曲" cityCode="101161204"/>
+      <country id="161205" name="迭部" cityCode="101161205"/>
+      <country id="161206" name="玛曲" cityCode="101161206"/>
+      <country id="161207" name="碌曲" cityCode="101161207"/>
+      <country id="161208" name="夏河" cityCode="101161208"/>
+    </city>
+    <city id="1613" name="白银">
+      <country id="161301" name="白银" cityCode="101161301"/>
+      <country id="161302" name="靖远" cityCode="101161302"/>
+      <country id="161303" name="会宁" cityCode="101161303"/>
+      <country id="161304" name="平川" cityCode="101161304"/>
+      <country id="161305" name="景泰" cityCode="101161305"/>
+    </city>
+    <city id="1614" name="嘉峪关">
+      <country id="161401" name="嘉峪关" cityCode="101161401"/>
+    </city>
+  </province>
+  <province id="17" name="宁夏">
+    <city id="1701" name="银川">
+      <country id="170101" name="银川" cityCode="101170101"/>
+      <country id="170102" name="永宁" cityCode="101170102"/>
+      <country id="170103" name="灵武" cityCode="101170103"/>
+      <country id="170104" name="贺兰" cityCode="101170104"/>
+    </city>
+    <city id="1702" name="石嘴山">
+      <country id="170201" name="石嘴山" cityCode="101170201"/>
+      <country id="170202" name="惠农" cityCode="101170202"/>
+      <country id="170203" name="平罗" cityCode="101170203"/>
+      <country id="170204" name="陶乐" cityCode="101170204"/>
+    </city>
+    <city id="1703" name="吴忠">
+      <country id="170301" name="吴忠" cityCode="101170301"/>
+      <country id="170302" name="同心" cityCode="101170302"/>
+      <country id="170303" name="盐池" cityCode="101170303"/>
+      <country id="170304" name="青铜峡" cityCode="101170306"/>
+    </city>
+    <city id="1704" name="固原">
+      <country id="170401" name="固原" cityCode="101170401"/>
+      <country id="170402" name="西吉" cityCode="101170402"/>
+      <country id="170403" name="隆德" cityCode="101170403"/>
+      <country id="170404" name="泾源" cityCode="101170404"/>
+      <country id="170405" name="彭阳" cityCode="101170406"/>
+    </city>
+    <city id="1705" name="中卫">
+      <country id="170501" name="中卫" cityCode="101170501"/>
+      <country id="170502" name="中宁" cityCode="101170502"/>
+      <country id="170503" name="海原" cityCode="101170504"/>
+    </city>
+  </province>
+  <province id="19" name="江苏">
+    <city id="1901" name="南京">
+      <country id="190101" name="南京" cityCode="101190101"/>
+      <country id="190102" name="溧水" cityCode="101190102"/>
+      <country id="190103" name="高淳" cityCode="101190103"/>
+      <country id="190104" name="江宁" cityCode="101190104"/>
+      <country id="190105" name="六合" cityCode="101190105"/>
+      <country id="190106" name="江浦" cityCode="101190106"/>
+      <country id="190107" name="浦口" cityCode="101190107"/>
+    </city>
+    <city id="1902" name="无锡">
+      <country id="190201" name="无锡" cityCode="101190201"/>
+      <country id="190202" name="江阴" cityCode="101190202"/>
+      <country id="190203" name="宜兴" cityCode="101190203"/>
+      <country id="190204" name="锡山" cityCode="101190204"/>
+    </city>
+    <city id="1903" name="镇江">
+      <country id="190301" name="镇江" cityCode="101190301"/>
+      <country id="190302" name="丹阳" cityCode="101190302"/>
+      <country id="190303" name="扬中" cityCode="101190303"/>
+      <country id="190304" name="句容" cityCode="101190304"/>
+      <country id="190305" name="丹徒" cityCode="101190305"/>
+    </city>
+    <city id="1904" name="苏州">
+      <country id="190401" name="苏州" cityCode="101190401"/>
+      <country id="190402" name="常熟" cityCode="101190402"/>
+      <country id="190403" name="张家港" cityCode="101190403"/>
+      <country id="190404" name="昆山" cityCode="101190404"/>
+      <country id="190405" name="吴中" cityCode="101190405"/>
+      <country id="190406" name="吴江" cityCode="101190407"/>
+      <country id="190407" name="太仓" cityCode="101190408"/>
+    </city>
+    <city id="1905" name="南通">
+      <country id="190501" name="南通" cityCode="101190501"/>
+      <country id="190502" name="海安" cityCode="101190502"/>
+      <country id="190503" name="如皋" cityCode="101190503"/>
+      <country id="190504" name="如东" cityCode="101190504"/>
+      <country id="190505" name="启东" cityCode="101190507"/>
+      <country id="190506" name="海门" cityCode="101190508"/>
+      <country id="190507" name="通州" cityCode="101190509"/>
+    </city>
+    <city id="1906" name="扬州">
+      <country id="190601" name="扬州" cityCode="101190601"/>
+      <country id="190602" name="宝应" cityCode="101190602"/>
+      <country id="190603" name="仪征" cityCode="101190603"/>
+      <country id="190604" name="高邮" cityCode="101190604"/>
+      <country id="190605" name="江都" cityCode="101190605"/>
+      <country id="190606" name="邗江" cityCode="101190606"/>
+    </city>
+    <city id="1907" name="盐城">
+      <country id="190701" name="盐城" cityCode="101190701"/>
+      <country id="190702" name="响水" cityCode="101190702"/>
+      <country id="190703" name="滨海" cityCode="101190703"/>
+      <country id="190704" name="阜宁" cityCode="101190704"/>
+      <country id="190705" name="射阳" cityCode="101190705"/>
+      <country id="190706" name="建湖" cityCode="101190706"/>
+      <country id="190707" name="东台" cityCode="101190707"/>
+      <country id="190708" name="大丰" cityCode="101190708"/>
+      <country id="190709" name="盐都" cityCode="101190709"/>
+    </city>
+    <city id="1908" name="徐州">
+      <country id="190801" name="徐州" cityCode="101190801"/>
+      <country id="190802" name="铜山" cityCode="101190802"/>
+      <country id="190803" name="丰县" cityCode="101190803"/>
+      <country id="190804" name="沛县" cityCode="101190804"/>
+      <country id="190805" name="邳州" cityCode="101190805"/>
+      <country id="190806" name="睢宁" cityCode="101190806"/>
+      <country id="190807" name="新沂" cityCode="101190807"/>
+    </city>
+    <city id="1909" name="淮安">
+      <country id="190901" name="淮安" cityCode="101190901"/>
+      <country id="190902" name="金湖" cityCode="101190902"/>
+      <country id="190903" name="盱眙" cityCode="101190903"/>
+      <country id="190904" name="洪泽" cityCode="101190904"/>
+      <country id="190905" name="涟水" cityCode="101190905"/>
+      <country id="190906" name="淮阴区" cityCode="101190906"/>
+      <country id="190907" name="淮安区" cityCode="101190908"/>
+    </city>
+    <city id="1910" name="连云港">
+      <country id="191001" name="连云港" cityCode="101191001"/>
+      <country id="191002" name="东海" cityCode="101191002"/>
+      <country id="191003" name="赣榆" cityCode="101191003"/>
+      <country id="191004" name="灌云" cityCode="101191004"/>
+      <country id="191005" name="灌南" cityCode="101191005"/>
+    </city>
+    <city id="1911" name="常州">
+      <country id="191101" name="常州" cityCode="101191101"/>
+      <country id="191102" name="溧阳" cityCode="101191102"/>
+      <country id="191103" name="金坛" cityCode="101191103"/>
+      <country id="191104" name="武进" cityCode="101191104"/>
+    </city>
+    <city id="1912" name="泰州">
+      <country id="191201" name="泰州" cityCode="101191201"/>
+      <country id="191202" name="兴化" cityCode="101191202"/>
+      <country id="191203" name="泰兴" cityCode="101191203"/>
+      <country id="191204" name="姜堰" cityCode="101191204"/>
+      <country id="191205" name="靖江" cityCode="101191205"/>
+    </city>
+    <city id="1913" name="宿迁">
+      <country id="191301" name="宿迁" cityCode="101191301"/>
+      <country id="191302" name="沭阳" cityCode="101191302"/>
+      <country id="191303" name="泗阳" cityCode="101191303"/>
+      <country id="191304" name="泗洪" cityCode="101191304"/>
+      <country id="191305" name="宿豫" cityCode="101191305"/>
+    </city>
+  </province>
+  <province id="26" name="贵州">
+    <city id="2601" name="贵阳">
+      <country id="260101" name="贵阳" cityCode="101260101"/>
+      <country id="260102" name="白云" cityCode="101260102"/>
+      <country id="260103" name="花溪" cityCode="101260103"/>
+      <country id="260104" name="乌当" cityCode="101260104"/>
+      <country id="260105" name="息烽" cityCode="101260105"/>
+      <country id="260106" name="开阳" cityCode="101260106"/>
+      <country id="260107" name="修文" cityCode="101260107"/>
+      <country id="260108" name="清镇" cityCode="101260108"/>
+      <country id="260109" name="小河" cityCode="101260109"/>
+      <country id="260110" name="云岩" cityCode="101260110"/>
+      <country id="260111" name="南明" cityCode="101260111"/>
+    </city>
+    <city id="2602" name="遵义">
+      <country id="260201" name="遵义" cityCode="101260201"/>
+      <country id="260202" name="遵义县" cityCode="101260202"/>
+      <country id="260203" name="仁怀" cityCode="101260203"/>
+      <country id="260204" name="绥阳" cityCode="101260204"/>
+      <country id="260205" name="湄潭" cityCode="101260205"/>
+      <country id="260206" name="凤冈" cityCode="101260206"/>
+      <country id="260207" name="桐梓" cityCode="101260207"/>
+      <country id="260208" name="赤水" cityCode="101260208"/>
+      <country id="260209" name="习水" cityCode="101260209"/>
+      <country id="260210" name="道真" cityCode="101260210"/>
+      <country id="260211" name="正安" cityCode="101260211"/>
+      <country id="260212" name="务川" cityCode="101260212"/>
+      <country id="260213" name="余庆" cityCode="101260213"/>
+      <country id="260214" name="汇川" cityCode="101260214"/>
+      <country id="260215" name="红花岗" cityCode="101260215"/>
+    </city>
+    <city id="2603" name="安顺">
+      <country id="260301" name="安顺" cityCode="101260301"/>
+      <country id="260302" name="普定" cityCode="101260302"/>
+      <country id="260303" name="镇宁" cityCode="101260303"/>
+      <country id="260304" name="平坝" cityCode="101260304"/>
+      <country id="260305" name="紫云" cityCode="101260305"/>
+      <country id="260306" name="关岭" cityCode="101260306"/>
+    </city>
+    <city id="2604" name="黔南">
+      <country id="260401" name="都匀" cityCode="101260401"/>
+      <country id="260402" name="贵定" cityCode="101260402"/>
+      <country id="260403" name="瓮安" cityCode="101260403"/>
+      <country id="260404" name="长顺" cityCode="101260404"/>
+      <country id="260405" name="福泉" cityCode="101260405"/>
+      <country id="260406" name="惠水" cityCode="101260406"/>
+      <country id="260407" name="龙里" cityCode="101260407"/>
+      <country id="260408" name="罗甸" cityCode="101260408"/>
+      <country id="260409" name="平塘" cityCode="101260409"/>
+      <country id="260410" name="独山" cityCode="101260410"/>
+      <country id="260411" name="三都" cityCode="101260411"/>
+      <country id="260412" name="荔波" cityCode="101260412"/>
+    </city>
+    <city id="2605" name="黔东南">
+      <country id="260501" name="凯里" cityCode="101260501"/>
+      <country id="260502" name="岑巩" cityCode="101260502"/>
+      <country id="260503" name="施秉" cityCode="101260503"/>
+      <country id="260504" name="镇远" cityCode="101260504"/>
+      <country id="260505" name="黄平" cityCode="101260505"/>
+      <country id="260506" name="麻江" cityCode="101260507"/>
+      <country id="260507" name="丹寨" cityCode="101260508"/>
+      <country id="260508" name="三穗" cityCode="101260509"/>
+      <country id="260509" name="台江" cityCode="101260510"/>
+      <country id="260510" name="剑河" cityCode="101260511"/>
+      <country id="260511" name="雷山" cityCode="101260512"/>
+      <country id="260512" name="黎平" cityCode="101260513"/>
+      <country id="260513" name="天柱" cityCode="101260514"/>
+      <country id="260514" name="锦屏" cityCode="101260515"/>
+      <country id="260515" name="榕江" cityCode="101260516"/>
+      <country id="260516" name="从江" cityCode="101260517"/>
+    </city>
+    <city id="2606" name="铜仁">
+      <country id="260601" name="铜仁" cityCode="101260601"/>
+      <country id="260602" name="江口" cityCode="101260602"/>
+      <country id="260603" name="玉屏" cityCode="101260603"/>
+      <country id="260604" name="万山" cityCode="101260604"/>
+      <country id="260605" name="思南" cityCode="101260605"/>
+      <country id="260606" name="印江" cityCode="101260607"/>
+      <country id="260607" name="石阡" cityCode="101260608"/>
+      <country id="260608" name="沿河" cityCode="101260609"/>
+      <country id="260609" name="德江" cityCode="101260610"/>
+      <country id="260610" name="松桃" cityCode="101260611"/>
+    </city>
+    <city id="2607" name="毕节">
+      <country id="260701" name="毕节" cityCode="101260701"/>
+      <country id="260702" name="赫章" cityCode="101260702"/>
+      <country id="260703" name="金沙" cityCode="101260703"/>
+      <country id="260704" name="威宁" cityCode="101260704"/>
+      <country id="260705" name="大方" cityCode="101260705"/>
+      <country id="260706" name="纳雍" cityCode="101260706"/>
+      <country id="260707" name="织金" cityCode="101260707"/>
+      <country id="260708" name="黔西" cityCode="101260708"/>
+    </city>
+    <city id="2608" name="六盘水">
+      <country id="260801" name="水城" cityCode="101260801"/>
+      <country id="260802" name="六枝" cityCode="101260802"/>
+      <country id="260803" name="盘县" cityCode="101260804"/>
+    </city>
+    <city id="2609" name="黔西南">
+      <country id="260901" name="兴义" cityCode="101260901"/>
+      <country id="260902" name="晴隆" cityCode="101260902"/>
+      <country id="260903" name="兴仁" cityCode="101260903"/>
+      <country id="260904" name="贞丰" cityCode="101260904"/>
+      <country id="260905" name="望谟" cityCode="101260905"/>
+      <country id="260906" name="安龙" cityCode="101260907"/>
+      <country id="260907" name="册亨" cityCode="101260908"/>
+      <country id="260908" name="普安" cityCode="101260909"/>
+    </city>
+  </province>
+  <province id="27" name="四川">
+    <city id="2701" name="成都">
+      <country id="270101" name="成都" cityCode="101270101"/>
+      <country id="270102" name="龙泉驿" cityCode="101270102"/>
+      <country id="270103" name="新都" cityCode="101270103"/>
+      <country id="270104" name="温江" cityCode="101270104"/>
+      <country id="270105" name="金堂" cityCode="101270105"/>
+      <country id="270106" name="双流" cityCode="101270106"/>
+      <country id="270107" name="郫县" cityCode="101270107"/>
+      <country id="270108" name="大邑" cityCode="101270108"/>
+      <country id="270109" name="蒲江" cityCode="101270109"/>
+      <country id="270110" name="新津" cityCode="101270110"/>
+      <country id="270111" name="都江堰" cityCode="101270111"/>
+      <country id="270112" name="彭州" cityCode="101270112"/>
+      <country id="270113" name="邛崃" cityCode="101270113"/>
+      <country id="270114" name="崇州" cityCode="101270114"/>
+    </city>
+    <city id="2702" name="攀枝花">
+      <country id="270201" name="攀枝花" cityCode="101270201"/>
+      <country id="270202" name="仁和" cityCode="101270202"/>
+      <country id="270203" name="米易" cityCode="101270203"/>
+      <country id="270204" name="盐边" cityCode="101270204"/>
+    </city>
+    <city id="2703" name="自贡">
+      <country id="270301" name="自贡" cityCode="101270301"/>
+      <country id="270302" name="富顺" cityCode="101270302"/>
+      <country id="270303" name="荣县" cityCode="101270303"/>
+    </city>
+    <city id="2704" name="绵阳">
+      <country id="270401" name="绵阳" cityCode="101270401"/>
+      <country id="270402" name="三台" cityCode="101270402"/>
+      <country id="270403" name="盐亭" cityCode="101270403"/>
+      <country id="270404" name="安县" cityCode="101270404"/>
+      <country id="270405" name="梓潼" cityCode="101270405"/>
+      <country id="270406" name="北川" cityCode="101270406"/>
+      <country id="270407" name="平武" cityCode="101270407"/>
+      <country id="270408" name="江油" cityCode="101270408"/>
+    </city>
+    <city id="2705" name="南充">
+      <country id="270501" name="南充" cityCode="101270501"/>
+      <country id="270502" name="南部" cityCode="101270502"/>
+      <country id="270503" name="营山" cityCode="101270503"/>
+      <country id="270504" name="蓬安" cityCode="101270504"/>
+      <country id="270505" name="仪陇" cityCode="101270505"/>
+      <country id="270506" name="西充" cityCode="101270506"/>
+      <country id="270507" name="阆中" cityCode="101270507"/>
+    </city>
+    <city id="2706" name="达州">
+      <country id="270601" name="达州" cityCode="101270601"/>
+      <country id="270602" name="宣汉" cityCode="101270602"/>
+      <country id="270603" name="开江" cityCode="101270603"/>
+      <country id="270604" name="大竹" cityCode="101270604"/>
+      <country id="270605" name="渠县" cityCode="101270605"/>
+      <country id="270606" name="万源" cityCode="101270606"/>
+      <country id="270607" name="通川" cityCode="101270607"/>
+      <country id="270608" name="达县" cityCode="101270608"/>
+    </city>
+    <city id="2707" name="遂宁">
+      <country id="270701" name="遂宁" cityCode="101270701"/>
+      <country id="270702" name="蓬溪" cityCode="101270702"/>
+      <country id="270703" name="射洪" cityCode="101270703"/>
+    </city>
+    <city id="2708" name="广安">
+      <country id="270801" name="广安" cityCode="101270801"/>
+      <country id="270802" name="岳池" cityCode="101270802"/>
+      <country id="270803" name="武胜" cityCode="101270803"/>
+      <country id="270804" name="邻水" cityCode="101270804"/>
+      <country id="270805" name="华蓥" cityCode="101270805"/>
+    </city>
+    <city id="2709" name="巴中">
+      <country id="270901" name="巴中" cityCode="101270901"/>
+      <country id="270902" name="通江" cityCode="101270902"/>
+      <country id="270903" name="南江" cityCode="101270903"/>
+      <country id="270904" name="平昌" cityCode="101270904"/>
+    </city>
+    <city id="2710" name="泸州">
+      <country id="271001" name="泸州" cityCode="101271001"/>
+      <country id="271002" name="泸县" cityCode="101271003"/>
+      <country id="271003" name="合江" cityCode="101271004"/>
+      <country id="271004" name="叙永" cityCode="101271005"/>
+      <country id="271005" name="古蔺" cityCode="101271006"/>
+      <country id="271006" name="纳溪" cityCode="101271007"/>
+    </city>
+    <city id="2711" name="宜宾">
+      <country id="271101" name="宜宾" cityCode="101271101"/>
+      <country id="271102" name="宜宾县" cityCode="101271103"/>
+      <country id="271103" name="南溪" cityCode="101271104"/>
+      <country id="271104" name="江安" cityCode="101271105"/>
+      <country id="271105" name="长宁" cityCode="101271106"/>
+      <country id="271106" name="高县" cityCode="101271107"/>
+      <country id="271107" name="珙县" cityCode="101271108"/>
+      <country id="271108" name="筠连" cityCode="101271109"/>
+      <country id="271109" name="兴文" cityCode="101271110"/>
+      <country id="271110" name="屏山" cityCode="101271111"/>
+    </city>
+    <city id="2712" name="内江">
+      <country id="271201" name="内江" cityCode="101271201"/>
+      <country id="271202" name="东兴" cityCode="101271202"/>
+      <country id="271203" name="威远" cityCode="101271203"/>
+      <country id="271204" name="资中" cityCode="101271204"/>
+      <country id="271205" name="隆昌" cityCode="101271205"/>
+    </city>
+    <city id="2713" name="资阳">
+      <country id="271301" name="资阳" cityCode="101271301"/>
+      <country id="271302" name="安岳" cityCode="101271302"/>
+      <country id="271303" name="乐至" cityCode="101271303"/>
+      <country id="271304" name="简阳" cityCode="101271304"/>
+    </city>
+    <city id="2714" name="乐山">
+      <country id="271401" name="乐山" cityCode="101271401"/>
+      <country id="271402" name="犍为" cityCode="101271402"/>
+      <country id="271403" name="井研" cityCode="101271403"/>
+      <country id="271404" name="夹江" cityCode="101271404"/>
+      <country id="271405" name="沐川" cityCode="101271405"/>
+      <country id="271406" name="峨边" cityCode="101271406"/>
+      <country id="271407" name="马边" cityCode="101271407"/>
+      <country id="271408" name="峨眉" cityCode="101271408"/>
+      <country id="271409" name="峨眉山" cityCode="101271409"/>
+    </city>
+    <city id="2715" name="眉山">
+      <country id="271501" name="眉山" cityCode="101271501"/>
+      <country id="271502" name="仁寿" cityCode="101271502"/>
+      <country id="271503" name="彭山" cityCode="101271503"/>
+      <country id="271504" name="洪雅" cityCode="101271504"/>
+      <country id="271505" name="丹棱" cityCode="101271505"/>
+      <country id="271506" name="青神" cityCode="101271506"/>
+    </city>
+    <city id="2716" name="凉山">
+      <country id="271601" name="凉山" cityCode="101271601"/>
+      <country id="271602" name="木里" cityCode="101271603"/>
+      <country id="271603" name="盐源" cityCode="101271604"/>
+      <country id="271604" name="德昌" cityCode="101271605"/>
+      <country id="271605" name="会理" cityCode="101271606"/>
+      <country id="271606" name="会东" cityCode="101271607"/>
+      <country id="271607" name="宁南" cityCode="101271608"/>
+      <country id="271608" name="普格" cityCode="101271609"/>
+      <country id="271609" name="西昌" cityCode="101271610"/>
+      <country id="271610" name="金阳" cityCode="101271611"/>
+      <country id="271611" name="昭觉" cityCode="101271612"/>
+      <country id="271612" name="喜德" cityCode="101271613"/>
+      <country id="271613" name="冕宁" cityCode="101271614"/>
+      <country id="271614" name="越西" cityCode="101271615"/>
+      <country id="271615" name="甘洛" cityCode="101271616"/>
+      <country id="271616" name="雷波" cityCode="101271617"/>
+      <country id="271617" name="美姑" cityCode="101271618"/>
+      <country id="271618" name="布拖" cityCode="101271619"/>
+    </city>
+    <city id="2717" name="雅安">
+      <country id="271701" name="雅安" cityCode="101271701"/>
+      <country id="271702" name="名山" cityCode="101271702"/>
+      <country id="271703" name="荥经" cityCode="101271703"/>
+      <country id="271704" name="汉源" cityCode="101271704"/>
+      <country id="271705" name="石棉" cityCode="101271705"/>
+      <country id="271706" name="天全" cityCode="101271706"/>
+      <country id="271707" name="芦山" cityCode="101271707"/>
+      <country id="271708" name="宝兴" cityCode="101271708"/>
+    </city>
+    <city id="2718" name="甘孜">
+      <country id="271801" name="甘孜" cityCode="101271801"/>
+      <country id="271802" name="康定" cityCode="101271802"/>
+      <country id="271803" name="泸定" cityCode="101271803"/>
+      <country id="271804" name="丹巴" cityCode="101271804"/>
+      <country id="271805" name="九龙" cityCode="101271805"/>
+      <country id="271806" name="雅江" cityCode="101271806"/>
+      <country id="271807" name="道孚" cityCode="101271807"/>
+      <country id="271808" name="炉霍" cityCode="101271808"/>
+      <country id="271809" name="新龙" cityCode="101271809"/>
+      <country id="271810" name="德格" cityCode="101271810"/>
+      <country id="271811" name="白玉" cityCode="101271811"/>
+      <country id="271812" name="石渠" cityCode="101271812"/>
+      <country id="271813" name="色达" cityCode="101271813"/>
+      <country id="271814" name="理塘" cityCode="101271814"/>
+      <country id="271815" name="巴塘" cityCode="101271815"/>
+      <country id="271816" name="乡城" cityCode="101271816"/>
+      <country id="271817" name="稻城" cityCode="101271817"/>
+      <country id="271818" name="得荣" cityCode="101271818"/>
+    </city>
+    <city id="2719" name="阿坝">
+      <country id="271901" name="阿坝" cityCode="101271901"/>
+      <country id="271902" name="汶川" cityCode="101271902"/>
+      <country id="271903" name="理县" cityCode="101271903"/>
+      <country id="271904" name="茂县" cityCode="101271904"/>
+      <country id="271905" name="松潘" cityCode="101271905"/>
+      <country id="271906" name="九寨沟" cityCode="101271906"/>
+      <country id="271907" name="金川" cityCode="101271907"/>
+      <country id="271908" name="小金" cityCode="101271908"/>
+      <country id="271909" name="黑水" cityCode="101271909"/>
+      <country id="271910" name="马尔康" cityCode="101271910"/>
+      <country id="271911" name="壤塘" cityCode="101271911"/>
+      <country id="271912" name="若尔盖" cityCode="101271912"/>
+      <country id="271913" name="红原" cityCode="101271913"/>
+    </city>
+    <city id="2720" name="德阳">
+      <country id="272001" name="德阳" cityCode="101272001"/>
+      <country id="272002" name="中江" cityCode="101272002"/>
+      <country id="272003" name="广汉" cityCode="101272003"/>
+      <country id="272004" name="什邡" cityCode="101272004"/>
+      <country id="272005" name="绵竹" cityCode="101272005"/>
+      <country id="272006" name="罗江" cityCode="101272006"/>
+    </city>
+    <city id="2721" name="广元">
+      <country id="272101" name="广元" cityCode="101272101"/>
+      <country id="272102" name="旺苍" cityCode="101272102"/>
+      <country id="272103" name="青川" cityCode="101272103"/>
+      <country id="272104" name="剑阁" cityCode="101272104"/>
+      <country id="272105" name="苍溪" cityCode="101272105"/>
+    </city>
+  </province>
+</China>

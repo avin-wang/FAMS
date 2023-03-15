@@ -1,0 +1,141 @@
+﻿<MyNamespace:PopupWindowBase x:Class="FAMS.Views.Toolkit.LoanCalculatorWin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FAMS.Views.Toolkit"
+        xmlns:MyNamespace="clr-namespace:FAMS.Commons.BaseClasses"
+        mc:Ignorable="d"
+        LogoPath="\res\icons\loan_calc_72px.png"
+        WindowStartupLocation="CenterScreen"
+        Title="贷款计算器" Height="580" Width="520">
+    <MyNamespace:PopupWindowBase.Resources>
+        <!--ComboBox ItemContainerStyle-->
+        <Style x:Key="ComboBoxItemContainerStyle" TargetType="{x:Type ComboBoxItem}">
+            <Setter Property="Padding" Value="5" />
+            <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+            <Setter Property="VerticalContentAlignment" Value="Center" />
+            <Setter Property="SnapsToDevicePixels" Value="true" />
+            <Setter Property="Focusable" Value="False" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type ComboBoxItem}">
+                        <Grid x:Name="grdItem" SnapsToDevicePixels="true" FocusVisualStyle="{x:Null}">
+                            <Rectangle Margin="-1" FocusVisualStyle="{x:Null}" Stroke="#A0FFFFFF"/>
+                            <ContentPresenter Margin="{TemplateBinding Padding}"
+                                              HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                              VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                                              SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"
+                                              FocusVisualStyle="{x:Null}"
+                                              x:Name="contentPresenter" />
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="grdItem" Property="Background" Value="#FFE5F3FB" />
+                            </Trigger>
+                            <Trigger Property="Selector.IsSelected" Value="True">
+                                <Setter TargetName="grdItem" Property="Background" Value="#FFF6F6F6" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </MyNamespace:PopupWindowBase.Resources>
+    
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30" /><!--total payment-->
+            <RowDefinition Height="10" />
+            <RowDefinition Height="30" /><!--down payment-->
+            <RowDefinition Height="10" />
+            <RowDefinition Height="30" /><!--terms-->
+            <RowDefinition Height="10" />
+            <RowDefinition Height="30" /><!--fees-->
+            <RowDefinition Height="10" />
+            <RowDefinition Height="30" /><!--loan interest rate-->
+            <RowDefinition Height="10" />
+            <RowDefinition Height="30" /><!--investment interest rate-->
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" /><!--down payment-->
+            <RowDefinition Height="10" />
+            <RowDefinition Height="30" /><!--termly repay-->
+            <RowDefinition Height="10" />
+            <RowDefinition Height="30" /><!--total revenue-->
+            <RowDefinition Height="10" />
+            <RowDefinition Height="30" /><!--net revenue-->
+            <RowDefinition Height="10" />
+            <RowDefinition Height="30" /><!--pay-off interest rate-->
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150" />
+            <ColumnDefinition Width="10" />
+            <ColumnDefinition Width="250" />
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Grid.Row="0" Grid.Column="0" Style="{DynamicResource TextBlockStyle}" Text="总付款" />
+        <TextBox Grid.Row="0" Grid.Column="2" Style="{StaticResource TextBoxStyle}"
+                 Text="{Binding Path=TotalPayment,UpdateSourceTrigger=PropertyChanged}" TextChanged="TextBox_TextChanged" />
+
+        <TextBlock Grid.Row="2" Grid.Column="0" Style="{DynamicResource TextBlockStyle}" Text="首付款 (%)" />
+        <ComboBox Grid.Row="2" Grid.Column="2" Style="{StaticResource ComboBoxEditableStyle}" ItemContainerStyle="{StaticResource ComboBoxItemContainerStyle}"
+                  Text="{Binding Path=DownPayment,UpdateSourceTrigger=PropertyChanged}" TextBoxBase.TextChanged="CbxDownPayment_TextChanged">
+            <ComboBoxItem Content="10" />
+            <ComboBoxItem Content="20" />
+            <ComboBoxItem Content="30" />
+            <ComboBoxItem Content="40" />
+            <ComboBoxItem Content="50" />
+            <ComboBoxItem Content="60" />
+            <ComboBoxItem Content="70" />
+            <ComboBoxItem Content="80" />
+            <ComboBoxItem Content="90" />
+        </ComboBox>
+
+        <TextBlock Grid.Row="4" Grid.Column="0" Style="{DynamicResource TextBlockStyle}" Text="分期数 (月)" />
+        <TextBox Grid.Row="4" Grid.Column="2" Style="{StaticResource TextBoxStyle}"
+                 Text="{Binding Path=Terms,UpdateSourceTrigger=PropertyChanged}" TextChanged="TextBox_TextChanged" />
+
+        <TextBlock Grid.Row="6" Grid.Column="0" Style="{DynamicResource TextBlockStyle}" Text="手续费" />
+        <TextBox Grid.Row="6" Grid.Column="2" Style="{StaticResource TextBoxStyle}"
+                 Text="{Binding Path=Fees,UpdateSourceTrigger=PropertyChanged}" TextChanged="TextBox_TextChanged" />
+
+        <!--loan interest rate-->
+        <TextBlock Grid.Row="8" Grid.Column="0" Style="{DynamicResource TextBlockStyle}" Text="贷款利率 (%)" />
+        <TextBox Grid.Row="8" Grid.Column="2" Style="{StaticResource TextBoxStyle}"
+                 Text="{Binding Path=LoanInterestRate,UpdateSourceTrigger=PropertyChanged}" TextChanged="TextBox_TextChanged" />
+        
+        <!--investment interest rate-->
+        <TextBlock Grid.Row="10" Grid.Column="0" Style="{DynamicResource TextBlockStyle}" Text="理财收益率 (%)" />
+        <TextBox Grid.Row="10" Grid.Column="2" Style="{StaticResource TextBoxStyle}"
+                 Text="{Binding Path=InvestInterestRate,UpdateSourceTrigger=PropertyChanged}" TextChanged="TextBox_TextChanged" />
+
+        <!--separator-->
+        <Border Grid.Row="11" Grid.Column="0" Grid.ColumnSpan="4" BorderBrush="White" Margin="10,0,10,0" BorderThickness="0,0,0,1" />
+
+        <!--down payment-->
+        <TextBlock Grid.Row="13" Grid.Column="0" Style="{DynamicResource TextBlockStyle}" Text="首付款" />
+        <TextBox Grid.Row="13" Grid.Column="2" Style="{StaticResource TextBoxStyle}" IsReadOnly="True"
+                 Text="{Binding Path=ActualDownPayment,UpdateSourceTrigger=PropertyChanged}" />
+
+        <!--termly repay-->
+        <TextBlock Grid.Row="15" Grid.Column="0" Style="{DynamicResource TextBlockStyle}" Text="每期还款" />
+        <TextBox Grid.Row="15" Grid.Column="2" Style="{StaticResource TextBoxStyle}" IsReadOnly="True"
+                 Text="{Binding Path=TermlyRepay,UpdateSourceTrigger=PropertyChanged}" />
+
+        <!--total revenue-->
+        <TextBlock Grid.Row="17" Grid.Column="0" Style="{DynamicResource TextBlockStyle}" Text="总收益" />
+        <TextBox Grid.Row="17" Grid.Column="2" Style="{StaticResource TextBoxStyle}" IsReadOnly="True"
+                 Text="{Binding Path=TotalRevenue,UpdateSourceTrigger=PropertyChanged}" />
+
+        <!--net revenue-->
+        <TextBlock Grid.Row="19" Grid.Column="0" Style="{DynamicResource TextBlockStyle}" Text="净收益" />
+        <TextBox Grid.Row="19" Grid.Column="2" Style="{StaticResource TextBoxStyle}" IsReadOnly="True"
+                 Text="{Binding Path=NetRevenue,UpdateSourceTrigger=PropertyChanged}" />
+
+        <!--pay-off interest rate-->
+        <TextBlock Grid.Row="21" Grid.Column="0" Style="{DynamicResource TextBlockStyle}" Text="回报利率 (%)" />
+        <TextBox Grid.Row="21" Grid.Column="2" Style="{StaticResource TextBoxStyle}" IsReadOnly="True"
+                 Text="{Binding Path=PayoffInterestRate,UpdateSourceTrigger=PropertyChanged}" />
+    </Grid>
+</MyNamespace:PopupWindowBase>

@@ -1,0 +1,114 @@
+﻿<MyNamespace:LoginWindowBase x:Class="FAMS.LoginWin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        xmlns:MyNamespace="clr-namespace:FAMS.Commons.BaseClasses"
+        xmlns:local="clr-namespace:FAMS"
+        mc:Ignorable="d" LogoPath="\res\icons\FAMS-logo.ico"
+        WindowStartupLocation="CenterScreen"
+        Title="家庭事务管理系统" Height="280" Width="380">
+    <MyNamespace:LoginWindowBase.Resources>
+        <!--ComboBox ItemContainerStyle-->
+        <Style x:Key="ComboBoxItemContainerStyle" TargetType="{x:Type ComboBoxItem}">
+            <Setter Property="Padding" Value="5" />
+            <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+            <Setter Property="VerticalContentAlignment" Value="Center" />
+            <Setter Property="SnapsToDevicePixels" Value="true" />
+            <Setter Property="Focusable" Value="False" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type ComboBoxItem}">
+                        <Grid x:Name="grdItem" SnapsToDevicePixels="true" FocusVisualStyle="{x:Null}">
+                            <Rectangle Margin="-1" FocusVisualStyle="{x:Null}" Stroke="#A0FFFFFF"/>
+                            <ContentPresenter Margin="{TemplateBinding Padding}"
+                                              HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                              VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                                              SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"
+                                              FocusVisualStyle="{x:Null}"
+                                              x:Name="contentPresenter" />
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="grdItem" Property="Background" Value="#FFE5F3FB" />
+                            </Trigger>
+                            <Trigger Property="Selector.IsSelected" Value="True">
+                                <Setter TargetName="grdItem" Property="Background" Value="#FFF6F6F6" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </MyNamespace:LoginWindowBase.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1.3*" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="20" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="20" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="32" />
+            <RowDefinition Height="0.9*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="80" />
+            <ColumnDefinition Width="20" />
+            <ColumnDefinition Width="230" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Right"
+                   FontSize="{StaticResource DefaultFontSizeNormal}" FontFamily="{StaticResource DefaultFontFamily}"
+                   Text="用户名" />
+        <ComboBox Grid.Row="1" Grid.Column="3" Style="{StaticResource ComboBoxEditableStyle}" ItemContainerStyle="{StaticResource ComboBoxItemContainerStyle}"
+                  ItemsSource="{Binding}" DataContext="{Binding}" SelectionChanged="cbxUserName_SelectionChanged" x:Name="cbxUserName" />
+
+        <TextBlock Grid.Row="3" Grid.Column="1"
+                   VerticalAlignment="Center" HorizontalAlignment="Right"
+                   FontSize="{StaticResource DefaultFontSizeNormal}" FontFamily="{StaticResource DefaultFontFamily}"
+                   Text="密码" />
+        <PasswordBox Grid.Row="3" Grid.Column="3" Height="30"
+                     VerticalAlignment="Center" VerticalContentAlignment="Center"
+                     FontSize="{StaticResource DefaultFontSizeNormal}" FontFamily="{StaticResource DefaultFontFamily}"
+                     KeyDown="pwdBox_KeyDown"
+                     x:Name="pwdBox" />
+
+        <Grid Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="5">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1.2*" />
+                <ColumnDefinition Width="30" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <CheckBox Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Right"
+                      FontSize="{StaticResource DefaultFontSizeNormal}" FontFamily="{StaticResource DefaultFontFamily}"
+                      Content="保存该登录信息？" x:Name="ckbSave" />
+            <CheckBox Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Left" Checked="ckbAutoLogin_Checked"
+                      FontSize="{StaticResource DefaultFontSizeNormal}" FontFamily="{StaticResource DefaultFontFamily}"
+                      Content="自动登录？" x:Name="ckbAutoLogin" />
+        </Grid>
+
+        <!--Login & Exit buttons-->
+        <Grid Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="5">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="32" />
+                <ColumnDefinition Width="30" />
+                <ColumnDefinition Width="32" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Button Grid.Column="1" Style="{StaticResource ButtonStyleForLogin}" x:Name="btnLogin" Click="btnLogin_Click" />
+            <Button Grid.Column="3" Style="{StaticResource ButtonStyleForLoginCancel}" x:Name="btnCancel" Click="btnCancel_Click" />
+        </Grid>
+
+        <Label Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="5" Visibility="Hidden"
+               HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center"
+               FontSize="13" Foreground="Red"
+               Content="用户名或密码错误！" x:Name="lbPrompt" />
+    </Grid>
+</MyNamespace:LoginWindowBase>

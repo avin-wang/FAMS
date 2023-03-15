@@ -1,0 +1,122 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!--Background of button when mouse is over or button is pressed-->
+    <LinearGradientBrush x:Key="ButtonBackground" StartPoint="0,0" EndPoint="0,1">
+        <GradientStop Color="#FFE5E5E5" Offset="0" />
+        <GradientStop Color="#FFbee6fd" Offset="0.33" />
+        <GradientStop Color="#FFd9f0fc" Offset="0.67" />
+        <GradientStop Color="#FFD0D0D0" Offset="1.00" />
+    </LinearGradientBrush>
+
+    <!--Style of ToolTip-->
+    <Style x:Key="ToolTipStyle" TargetType="{x:Type ToolTip}">
+        <Setter Property="FontFamily" Value="Helvetica" />
+        <Setter Property="BorderThickness" Value="0" />
+    </Style>
+
+    <!--Style of Button-->
+    <Style x:Key="ButtonStyle" TargetType="{x:Type Button}">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid>
+                        <Border Name="bd" Background="Transparent" />
+                        <ContentPresenter />
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="bd" Property="Background" Value="{StaticResource ButtonBackground}" />
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter TargetName="bd" Property="Background" Value="{StaticResource ButtonBackground}" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--ControlTemplate of Window-->
+    <ControlTemplate x:Key="MainWindowControlTemplate" TargetType="{x:Type Window}">
+        <Grid Name="grdMainWindow" Background="LightGray" RenderTransformOrigin="0.2,0.2">
+            <Grid.RenderTransform>
+                <ScaleTransform />
+            </Grid.RenderTransform>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="32" />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <!--Title bar-->
+                <Border x:Name="borderTitle" Width="Auto">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="10" />
+                            <ColumnDefinition Width="21" />
+                            <ColumnDefinition />
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="10" />
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="10" />
+                        </Grid.ColumnDefinitions>
+                        <!--Logo icon-->
+                        <Border Grid.Column="1" Margin="0,2,0,2">
+                            <Border.Background>
+                                <ImageBrush ImageSource="/FAMS.CustomWindow;component/FAMS-logo.png" />
+                            </Border.Background>
+                        </Border>
+                        <!--Title text-->
+                        <Label Grid.Column="2" VerticalAlignment="Center" FontSize="15" FontWeight="Regular" FontFamily="Helvetica" Content="{TemplateBinding Title}" />
+                        <!--Minimize button-->
+                        <Button Grid.Column="3" x:Name="buttonMinimize" Width="24" Height="24" Style="{StaticResource ButtonStyle}">
+                            <Button.ToolTip>
+                                <ToolTip Content="最小化" Style="{DynamicResource ToolTipStyle}" />
+                            </Button.ToolTip>
+                            <Image Source="/FAMS.CustomWindow;component/minimize_32px.png" />
+                        </Button>
+                        <!--Close button-->
+                        <Button Grid.Column="5" x:Name="buttonClose" Width="24" Height="24" Style="{StaticResource ButtonStyle}">
+                            <Button.ToolTip>
+                                <ToolTip Content="退出" Style="{DynamicResource ToolTipStyle}" />
+                            </Button.ToolTip>
+                            <Image Source="/FAMS.CustomWindow;component/button_power_64px.png" />
+                        </Button>
+                    </Grid>
+                </Border>
+                <!--Content-->
+                <Border Grid.Row="1" Width="Auto">
+                    <AdornerDecorator>
+                        <ContentPresenter />
+                    </AdornerDecorator>
+                </Border>
+            </Grid>
+            <!--Resize grip-->
+            <ResizeGrip x:Name="WindowResizeGrip" VerticalAlignment="Bottom" HorizontalAlignment="Right"
+                        Visibility="Visible" IsTabStop="false" Margin="0,0,8,8" />
+        </Grid>
+        <ControlTemplate.Triggers>
+            <EventTrigger RoutedEvent="Window.Loaded">
+                <BeginStoryboard>
+                    <Storyboard>
+                        <DoubleAnimation Storyboard.TargetName="grdMainWindow" Storyboard.TargetProperty="RenderTransform.ScaleX"
+                                         From="0.8" To="1.0" Duration="0:0:0.8" AutoReverse="False" RepeatBehavior="1x" />
+                        <DoubleAnimation Storyboard.TargetName="grdMainWindow" Storyboard.TargetProperty="RenderTransform.ScaleY"
+                                         From="0.8" To="1.0" Duration="0:0:1.0" AutoReverse="False" RepeatBehavior="1x" />
+                    </Storyboard>
+                </BeginStoryboard>
+            </EventTrigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+    
+    <!--Style of Window-->
+    <Style x:Key="MainWindowStyle" TargetType="{x:Type Window}">
+        <Setter Property="WindowStyle" Value="None" />
+        <Setter Property="MinHeight" Value="350" />
+        <Setter Property="MinWidth" Value="500" />
+        <Setter Property="AllowsTransparency" Value="True" />
+        <Setter Property="ResizeMode" Value="CanResizeWithGrip" />
+        <Setter Property="Template" Value="{StaticResource MainWindowControlTemplate}"/>
+    </Style>
+    
+</ResourceDictionary>

@@ -1,0 +1,51 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+
+    <!--Default font family-->
+    <FontFamily x:Key="DefaultFontFamily">Tahoma,仿宋</FontFamily>
+    <FontFamily x:Key="DefaultFontFamilyCHS">仿宋</FontFamily>
+    <sys:Double x:Key="DefaultFontSizeSmall">15</sys:Double>
+    <sys:Double x:Key="DefaultFontSizeNormal">18</sys:Double>
+    <sys:Double x:Key="DefaultFontSizeLarge">30</sys:Double>
+    <sys:Double x:Key="FontSizeExtremeLarge">60</sys:Double>
+
+    <!--Background of MainWindow's navigation and content frame-->
+    <SolidColorBrush x:Key="MainWindowBackground" Color="LightGray" />
+
+    <!--Background of MainWindow's status bar-->
+    <LinearGradientBrush x:Key="StatusBarBackground" StartPoint="0,0" EndPoint="0,1">
+        <GradientStop Color="#FFD0D0D0" Offset="0" />
+        <GradientStop Color="#FFE5E5E5" Offset="1" />
+    </LinearGradientBrush>
+
+    <!--Background of title bar of popup window-->
+    <LinearGradientBrush x:Key="PpwTitleBarBackground" StartPoint="0,0" EndPoint="0,1">
+        <GradientStop Color="#FFE5E5E5" Offset="0" />
+        <GradientStop Color="#FFD0D0D0" Offset="1" />
+    </LinearGradientBrush>
+    
+    <!--Foreground of text, i.e., text color-->
+    <SolidColorBrush x:Key="TextForeground" Color="Black" />
+    
+    <!--ListView's relevant backgrounds-->
+    <LinearGradientBrush x:Key="GridViewColumnHeaderBackground" StartPoint="0,0" EndPoint="0,1">
+        <GradientStop Color="#FFEEEEEE" Offset="0" />
+        <GradientStop Color="#FFD5D5D5" Offset="1" />
+    </LinearGradientBrush>
+    <SolidColorBrush x:Key="ListViewBorderBrush" Color="White" />
+    <SolidColorBrush x:Key="GridViewColumnHeaderBorderBrush" Color="#FFA1A1A4" />
+    <SolidColorBrush x:Key="ListViewItemsContentBackground" Color="White" />
+    <SolidColorBrush x:Key="ListViewItemAlternationBackground" Color="WhiteSmoke" />
+    <SolidColorBrush x:Key="ListViewItemSelectedForeground" Color="Black" />
+    <SolidColorBrush x:Key="ListViewItemSelectedBackground" Color="#FFFDD3AA" /><!--#FFAAD0FD-->
+    <SolidColorBrush x:Key="ListViewItemMouseOverBackground" Color="#FFE5F3FB" />
+    <SolidColorBrush x:Key="ListViewItemMouseOverForeground" Color="Black" />
+
+    <!--Scrollbar's relevant backgrounds-->
+    <SolidColorBrush x:Key="ScrollBarForeround" Color="#877F7F" />
+    <SolidColorBrush x:Key="ScrollBarBackground" Color="#3E3E42" />
+    <SolidColorBrush x:Key="MouseOverForeground" Color="Orange" />
+    <SolidColorBrush x:Key="PressedForeground" Color="DarkOrange" />
+
+</ResourceDictionary>

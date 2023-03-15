@@ -1,0 +1,163 @@
+﻿<MyNamespace:PopupWindowBase x:Class="FAMS.Views.Accounts.AdvancedSearchWin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FAMS.Views.Accounts"
+        xmlns:MyNamespace="clr-namespace:FAMS.Commons.BaseClasses"
+        mc:Ignorable="d" LogoPath="\res\icons\advanced_search_32px.png"
+        WindowStartupLocation="CenterScreen"
+        Title="高级搜索" Height="450" Width="370">
+    <MyNamespace:PopupWindowBase.Resources>
+        <!--ComboBox ItemContainerStyle-->
+        <Style x:Key="ComboBoxItemContainerStyle" TargetType="{x:Type ComboBoxItem}">
+            <Setter Property="Padding" Value="5" />
+            <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+            <Setter Property="VerticalContentAlignment" Value="Center" />
+            <Setter Property="SnapsToDevicePixels" Value="true" />
+            <Setter Property="Focusable" Value="False" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type ComboBoxItem}">
+                        <Grid x:Name="grdItem" SnapsToDevicePixels="true" FocusVisualStyle="{x:Null}">
+                            <Rectangle Margin="-1" FocusVisualStyle="{x:Null}" Stroke="#A0FFFFFF"/>
+                            <ContentPresenter Margin="{TemplateBinding Padding}"
+                                              HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                              VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                                              SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"
+                                              FocusVisualStyle="{x:Null}"
+                                              x:Name="contentPresenter" />
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="grdItem" Property="Background" Value="#FFE5F3FB" />
+                            </Trigger>
+                            <Trigger Property="Selector.IsSelected" Value="True">
+                                <Setter TargetName="grdItem" Property="Background" Value="#FFF6F6F6" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </MyNamespace:PopupWindowBase.Resources>
+
+    <!--上面LogoPath用反斜杠，是为了解决弹窗找不到图标资源奔溃的权益办法，该附加属性用处见PopupWindowBase类-->
+    <!--中PopupWindowBase_Loaded方法里的Define logo那一步，那里的绝对路径做法也是权益之策，具体绝对路径下的-->
+    <!--相应图标文件并不是代码编译生成的，而是人为拷到那里的，不可删除！任何时候，该图标文件都应随程序一起拷贝-->
+    <!--并放在exe所在目录下的Icons文件夹内-->
+
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="30"/><!--Account Name-->
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="30"/><!--Account Type-->
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="30"/><!--URL-->
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="30"/><!--User Name-->
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="30"/><!--Display Name-->
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="30"/><!--Append Date-->
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="0" x:Name="hidedRow1"/><!--Append date from-->
+            <RowDefinition Height="0" x:Name="hidedRow2"/>
+            <RowDefinition Height="0" x:Name="hidedRow3"/><!--Append date to-->
+            <RowDefinition Height="0" x:Name="hidedRow4"/>
+            <RowDefinition Height="30"/><!--Last Revised Date-->
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="0" x:Name="hidedRow5"/><!--Revised date from-->
+            <RowDefinition Height="0" x:Name="hidedRow6"/>
+            <RowDefinition Height="0" x:Name="hidedRow7"/><!--Revised date to-->
+            <RowDefinition Height="0" x:Name="hidedRow8"/>
+            <RowDefinition Height="30"/><!--Attachments-->
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="36"/><!--Search-->
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="120"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="200"/>
+        </Grid.ColumnDefinitions>
+
+        <!--Account Name-->
+        <TextBlock Grid.Row="1" Grid.Column="0" Style="{DynamicResource TextBlockStyle}" Text="账号名称" />
+        <TextBox Grid.Row="1" Grid.Column="2" Style="{DynamicResource TextBoxStyle}" Text="{Binding AccountName}"/>
+
+        <!--Account Type-->
+        <TextBlock Grid.Row="3" Grid.Column="0" Style="{DynamicResource TextBlockStyle}" Text="账号类型" />
+        <ComboBox Grid.Row="3" Grid.Column="2" Style="{StaticResource ComboBoxStyle}" ItemContainerStyle="{StaticResource ComboBoxItemContainerStyle}"
+                  SelectedIndex="{Binding AccountType}">
+            <ComboBoxItem Content="普通账号"/>
+            <ComboBoxItem Content="财务账号"/>
+            <ComboBoxItem Content="工作账号"/>
+            <ComboBoxItem Content="政务账号"/>
+            <ComboBoxItem Content="全部"/>
+        </ComboBox>
+
+        <!--URL-->
+        <TextBlock Grid.Row="5" Grid.Column="0" Style="{DynamicResource TextBlockStyle}" Text="网址" />
+        <TextBox Grid.Row="5" Grid.Column="2" Style="{DynamicResource TextBoxStyle}" Text="{Binding URL}"/>
+
+        <!--User Name-->
+        <TextBlock Grid.Row="7" Grid.Column="0" Style="{DynamicResource TextBlockStyle}" Text="用户名/登录名" />
+        <TextBox Grid.Row="7" Grid.Column="2" Style="{DynamicResource TextBoxStyle}" Text="{Binding UserName}"/>
+
+        <!--Display Name-->
+        <TextBlock Grid.Row="9" Grid.Column="0" Style="{DynamicResource TextBlockStyle}" Text="显示名称/昵称" />
+        <TextBox Grid.Row="9" Grid.Column="2" Style="{DynamicResource TextBoxStyle}" Text="{Binding DisplayName}"/>
+
+        <!--Append Date-->
+        <TextBlock Grid.Row="11" Grid.Column="0" Style="{DynamicResource TextBlockStyle}" Text="提交日期" />
+        <ComboBox Grid.Row="11" Grid.Column="2" Style="{StaticResource ComboBoxStyle}" ItemContainerStyle="{StaticResource ComboBoxItemContainerStyle}"
+                  Text="{Binding AppendDate}" x:Name="cbxAppendDate">
+            <ComboBoxItem Content="Within a week" />
+            <ComboBoxItem Content="Within a month" />
+            <ComboBoxItem Content="Within three months" />
+            <ComboBoxItem Content="Within half a year" />
+            <ComboBoxItem Content="This year" />
+            <ComboBoxItem Content="Last year" />
+            <ComboBoxItem Content="The year before last" />
+            <ComboBoxItem Content="Select a date range..." />
+        </ComboBox>
+
+        <!--Append date from & to-->
+        <DatePicker Grid.Row="13" Grid.Column="0" Grid.ColumnSpan="3" Width="330" Height="0" FontFamily="{DynamicResource DefaultFontFamily}" FontSize="{StaticResource DefaultFontSizeNormal}"
+                    x:Name="dpkAppendDateFrom" Text="{Binding AppendDateFrom,Mode=TwoWay}" />
+        <DatePicker Grid.Row="15" Grid.Column="0" Grid.ColumnSpan="3" Width="330" Height="0" FontFamily="{DynamicResource DefaultFontFamily}" FontSize="{StaticResource DefaultFontSizeNormal}"
+                    x:Name="dpkAppendDateTo" Text="{Binding AppendDateTo,Mode=TwoWay}" />
+
+        <!--Last Revised Date-->
+        <TextBlock Grid.Row="17" Grid.Column="0" Style="{DynamicResource TextBlockStyle}" Text="最后修改" />
+        <ComboBox Grid.Row="17" Grid.Column="2" Style="{StaticResource ComboBoxStyle}" ItemContainerStyle="{StaticResource ComboBoxItemContainerStyle}"
+                  Text="{Binding LastRevised}" x:Name="cbxLastRevised">
+            <ComboBoxItem Content="Within a week" />
+            <ComboBoxItem Content="Within a month" />
+            <ComboBoxItem Content="Within three months" />
+            <ComboBoxItem Content="Within half a year" />
+            <ComboBoxItem Content="This year" />
+            <ComboBoxItem Content="Last year" />
+            <ComboBoxItem Content="The year before last" />
+            <ComboBoxItem Content="Select a date range..." />
+        </ComboBox>
+
+        <!--Last Revised date from & to-->
+        <DatePicker Grid.Row="19" Grid.Column="0" Grid.ColumnSpan="3" Width="330" Height="0" FontFamily="{DynamicResource DefaultFontFamily}" FontSize="{StaticResource DefaultFontSizeNormal}"
+                    x:Name="dpkRevisedDateFrom" Text="{Binding RevisedDateFrom,Mode=TwoWay}" />
+        <DatePicker Grid.Row="21" Grid.Column="0" Grid.ColumnSpan="3" Width="330" Height="0" FontFamily="{DynamicResource DefaultFontFamily}" FontSize="{StaticResource DefaultFontSizeNormal}"
+                    x:Name="dpkRevisedDateTo" Text="{Binding RevisedDateTo,Mode=TwoWay}" />
+
+        <!--Attachments-->
+        <TextBlock Grid.Row="23" Grid.Column="0" Style="{DynamicResource TextBlockStyle}" Text="附件" />
+        <ComboBox Grid.Row="23" Grid.Column="2" Style="{StaticResource ComboBoxStyle}" ItemContainerStyle="{StaticResource ComboBoxItemContainerStyle}"
+                  SelectedIndex="{Binding AttachmentFlag}">
+            <ComboBoxItem Content="无"/>
+            <ComboBoxItem Content="有"/>
+            <ComboBoxItem Content="全部"/>
+        </ComboBox>
+
+        <Button Grid.Row="25" Grid.ColumnSpan="3" Style="{StaticResource ButtonStyleForSearching}" Click="BtnSearch_Click" />
+    </Grid>
+</MyNamespace:PopupWindowBase>

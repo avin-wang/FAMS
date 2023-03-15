@@ -1,0 +1,220 @@
+﻿<Page x:Class="FAMS.Views.Documents.Documents"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:FAMS.Views.Documents"
+      xmlns:services="clr-namespace:FAMS.Services"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="1700"
+      Title="Documents">
+    <Page.Resources>
+        <!--Length to bool converter-->
+        <services:LengthToBoolConverter x:Key="LengthToBoolConverter" />
+        <!--Length to int converter-->
+        <services:FileListToFileCountConverter x:Key="FileListToFileCountConverter" />
+    </Page.Resources>
+
+    <Grid Margin="10,30,10,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" /><!--doc title list area-->
+            <ColumnDefinition Width="10" />
+            <ColumnDefinition Width="2.5*" /><!--doc content editting area-->
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="10" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <!--doc title list area-->
+        <Grid Grid.Row="0" Grid.Column="0" Grid.RowSpan="3">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40" /><!--new & delete buttons-->
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Border Grid.Row="0" Background="White" BorderThickness="0.6,0.6,0.6,0" BorderBrush="Gray" />
+            <!--refresh, new, delete buttons-->
+            <Grid Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition Width="5" />
+                    <ColumnDefinition Width="30" />
+                    <ColumnDefinition Width="5" />
+                    <ColumnDefinition Width="30" />
+                    <ColumnDefinition Width="5" />
+                    <ColumnDefinition Width="30" />
+                </Grid.ColumnDefinitions>
+                <!--search box-->
+                <Grid Grid.Column="0" Margin="5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="45"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="15"/>
+                    </Grid.ColumnDefinitions>
+                    <Rectangle Grid.ColumnSpan="3" StrokeThickness="0.3" Stroke="Gray" Fill="White" RadiusX="15" RadiusY="15" />
+                    <Button Style="{StaticResource ButtonStyleForSearchDoc}" x:Name="btnSearchDoc" />
+                    <TextBox Grid.Column="1" x:Name="tbxSearchKeyWord">
+                        <TextBox.Resources>
+                            <VisualBrush x:Key="HintText" TileMode="None" Opacity="0.6" Stretch="None" AlignmentX="Left">
+                                <VisualBrush.Visual>
+                                    <TextBlock FontFamily="{StaticResource DefaultFontFamily}" FontSize="{StaticResource DefaultFontSizeNormal}" FontStyle="Italic" Text="输入关键字" />
+                                </VisualBrush.Visual>
+                            </VisualBrush>
+                            <VisualBrush x:Key="HintText_NonWartermark" TileMode="None" Opacity="0.6" Stretch="None" AlignmentX="Left">
+                                <VisualBrush.Visual>
+                                    <TextBlock Text=""/>
+                                </VisualBrush.Visual>
+                            </VisualBrush>
+                        </TextBox.Resources>
+                        <TextBox.Style>
+                            <Style TargetType="{x:Type TextBox}">
+                                <Setter Property="FontSize" Value="{StaticResource DefaultFontSizeNormal}" />
+                                <!--Alignment-->
+                                <Setter Property="VerticalContentAlignment" Value="Center"/>
+                                <Setter Property="VerticalAlignment" Value="Stretch"/>
+                                <!--Border-->
+                                <Setter Property="BorderThickness" Value="0"/>
+                                <Style.Triggers>
+                                    <Trigger Property="Text" Value="{x:Null}">
+                                        <Setter Property="Background" Value="{StaticResource HintText}"/>
+                                    </Trigger>
+                                    <Trigger Property="Text" Value="">
+                                        <Setter Property="Background" Value="{StaticResource HintText}"/>
+                                    </Trigger>
+                                    <DataTrigger Binding="{Binding RelativeSource={x:Static RelativeSource.Self},Path=Text.Length,Converter={StaticResource LengthToBoolConverter}}" Value="true">
+                                        <Setter Property="Background" Value="{StaticResource HintText_NonWartermark}"/>
+                                    </DataTrigger>
+                                </Style.Triggers>
+                            </Style>
+                        </TextBox.Style>
+                    </TextBox>
+                </Grid>
+                <!--refresh button-->
+                <Button Grid.Column="2" Style="{StaticResource ButtonStyleForRefresh}" Click="BtnRefresh_Click" />
+                <!--new doc button-->
+                <Button Grid.Column="4" Style="{StaticResource ButtonStyleForNewDoc}" Click="BtnNewDoc_Click" />
+                <!--delete doc button-->
+                <Button Grid.Column="6" Style="{StaticResource ButtonStyleForDeleting}" Click="BtnDeleteDoc_Click" />
+            </Grid>
+            <ListBox Grid.Row="1" Style="{StaticResource ListBoxStyleForDocTitle}" BorderThickness="1,0,1,1" x:Name="lbxDocTitle">
+                <ListBox.ContextMenu>
+                    <ContextMenu>
+                        <MenuItem Header="删除" Click="MiDeleteDoc_Click" />
+                    </ContextMenu>
+                </ListBox.ContextMenu>
+            </ListBox>
+        </Grid>
+        
+        <!--doc info editting area-->
+        <Border Grid.Row="0" Grid.Column="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" BorderThickness="0.6" BorderBrush="Gray" Background="White" />
+        <Grid Grid.Row="0" Grid.Column="2" Margin="5" x:Name="grdDocInfo">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30" /><!--title & toolbar-->
+                <RowDefinition Height="5" /><!--separation line-->
+                <RowDefinition Height="5" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="5" /><!--separation line-->
+                <RowDefinition Height="5" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="5" /><!--separation line-->
+                <RowDefinition Height="5" />
+                <RowDefinition Height="Auto" /><!--attached file list-->
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="10" />
+                <ColumnDefinition Width="250" />
+                <ColumnDefinition Width="5" /><!--separation line-->
+                <ColumnDefinition Width="5" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="10" />
+                <ColumnDefinition Width="250" />
+                <ColumnDefinition Width="5" /><!--separation line-->
+                <ColumnDefinition Width="5" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="10" />
+                <ColumnDefinition Width="250" />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            
+            <!--doc title-->
+            <TextBox Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="13" Style="{StaticResource TextBoxStyleDynamicBorder}" FontStyle="Italic" Text="{Binding Path=DocTitle,UpdateSourceTrigger=PropertyChanged}" TextChanged="TbxDocTitle_TextChanged" IsReadOnly="True" x:Name="tbxDocTitle" />
+            <!--source-->
+            <TextBlock Grid.Row="3" Grid.Column="0" Style="{StaticResource TextBlockStyle}" FontStyle="Italic" FontSize="{StaticResource DefaultFontSizeSmall}" Text="来源：" />
+            <TextBox Grid.Row="3" Grid.Column="2" Style="{StaticResource TextBoxStyleDynamicBorder}" FontStyle="Italic" FontSize="{StaticResource DefaultFontSizeSmall}" Text="{Binding Path=Source,UpdateSourceTrigger=PropertyChanged}" IsReadOnly="True" TextChanged="TbxSource_TextChanged" x:Name="tbxSource" />
+            <!--original title-->
+            <TextBlock Grid.Row="3" Grid.Column="5" Style="{StaticResource TextBlockStyle}" FontStyle="Italic" FontSize="{StaticResource DefaultFontSizeSmall}" Text="原始标题：" />
+            <TextBox Grid.Row="3" Grid.Column="7" Style="{StaticResource TextBoxStyleDynamicBorder}" FontStyle="Italic" FontSize="{StaticResource DefaultFontSizeSmall}" Text="{Binding Path=OriginalTitle,UpdateSourceTrigger=PropertyChanged}" IsReadOnly="True" TextChanged="TbxOriginalTitle_TextChanged" x:Name="tbxOriginalTitle" />
+            <!--category-->
+            <TextBlock Grid.Row="3" Grid.Column="10" Style="{StaticResource TextBlockStyle}" FontStyle="Italic" FontSize="{StaticResource DefaultFontSizeSmall}" Text="分类：" />
+            <TextBox Grid.Row="3" Grid.Column="12" Style="{StaticResource TextBoxStyleDynamicBorder}" FontStyle="Italic" FontSize="{StaticResource DefaultFontSizeSmall}" Text="{Binding Path=Category,UpdateSourceTrigger=PropertyChanged}" IsReadOnly="True" TextChanged="TbxCategory_TextChanged" x:Name="tbxCategory" />
+            <!--author-->
+            <TextBlock Grid.Row="6" Grid.Column="0" Style="{StaticResource TextBlockStyle}" FontStyle="Italic" FontSize="{StaticResource DefaultFontSizeSmall}" Text="作者：" />
+            <TextBox Grid.Row="6" Grid.Column="2" Style="{StaticResource TextBoxStyleDynamicBorder}" FontStyle="Italic" FontSize="{StaticResource DefaultFontSizeSmall}" Text="{Binding Path=Author,UpdateSourceTrigger=PropertyChanged}" IsReadOnly="True" TextChanged="TbxAuthor_TextChanged" x:Name="tbxAuthor" />
+            <!--create time-->
+            <TextBlock Grid.Row="6" Grid.Column="5" Style="{StaticResource TextBlockStyle}" FontStyle="Italic" FontSize="{StaticResource DefaultFontSizeSmall}" Text="创建：" />
+            <TextBox Grid.Row="6" Grid.Column="7" Style="{StaticResource TextBoxStyleDynamicBorder}" FontStyle="Italic" FontSize="{StaticResource DefaultFontSizeSmall}" Text="{Binding Path=CreateTime,UpdateSourceTrigger=PropertyChanged}" IsReadOnly="True" />
+            <!--last revised time-->
+            <TextBlock Grid.Row="6" Grid.Column="10" Style="{StaticResource TextBlockStyle}" FontStyle="Italic" FontSize="{StaticResource DefaultFontSizeSmall}" Text="最后修改：" />
+            <TextBox Grid.Row="6" Grid.Column="12" Style="{StaticResource TextBoxStyleDynamicBorder}" FontStyle="Italic" FontSize="{StaticResource DefaultFontSizeSmall}" Text="{Binding Path=LastRevised,UpdateSourceTrigger=PropertyChanged}" IsReadOnly="True" />
+            <!--Attached files list-->
+            <ListBox Grid.Row="9" Grid.Column="0" Grid.ColumnSpan="14" BorderThickness="0" Background="Transparent" SelectionMode="Extended" x:Name="lbxAttachFileList">
+                <ListBox.ContextMenu>
+                    <ContextMenu>
+                        <MenuItem Header="删除" Click="MiDeleteAttachFiles_Click" />
+                        <MenuItem Header="在资源管理器中查看" Click="MiOpenExplorer_Click" />
+                    </ContextMenu>
+                </ListBox.ContextMenu>
+                <ListBox.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <StackPanel Orientation="Horizontal" />
+                    </ItemsPanelTemplate>
+                </ListBox.ItemsPanel>
+            </ListBox>
+
+            <!--horizontal separation lines-->
+            <Border Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="13" BorderThickness="0,0,0,0.5" BorderBrush="LightGray" />
+            <Border Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="13" BorderThickness="0,0,0,0.5" BorderBrush="LightGray" />
+            <Border Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="13" BorderThickness="0,0,0,0.5" BorderBrush="LightGray" />
+            <!--vertical separation lines-->
+            <Border Grid.Row="3" Grid.Column="3" BorderThickness="0,0,0.5,0" BorderBrush="LightGray" />
+            <Border Grid.Row="3" Grid.Column="8" BorderThickness="0,0,0.5,0" BorderBrush="LightGray" />
+            <Border Grid.Row="6" Grid.Column="3" BorderThickness="0,0,0.5,0" BorderBrush="LightGray" />
+            <Border Grid.Row="6" Grid.Column="8" BorderThickness="0,0,0.5,0" BorderBrush="LightGray" />
+            
+            <!--toolbar-->
+            <Grid Grid.Row="0" Grid.Column="13" Grid.ColumnSpan="14">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition Width="30" />
+                    <ColumnDefinition Width="5" />
+                    <ColumnDefinition Width="30" />
+                    <ColumnDefinition Width="5" />
+                    <ColumnDefinition Width="30" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="5" />
+                    <ColumnDefinition Width="30" />
+                    <ColumnDefinition Width="5" />
+                </Grid.ColumnDefinitions>
+                <!--edit doc-->
+                <Button Grid.Column="1" Style="{StaticResource ButtonStyleForEditDoc}" Click="BtnEditDoc_Click" />
+                <!--save-->
+                <Button Grid.Column="3" Style="{StaticResource ButtonStyleForDocSave}" Click="BtnSaveDoc_Click" />
+                <!--add files-->
+                <Button Grid.Column="5" Style="{StaticResource ButtonStyleForDocAttach}" Click="BtnAddAttachFiles_Click" />
+                <!--attached file count-->
+                <TextBlock Grid.Column="6" VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="{StaticResource DefaultFontSizeSmall}"
+                           Text="{Binding Path=AttachFileNames,Converter={StaticResource FileListToFileCountConverter},UpdateSourceTrigger=PropertyChanged}"
+                           x:Name="tbxFileCount"/>
+                <!--Export to txt-->
+                <Button Grid.Column="8" Style="{DynamicResource ButtonStyleForExport2Txt}" Click="BtnExport2Txt_Click" />
+            </Grid>
+        </Grid>
+
+        <!--doc text editting area-->
+        <ScrollViewer Grid.Row="2" Grid.Column="2" VerticalScrollBarVisibility="Auto">
+            <TextBox Style="{StaticResource TextBoxStyleforDoc}" Text="{Binding Path=DocText,UpdateSourceTrigger=PropertyChanged}" IsReadOnly="True" TextChanged="TbxDocText_TextChanged" x:Name="tbxDocText" />
+        </ScrollViewer>
+    </Grid>
+</Page>

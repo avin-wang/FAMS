@@ -1,0 +1,60 @@
+﻿<MyNamespace:PopupWindowBase x:Class="FAMS.Views.Home.OptionWin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FAMS.Views.Home"
+        xmlns:MyNamespace="clr-namespace:FAMS.Commons.BaseClasses"
+        xmlns:services="clr-namespace:FAMS.Services"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        LogoPath="\Icons\options_32px.png" FontSize="15"
+        Title="Options" SizeToContent="Manual"
+        Height="400" Width="600">
+    <MyNamespace:PopupWindowBase.Resources>
+        <!--Bool to visibility converter-->
+        <services:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter" />
+    </MyNamespace:PopupWindowBase.Resources>
+
+    <!--上面LogoPath用反斜杠，是为了解决弹窗找不到图标资源奔溃的权益办法，该附加属性用处见PopupWindowBase类-->
+    <!--中PopupWindowBase_Loaded方法里的Define logo那一步，那里的绝对路径做法也是权益之策，具体绝对路径下的-->
+    <!--相应图标文件并不是代码编译生成的，而是人为拷到那里的，不可删除！任何时候，该图标文件都应随程序一起拷贝-->
+    <!--并放在exe所在目录下的Icons文件夹内-->
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <!--Navigation-->
+        <Border>
+            <StackPanel Margin="0,10">
+                <RadioButton Content="General" x:Name="rbGeneral" IsChecked="True"
+                             Style="{DynamicResource RadioButtonStyleForExclusiveSelection}"/>
+                <RadioButton Content="Advanced" Style="{DynamicResource RadioButtonStyleForExclusiveSelection}"/>
+                <RadioButton Content="Themes" Style="{DynamicResource RadioButtonStyleForExclusiveSelection}"/>
+            </StackPanel>
+        </Border>
+
+        <!--Options-->
+        <Border Grid.Column="1" Background="White">
+            <!--General-->
+            <StackPanel Margin="10" x:Name="spGeneral"
+                        Visibility="{Binding IsChecked,ElementName=rbGeneral,Converter={StaticResource BoolToVisibilityConverter}}">
+                <!--Auto runs-->
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="26" />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <!--<CheckBox Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center"
+                              IsChecked="{Binding AutoRuns}" x:Name="cbxAutoRuns" />-->
+                    <CheckBox Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" x:Name="cbxAutoRuns" />
+                    <TextBlock Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Left"
+                               Text="Auto runs when Windows boosts up" FontSize="{StaticResource FontSizeNormal}" />
+                </Grid>
+            </StackPanel>
+        </Border>
+    </Grid>
+</MyNamespace:PopupWindowBase>

@@ -1,0 +1,1576 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!--Style of Button for login-->
+    <Style x:Key="ButtonStyleForLogin" TargetType="{x:Type Button}">
+        <!--size-->
+        <Setter Property="Width" Value="32"/>
+        <Setter Property="Height" Value="32"/>
+        <!--Alignment-->
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="ToolTip">
+            <Setter.Value>
+                <ToolTip Content="登录" Style="{DynamicResource ToolTipStyle}"/>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="ContentContainer">
+                        <TextBlock Text="{TemplateBinding Content}" TextAlignment="Center"
+                                       VerticalAlignment="Center" HorizontalAlignment="Center">
+                        </TextBlock>
+                        <Border.Background>
+                            <ImageBrush Opacity="0.5" ImageSource="/Resources/Icons/login_48px.png"/>
+                        </Border.Background>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="ContentContainer">
+                                <Setter.Value>
+                                    <ImageBrush Opacity="0.7" ImageSource="/Resources/Icons/login_48px.png"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="ContentContainer">
+                                <Setter.Value>
+                                    <ImageBrush Opacity="0.7" ImageSource="/Resources/Icons/login_48px.png"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--Style of Button for login cancel-->
+    <Style x:Key="ButtonStyleForLoginCancel" TargetType="{x:Type Button}">
+        <!--size-->
+        <Setter Property="Width" Value="32"/>
+        <Setter Property="Height" Value="32"/>
+        <!--Alignment-->
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="ToolTip">
+            <Setter.Value>
+                <ToolTip Content="退出" Style="{DynamicResource ToolTipStyle}"/>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="ContentContainer">
+                        <TextBlock Text="{TemplateBinding Content}" TextAlignment="Center"
+                                       VerticalAlignment="Center" HorizontalAlignment="Center">
+                        </TextBlock>
+                        <Border.Background>
+                            <ImageBrush Opacity="0.5" ImageSource="/Resources/Icons/cancel_48px.png"/>
+                        </Border.Background>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="ContentContainer">
+                                <Setter.Value>
+                                    <ImageBrush Opacity="0.7" ImageSource="/Resources/Icons/cancel_48px.png"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="ContentContainer">
+                                <Setter.Value>
+                                    <ImageBrush Opacity="0.7" ImageSource="/Resources/Icons/cancel_48px.png"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--Style of Button for search box-->
+    <Style x:Key="ButtonStyleForSearchBox" TargetType="{x:Type Button}">
+        <!--Shape of cursor-->
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="ToolTip">
+            <Setter.Value>
+                <ToolTip Content="搜索" Style="{DynamicResource ToolTipStyle}"/>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Image x:Name="icon" Height="28" Width="28" Opacity="0.8" Source="/Resources/Icons/search_48px.png"/>
+                    <ControlTemplate.Triggers>
+                        <EventTrigger RoutedEvent="MouseEnter">
+                            <BeginStoryboard>
+                                <Storyboard>
+                                    <DoubleAnimation Storyboard.TargetName="icon" Storyboard.TargetProperty="Width" To="30" Duration="0:0:0.15"/>
+                                    <DoubleAnimation Storyboard.TargetName="icon" Storyboard.TargetProperty="Height" To="30" Duration="0:0:0.15"/>
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger>
+                        <EventTrigger RoutedEvent="MouseLeave">
+                            <BeginStoryboard>
+                                <Storyboard>
+                                    <DoubleAnimation Storyboard.TargetName="icon" Storyboard.TargetProperty="Width" To="28" Duration="0:0:0.15"/>
+                                    <DoubleAnimation Storyboard.TargetName="icon" Storyboard.TargetProperty="Height" To="28" Duration="0:0:0.15"/>
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--Style of Button for viewing sth in Explorer-->
+    <Style x:Key="ButtonStyleForViewing" TargetType="{x:Type Button}">
+        <!--Size-->
+        <Setter Property="Width" Value="24" />
+        <!--Border-->
+        <Setter Property="BorderThickness" Value="0" />
+        <!--Shape of cursor-->
+        <Setter Property="Cursor" Value="Hand"/>
+        <!--Alignment-->
+        <Setter Property="HorizontalAlignment" Value="Left" />
+        <Setter Property="ToolTip">
+            <Setter.Value>
+                <ToolTip Content="在资源管理器中查看" Style="{DynamicResource ToolTipStyle}"/>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Image x:Name="icon" Height="20" Width="20" Opacity="0.7" Source="/Resources/Icons/view_32px.png"/>
+                    <ControlTemplate.Triggers>
+                        <EventTrigger RoutedEvent="MouseEnter">
+                            <BeginStoryboard>
+                                <Storyboard>
+                                    <DoubleAnimation Storyboard.TargetName="icon" Storyboard.TargetProperty="Width" To="22" Duration="0:0:0.15"/>
+                                    <DoubleAnimation Storyboard.TargetName="icon" Storyboard.TargetProperty="Height" To="22" Duration="0:0:0.15"/>
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger>
+                        <EventTrigger RoutedEvent="MouseLeave">
+                            <BeginStoryboard>
+                                <Storyboard>
+                                    <DoubleAnimation Storyboard.TargetName="icon" Storyboard.TargetProperty="Width" To="20" Duration="0:0:0.15"/>
+                                    <DoubleAnimation Storyboard.TargetName="icon" Storyboard.TargetProperty="Height" To="20" Duration="0:0:0.15"/>
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter TargetName="icon" Property="Opacity" Value="0.3" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--Style of Button for deleting attached files-->
+    <Style x:Key="ButtonStyleForDeletingAttachedFiles" TargetType="{x:Type Button}">
+        <!--Size-->
+        <Setter Property="Width" Value="24" />
+        <!--Border-->
+        <Setter Property="BorderThickness" Value="0" />
+        <!--Shape of cursor-->
+        <Setter Property="Cursor" Value="Hand"/>
+        <!--Alignment-->
+        <Setter Property="HorizontalAlignment" Value="Left" />
+        <Setter Property="ToolTip">
+            <Setter.Value>
+                <ToolTip Content="删除" Style="{DynamicResource ToolTipStyle}"/>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Image x:Name="icon" Height="17" Width="17" Opacity="0.5" Source="/Resources/Icons/delete_32px.png"/>
+                    <ControlTemplate.Triggers>
+                        <EventTrigger RoutedEvent="MouseEnter">
+                            <BeginStoryboard>
+                                <Storyboard>
+                                    <DoubleAnimation Storyboard.TargetName="icon" Storyboard.TargetProperty="Width" To="19" Duration="0:0:0.15"/>
+                                    <DoubleAnimation Storyboard.TargetName="icon" Storyboard.TargetProperty="Height" To="19" Duration="0:0:0.15"/>
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger>
+                        <EventTrigger RoutedEvent="MouseLeave">
+                            <BeginStoryboard>
+                                <Storyboard>
+                                    <DoubleAnimation Storyboard.TargetName="icon" Storyboard.TargetProperty="Width" To="17" Duration="0:0:0.15"/>
+                                    <DoubleAnimation Storyboard.TargetName="icon" Storyboard.TargetProperty="Height" To="17" Duration="0:0:0.15"/>
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter TargetName="icon" Property="Opacity" Value="0.2" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--Style of Button for attachment-->
+    <Style x:Key="ButtonStyleForAttachment" TargetType="{x:Type Button}">
+        <!--Size-->
+        <Setter Property="Width" Value="24" />
+        <!--Border-->
+        <Setter Property="BorderThickness" Value="0" />
+        <!--Shape of cursor-->
+        <Setter Property="Cursor" Value="Hand"/>
+        <!--Alignment-->
+        <Setter Property="HorizontalAlignment" Value="Left" />
+        <Setter Property="ToolTip">
+            <Setter.Value>
+                <ToolTip Content="添加附件" Style="{DynamicResource ToolTipStyle}"/>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Image x:Name="icon" Height="20" Width="20" Source="/Resources/Icons/attachment_32px.png"/>
+                    <ControlTemplate.Triggers>
+                        <EventTrigger RoutedEvent="MouseEnter">
+                            <BeginStoryboard>
+                                <Storyboard>
+                                    <DoubleAnimation Storyboard.TargetName="icon" Storyboard.TargetProperty="Width" To="23" Duration="0:0:0.15"/>
+                                    <DoubleAnimation Storyboard.TargetName="icon" Storyboard.TargetProperty="Height" To="23" Duration="0:0:0.15"/>
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger>
+                        <EventTrigger RoutedEvent="MouseLeave">
+                            <BeginStoryboard>
+                                <Storyboard>
+                                    <DoubleAnimation Storyboard.TargetName="icon" Storyboard.TargetProperty="Width" To="20" Duration="0:0:0.15"/>
+                                    <DoubleAnimation Storyboard.TargetName="icon" Storyboard.TargetProperty="Height" To="20" Duration="0:0:0.15"/>
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--Style of Button for advanced search-->
+    <Style x:Key="ButtonStyleForAdvancedSearch" TargetType="{x:Type Button}">
+        <!--size-->
+        <Setter Property="Width" Value="22"/>
+        <Setter Property="Height" Value="22"/>
+        <!--Alignment-->
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="ToolTip">
+            <Setter.Value>
+                <ToolTip Content="高级搜索" Style="{DynamicResource ToolTipStyle}"/>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="ContentContainer">
+                        <TextBlock Text="{TemplateBinding Content}" TextAlignment="Center"
+                                       VerticalAlignment="Center" HorizontalAlignment="Center">
+                        </TextBlock>
+                        <Border.Background>
+                            <ImageBrush Opacity="0.5" ImageSource="/Resources/Icons/advanced_search_32px.png"/>
+                        </Border.Background>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="ContentContainer">
+                                <Setter.Value>
+                                    <ImageBrush Opacity="0.7" ImageSource="/Resources/Icons/advanced_search_32px.png"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="ContentContainer">
+                                <Setter.Value>
+                                    <ImageBrush Opacity="0.7" ImageSource="/Resources/Icons/advanced_search_32px.png"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--Style of Button for searching-->
+    <Style x:Key="ButtonStyleForSearching" TargetType="{x:Type Button}">
+        <!--size-->
+        <Setter Property="Width" Value="36"/>
+        <Setter Property="Height" Value="36"/>
+        <!--Alignment-->
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="ToolTip">
+            <Setter.Value>
+                <ToolTip Content="搜索" Style="{DynamicResource ToolTipStyle}"/>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="ContentContainer">
+                        <TextBlock Text="{TemplateBinding Content}" TextAlignment="Center"
+                                       VerticalAlignment="Center" HorizontalAlignment="Center">
+                        </TextBlock>
+                        <Border.Background>
+                            <ImageBrush Opacity="0.7" ImageSource="/Resources/Icons/search_48px.png"/>
+                        </Border.Background>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="ContentContainer">
+                                <Setter.Value>
+                                    <ImageBrush Opacity="1.0" ImageSource="/Resources/Icons/search_48px.png"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="ContentContainer">
+                                <Setter.Value>
+                                    <ImageBrush Opacity="1.0" ImageSource="/Resources/Icons/search_48px.png"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    
+    <!--Style of Button for editing-->
+    <Style x:Key="ButtonStyleForEditing" TargetType="{x:Type Button}">
+        <!--size-->
+        <Setter Property="Width" Value="18"/>
+        <Setter Property="Height" Value="18"/>
+        <!--Alignment-->
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="ToolTip">
+            <Setter.Value>
+                <ToolTip Content="修改" Style="{DynamicResource ToolTipStyle}"/>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="ContentContainer">
+                        <TextBlock Text="{TemplateBinding Content}" TextAlignment="Center"
+                                       VerticalAlignment="Center" HorizontalAlignment="Center">
+                        </TextBlock>
+                        <Border.Background>
+                            <ImageBrush Opacity="0.5" ImageSource="/Resources/Icons/edit_32px.png"/>
+                        </Border.Background>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="ContentContainer">
+                                <Setter.Value>
+                                    <ImageBrush Opacity="0.7" ImageSource="/Resources/Icons/edit_32px.png"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="ContentContainer">
+                                <Setter.Value>
+                                    <ImageBrush Opacity="0.7" ImageSource="/Resources/Icons/edit_32px.png"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--Style of Button for editing (small)-->
+    <Style x:Key="ButtonStyleForEditingSmall" TargetType="{x:Type Button}">
+        <!--size-->
+        <Setter Property="Width" Value="15"/>
+        <Setter Property="Height" Value="15"/>
+        <!--Alignment-->
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="ToolTip">
+            <Setter.Value>
+                <ToolTip Content="Edit" Style="{DynamicResource ToolTipStyle}"/>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="ContentContainer">
+                        <TextBlock Text="{TemplateBinding Content}" TextAlignment="Center"
+                                       VerticalAlignment="Center" HorizontalAlignment="Center">
+                        </TextBlock>
+                        <Border.Background>
+                            <ImageBrush Opacity="0.5" ImageSource="/Resources/Icons/edit_32px.png"/>
+                        </Border.Background>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="ContentContainer">
+                                <Setter.Value>
+                                    <ImageBrush Opacity="0.7" ImageSource="/Resources/Icons/edit_32px.png"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="ContentContainer">
+                                <Setter.Value>
+                                    <ImageBrush Opacity="0.7" ImageSource="/Resources/Icons/edit_32px.png"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--Style of Button for saving-->
+    <Style x:Key="ButtonStyleForSaving" TargetType="{x:Type Button}">
+        <!--size-->
+        <Setter Property="Width" Value="18"/>
+        <Setter Property="Height" Value="18"/>
+        <!--Alignment-->
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="ToolTip">
+            <Setter.Value>
+                <ToolTip Content="保存" Style="{DynamicResource ToolTipStyle}"/>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="ContentContainer">
+                        <TextBlock Text="{TemplateBinding Content}" TextAlignment="Center"
+                                       VerticalAlignment="Center" HorizontalAlignment="Center">
+                        </TextBlock>
+                        <Border.Background>
+                            <ImageBrush Opacity="0.5" ImageSource="/Resources/Icons/save_32px.png"/>
+                        </Border.Background>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="ContentContainer">
+                                <Setter.Value>
+                                    <ImageBrush Opacity="0.6" ImageSource="/Resources/Icons/save_32px.png"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="ContentContainer">
+                                <Setter.Value>
+                                    <ImageBrush Opacity="0.6" ImageSource="/Resources/Icons/save_32px.png"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--Style of Button for saving editting-->
+    <Style x:Key="ButtonStyleForSavingEditting" TargetType="{x:Type Button}">
+        <!--size-->
+        <Setter Property="Width" Value="20"/>
+        <Setter Property="Height" Value="20"/>
+        <!--Alignment-->
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="ToolTip">
+            <Setter.Value>
+                <ToolTip Content="保存" Style="{DynamicResource ToolTipStyle}"/>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="ContentContainer">
+                        <TextBlock Text="{TemplateBinding Content}" TextAlignment="Center"
+                                       VerticalAlignment="Center" HorizontalAlignment="Center">
+                        </TextBlock>
+                        <Border.Background>
+                            <ImageBrush Opacity="0.5" ImageSource="/Resources/Icons/save_edit_32px.png"/>
+                        </Border.Background>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="ContentContainer">
+                                <Setter.Value>
+                                    <ImageBrush Opacity="0.7" ImageSource="/Resources/Icons/save_edit_32px.png"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="ContentContainer">
+                                <Setter.Value>
+                                    <ImageBrush Opacity="0.7" ImageSource="/Resources/Icons/save_edit_32px.png"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--Style of Button for saving editting (small)-->
+    <Style x:Key="ButtonStyleForSavingEdittingSmall" TargetType="{x:Type Button}">
+        <!--size-->
+        <Setter Property="Width" Value="15"/>
+        <Setter Property="Height" Value="15"/>
+        <!--Alignment-->
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="ToolTip">
+            <Setter.Value>
+                <ToolTip Content="保存" Style="{DynamicResource ToolTipStyle}"/>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="ContentContainer">
+                        <TextBlock Text="{TemplateBinding Content}" TextAlignment="Center"
+                                       VerticalAlignment="Center" HorizontalAlignment="Center">
+                        </TextBlock>
+                        <Border.Background>
+                            <ImageBrush Opacity="0.5" ImageSource="/Resources/Icons/save_edit_32px.png"/>
+                        </Border.Background>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="ContentContainer">
+                                <Setter.Value>
+                                    <ImageBrush Opacity="0.7" ImageSource="/Resources/Icons/save_edit_32px.png"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="ContentContainer">
+                                <Setter.Value>
+                                    <ImageBrush Opacity="0.7" ImageSource="/Resources/Icons/save_edit_32px.png"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    
+    <!--Style of Button for saving editting (large)-->
+    <Style x:Key="ButtonStyleForSavingEdittingLarge" TargetType="{x:Type Button}">
+        <!--size-->
+        <Setter Property="Width" Value="28"/>
+        <Setter Property="Height" Value="28"/>
+        <!--Alignment-->
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="ToolTip">
+            <Setter.Value>
+                <ToolTip Content="保存" Style="{DynamicResource ToolTipStyle}"/>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="ContentContainer">
+                        <TextBlock Text="{TemplateBinding Content}" TextAlignment="Center"
+                                       VerticalAlignment="Center" HorizontalAlignment="Center">
+                        </TextBlock>
+                        <Border.Background>
+                            <ImageBrush Opacity="0.5" ImageSource="/Resources/Icons/save_edit_32px.png"/>
+                        </Border.Background>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="ContentContainer">
+                                <Setter.Value>
+                                    <ImageBrush Opacity="0.7" ImageSource="/Resources/Icons/save_edit_32px.png"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="ContentContainer">
+                                <Setter.Value>
+                                    <ImageBrush Opacity="0.7" ImageSource="/Resources/Icons/save_edit_32px.png"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--Style of Button for canceling editting-->
+    <Style x:Key="ButtonStyleForCancelingEditting" TargetType="{x:Type Button}">
+        <!--size-->
+        <Setter Property="Width" Value="24"/>
+        <Setter Property="Height" Value="24"/>
+        <!--Alignment-->
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="ToolTip">
+            <Setter.Value>
+                <ToolTip Content="取消" Style="{DynamicResource ToolTipStyle}"/>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="ContentContainer">
+                        <TextBlock Text="{TemplateBinding Content}" TextAlignment="Center"
+                                       VerticalAlignment="Center" HorizontalAlignment="Center">
+                        </TextBlock>
+                        <Border.Background>
+                            <ImageBrush Opacity="0.5" ImageSource="/Resources/Icons/cancel_48px.png"/>
+                        </Border.Background>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="ContentContainer">
+                                <Setter.Value>
+                                    <ImageBrush Opacity="0.7" ImageSource="/Resources/Icons/cancel_48px.png"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="ContentContainer">
+                                <Setter.Value>
+                                    <ImageBrush Opacity="0.7" ImageSource="/Resources/Icons/cancel_48px.png"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    
+    <!--Style of Button for canceling editting (large)-->
+    <Style x:Key="ButtonStyleForCancelingEdittingLarge" TargetType="{x:Type Button}">
+        <!--size-->
+        <Setter Property="Width" Value="32"/>
+        <Setter Property="Height" Value="32"/>
+        <!--Alignment-->
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="ToolTip">
+            <Setter.Value>
+                <ToolTip Content="取消" Style="{DynamicResource ToolTipStyle}"/>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="ContentContainer">
+                        <TextBlock Text="{TemplateBinding Content}" TextAlignment="Center"
+                                       VerticalAlignment="Center" HorizontalAlignment="Center">
+                        </TextBlock>
+                        <Border.Background>
+                            <ImageBrush Opacity="0.5" ImageSource="/Resources/Icons/cancel_48px.png"/>
+                        </Border.Background>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="ContentContainer">
+                                <Setter.Value>
+                                    <ImageBrush Opacity="0.7" ImageSource="/Resources/Icons/cancel_48px.png"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="ContentContainer">
+                                <Setter.Value>
+                                    <ImageBrush Opacity="0.7" ImageSource="/Resources/Icons/cancel_48px.png"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--Style of Button for deleting-->
+    <Style x:Key="ButtonStyleForDeleting" TargetType="{x:Type Button}">
+        <!--size-->
+        <Setter Property="Width" Value="18"/>
+        <Setter Property="Height" Value="20"/>
+        <!--Alignment-->
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="ToolTip">
+            <Setter.Value>
+                <ToolTip Content="删除" Style="{DynamicResource ToolTipStyle}"/>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="ContentContainer">
+                        <TextBlock Text="{TemplateBinding Content}" TextAlignment="Center"
+                                       VerticalAlignment="Center" HorizontalAlignment="Center">
+                        </TextBlock>
+                        <Border.Background>
+                            <ImageBrush Opacity="0.5" ImageSource="/Resources/Icons/delete_32px.png"/>
+                        </Border.Background>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="ContentContainer">
+                                <Setter.Value>
+                                    <ImageBrush Opacity="0.7" ImageSource="/Resources/Icons/delete_32px.png"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="ContentContainer">
+                                <Setter.Value>
+                                    <ImageBrush Opacity="0.7" ImageSource="/Resources/Icons/delete_32px.png"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--Style of Button for deleting words-->
+    <Style x:Key="ButtonStyleForDeletingWords" TargetType="{x:Type Button}">
+        <!--size-->
+        <Setter Property="Width" Value="25"/>
+        <Setter Property="Height" Value="17"/>
+        <!--Alignment-->
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="ToolTip">
+            <Setter.Value>
+                <ToolTip Content="删除" Style="{DynamicResource ToolTipStyle}"/>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="ContentContainer">
+                        <TextBlock Text="{TemplateBinding Content}" TextAlignment="Center"
+                                       VerticalAlignment="Center" HorizontalAlignment="Center">
+                        </TextBlock>
+                        <Border.Background>
+                            <ImageBrush Opacity="0.5" ImageSource="/Resources/Icons/delete_words_32px.png"/>
+                        </Border.Background>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="ContentContainer">
+                                <Setter.Value>
+                                    <ImageBrush Opacity="0.7" ImageSource="/Resources/Icons/delete_words_32px.png"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="ContentContainer">
+                                <Setter.Value>
+                                    <ImageBrush Opacity="0.7" ImageSource="/Resources/Icons/delete_words_32px.png"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--Style of Button for database merging-->
+    <Style x:Key="ButtonStyleForMerging" TargetType="{x:Type Button}">
+        <!--size-->
+        <Setter Property="Width" Value="20"/>
+        <Setter Property="Height" Value="20"/>
+        <!--Alignment-->
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="ToolTip">
+            <Setter.Value>
+                <ToolTip Content="并入数据库" Style="{DynamicResource ToolTipStyle}"/>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="ContentContainer">
+                        <TextBlock Text="{TemplateBinding Content}" TextAlignment="Center"
+                                       VerticalAlignment="Center" HorizontalAlignment="Center">
+                        </TextBlock>
+                        <Border.Background>
+                            <ImageBrush Opacity="0.5" ImageSource="/Resources/Icons/merge_into_32px.png"/>
+                        </Border.Background>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="ContentContainer">
+                                <Setter.Value>
+                                    <ImageBrush Opacity="0.7" ImageSource="/Resources/Icons/merge_into_32px.png"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="ContentContainer">
+                                <Setter.Value>
+                                    <ImageBrush Opacity="0.7" ImageSource="/Resources/Icons/merge_into_32px.png"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--Style of Button for exporting-->
+    <Style x:Key="ButtonStyleForExporting" TargetType="{x:Type Button}">
+        <!--size-->
+        <Setter Property="Width" Value="23"/>
+        <Setter Property="Height" Value="23"/>
+        <!--Alignment-->
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="ToolTip">
+            <Setter.Value>
+                <ToolTip Content="导出" Style="{DynamicResource ToolTipStyle}"/>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="ContentContainer">
+                        <TextBlock Text="{TemplateBinding Content}" TextAlignment="Center"
+                                       VerticalAlignment="Center" HorizontalAlignment="Center">
+                        </TextBlock>
+                        <Border.Background>
+                            <ImageBrush Opacity="0.6" ImageSource="/Resources/Icons/export_32px.png"/>
+                        </Border.Background>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="ContentContainer">
+                                <Setter.Value>
+                                    <ImageBrush Opacity="0.8" ImageSource="/Resources/Icons/export_32px.png"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="ContentContainer">
+                                <Setter.Value>
+                                    <ImageBrush Opacity="0.8" ImageSource="/Resources/Icons/export_32px.png"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--Style of Button for exporting to txt file-->
+    <Style x:Key="ButtonStyleForExport2Txt" TargetType="{x:Type Button}">
+        <!--size-->
+        <Setter Property="Width" Value="17"/>
+        <Setter Property="Height" Value="19"/>
+        <!--Alignment-->
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="ToolTip">
+            <Setter.Value>
+                <ToolTip Content="导出到txt文件" Style="{DynamicResource ToolTipStyle}"/>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="ContentContainer">
+                        <TextBlock Text="{TemplateBinding Content}" TextAlignment="Center"
+                                       VerticalAlignment="Center" HorizontalAlignment="Center">
+                        </TextBlock>
+                        <Border.Background>
+                            <ImageBrush Opacity="0.6" ImageSource="/Resources/Icons/txt_file_48px.png"/>
+                        </Border.Background>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="ContentContainer">
+                                <Setter.Value>
+                                    <ImageBrush Opacity="0.8" ImageSource="/Resources/Icons/txt_file_48px.png"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="ContentContainer">
+                                <Setter.Value>
+                                    <ImageBrush Opacity="0.8" ImageSource="/Resources/Icons/txt_file_48px.png"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--Style of Button for adding a new account-->
+    <Style x:Key="ButtonStyleForAddingNewDatabase" TargetType="{x:Type Button}">
+        <!--size-->
+        <Setter Property="Width" Value="20"/>
+        <Setter Property="Height" Value="21"/>
+        <!--Alignment-->
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="ToolTip">
+            <Setter.Value>
+                <ToolTip Content="新建数据库" Style="{DynamicResource ToolTipStyle}"/>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="ContentContainer">
+                        <TextBlock Text="{TemplateBinding Content}" TextAlignment="Center"
+                                       VerticalAlignment="Center" HorizontalAlignment="Center">
+                        </TextBlock>
+                        <Border.Background>
+                            <ImageBrush Opacity="0.5" ImageSource="/Resources/Icons/database_48px.png"/>
+                        </Border.Background>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="ContentContainer">
+                                <Setter.Value>
+                                    <ImageBrush Opacity="0.7" ImageSource="/Resources/Icons/database_48px.png"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="ContentContainer">
+                                <Setter.Value>
+                                    <ImageBrush Opacity="0.7" ImageSource="/Resources/Icons/database_48px.png"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--Style of Button for adding a new account-->
+    <Style x:Key="ButtonStyleForAddingNewAccount" TargetType="{x:Type Button}">
+        <!--size-->
+        <Setter Property="Width" Value="20"/>
+        <Setter Property="Height" Value="20"/>
+        <!--Alignment-->
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="ToolTip">
+            <Setter.Value>
+                <ToolTip Content="新建账号" Style="{DynamicResource ToolTipStyle}"/>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="ContentContainer">
+                        <TextBlock Text="{TemplateBinding Content}" TextAlignment="Center"
+                                       VerticalAlignment="Center" HorizontalAlignment="Center">
+                        </TextBlock>
+                        <Border.Background>
+                            <ImageBrush Opacity="0.5" ImageSource="/Resources/Icons/add_new_account_32px.png"/>
+                        </Border.Background>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="ContentContainer">
+                                <Setter.Value>
+                                    <ImageBrush Opacity="0.7" ImageSource="/Resources/Icons/add_new_account_32px.png"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="ContentContainer">
+                                <Setter.Value>
+                                    <ImageBrush Opacity="0.7" ImageSource="/Resources/Icons/add_new_account_32px.png"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--Style of Button for adding words-->
+    <Style x:Key="ButtonStyleForAddingWords" TargetType="{x:Type Button}">
+        <!--size-->
+        <Setter Property="Width" Value="17"/>
+        <Setter Property="Height" Value="17"/>
+        <!--Alignment-->
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="ToolTip">
+            <Setter.Value>
+                <ToolTip Content="添加" Style="{DynamicResource ToolTipStyle}"/>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="ContentContainer">
+                        <TextBlock Text="{TemplateBinding Content}" TextAlignment="Center"
+                                       VerticalAlignment="Center" HorizontalAlignment="Center">
+                        </TextBlock>
+                        <Border.Background>
+                            <ImageBrush Opacity="0.5" ImageSource="/Resources/Icons/add_words_32px.png"/>
+                        </Border.Background>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="ContentContainer">
+                                <Setter.Value>
+                                    <ImageBrush Opacity="0.7" ImageSource="/Resources/Icons/add_words_32px.png"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="ContentContainer">
+                                <Setter.Value>
+                                    <ImageBrush Opacity="0.7" ImageSource="/Resources/Icons/add_words_32px.png"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--Style of Button with round corner-->
+    <Style x:Key="ButtonStyleWithRoundCorner" TargetType="{x:Type Button}">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="PART_Background" BorderThickness="0" BorderBrush="{TemplateBinding Control.BorderBrush}" CornerRadius="13">
+                        <Border.Background>
+                            <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                                <GradientStop Color="White" Offset="0.0" />
+                                <GradientStop Color="Silver" Offset="0.5" />
+                                <GradientStop Color="White" Offset="0.0" />
+                            </LinearGradientBrush>
+                        </Border.Background>
+                        <ContentPresenter Content="{TemplateBinding ContentControl.Content}" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="UIElement.IsMouseOver" Value="True">
+                            <Setter TargetName="PART_Background" Property="Border.Background">
+                                <Setter.Value>
+                                    <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                                        <GradientStop Color="Silver" Offset="0.0" />
+                                        <GradientStop Color="White" Offset="0.5" />
+                                        <GradientStop Color="Silver" Offset="0.0" />
+                                    </LinearGradientBrush>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                        <Trigger Property="ButtonBase.IsPressed" Value="True">
+                            <Setter Property="UIElement.Effect">
+                                <Setter.Value>
+                                    <DropShadowEffect Color="Gray" Direction="-45" BlurRadius="1" ShadowDepth="1" />
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--Style of Button with round corner (large round corner)-->
+    <Style x:Key="ButtonStyleWithRoundCornerLarge" TargetType="{x:Type Button}">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="PART_Background" BorderThickness="0" BorderBrush="{TemplateBinding Control.BorderBrush}" CornerRadius="15">
+                        <Border.Background>
+                            <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                                <GradientStop Color="White" Offset="0.0" />
+                                <GradientStop Color="Silver" Offset="0.5" />
+                                <GradientStop Color="White" Offset="0.0" />
+                            </LinearGradientBrush>
+                        </Border.Background>
+                        <ContentPresenter Content="{TemplateBinding ContentControl.Content}" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="UIElement.IsMouseOver" Value="True">
+                            <Setter TargetName="PART_Background" Property="Border.Background">
+                                <Setter.Value>
+                                    <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                                        <GradientStop Color="Silver" Offset="0.0" />
+                                        <GradientStop Color="White" Offset="0.5" />
+                                        <GradientStop Color="Silver" Offset="0.0" />
+                                    </LinearGradientBrush>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                        <Trigger Property="ButtonBase.IsPressed" Value="True">
+                            <Setter Property="UIElement.Effect">
+                                <Setter.Value>
+                                    <DropShadowEffect Color="Gray" Direction="-45" BlurRadius="1" ShadowDepth="1" />
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--Style of Button for unlocker-->
+    <Style x:Key="ButtonStyleForUnlocker" TargetType="{x:Type Button}">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="PART_Background" BorderThickness="0.5" BorderBrush="{TemplateBinding Control.BorderBrush}" CornerRadius="0,13,13,0">
+                        <Border.Background>
+                            <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                                <GradientStop Color="White" Offset="0.0" />
+                                <GradientStop Color="Silver" Offset="0.5" />
+                                <GradientStop Color="White" Offset="0.0" />
+                            </LinearGradientBrush>
+                        </Border.Background>
+                        <ContentPresenter Content="{TemplateBinding ContentControl.Content}" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="UIElement.IsMouseOver" Value="True">
+                            <Setter TargetName="PART_Background" Property="Border.Background">
+                                <Setter.Value>
+                                    <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                                        <GradientStop Color="Silver" Offset="0.0" />
+                                        <GradientStop Color="White" Offset="0.5" />
+                                        <GradientStop Color="Silver" Offset="0.0" />
+                                    </LinearGradientBrush>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                        <Trigger Property="ButtonBase.IsPressed" Value="True">
+                            <Setter Property="UIElement.Effect">
+                                <Setter.Value>
+                                    <DropShadowEffect Color="Gray" Direction="-45" BlurRadius="1" ShadowDepth="1" />
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--Style of Button for doc searching-->
+    <Style x:Key="ButtonStyleForSearchDoc" TargetType="{x:Type Button}">
+        <!--Shape of cursor-->
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="ToolTip">
+            <Setter.Value>
+                <ToolTip Content="搜索" Style="{DynamicResource ToolTipStyle}"/>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Image x:Name="icon" Height="28" Width="28" Opacity="0.6" Source="/Resources/Icons/search_48px.png"/>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="icon" Property="Opacity" Value="0.8" />
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter TargetName="icon" Property="Opacity" Value="0.8" />
+                        </Trigger>
+                        <EventTrigger RoutedEvent="MouseEnter">
+                            <BeginStoryboard>
+                                <Storyboard>
+                                    <DoubleAnimation Storyboard.TargetName="icon" Storyboard.TargetProperty="Width" To="30" Duration="0:0:0.15"/>
+                                    <DoubleAnimation Storyboard.TargetName="icon" Storyboard.TargetProperty="Height" To="30" Duration="0:0:0.15"/>
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger>
+                        <EventTrigger RoutedEvent="MouseLeave">
+                            <BeginStoryboard>
+                                <Storyboard>
+                                    <DoubleAnimation Storyboard.TargetName="icon" Storyboard.TargetProperty="Width" To="28" Duration="0:0:0.15"/>
+                                    <DoubleAnimation Storyboard.TargetName="icon" Storyboard.TargetProperty="Height" To="28" Duration="0:0:0.15"/>
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--Style of Button for refresh doc title list-->
+    <Style x:Key="ButtonStyleForRefresh" TargetType="{x:Type Button}">
+        <!--size-->
+        <Setter Property="Width" Value="20"/>
+        <Setter Property="Height" Value="20"/>
+        <!--Alignment-->
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="ToolTip">
+            <Setter.Value>
+                <ToolTip Content="刷新" Style="{DynamicResource ToolTipStyle}"/>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="ContentContainer">
+                        <TextBlock Text="{TemplateBinding Content}" TextAlignment="Center"
+                                       VerticalAlignment="Center" HorizontalAlignment="Center">
+                        </TextBlock>
+                        <Border.Background>
+                            <ImageBrush Opacity="0.5" ImageSource="/Resources/Icons/refresh_48px.png"/>
+                        </Border.Background>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="ContentContainer">
+                                <Setter.Value>
+                                    <ImageBrush Opacity="0.7" ImageSource="/Resources/Icons/refresh_48px.png"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="ContentContainer">
+                                <Setter.Value>
+                                    <ImageBrush Opacity="0.7" ImageSource="/Resources/Icons/refresh_48px.png"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--Style of Button for refresh weather-->
+    <Style x:Key="ButtonStyleForRefreshWeather" TargetType="{x:Type Button}">
+        <!--size-->
+        <Setter Property="Width" Value="20"/>
+        <Setter Property="Height" Value="20"/>
+        <!--Alignment-->
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="ToolTip">
+            <Setter.Value>
+                <ToolTip Content="刷新" Style="{DynamicResource ToolTipStyle}"/>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="ContentContainer">
+                        <TextBlock Text="{TemplateBinding Content}" TextAlignment="Center"
+                                       VerticalAlignment="Center" HorizontalAlignment="Center">
+                        </TextBlock>
+                        <Border.Background>
+                            <ImageBrush Opacity="0.5" ImageSource="/Resources/Icons/refresh_weather_48px.png"/>
+                        </Border.Background>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="ContentContainer">
+                                <Setter.Value>
+                                    <ImageBrush Opacity="0.7" ImageSource="/Resources/Icons/refresh_weather_48px.png"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="ContentContainer">
+                                <Setter.Value>
+                                    <ImageBrush Opacity="0.7" ImageSource="/Resources/Icons/refresh_weather_48px.png"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--Style of Button for newing doc-->
+    <Style x:Key="ButtonStyleForNewDoc" TargetType="{x:Type Button}">
+        <!--size-->
+        <Setter Property="Width" Value="17"/>
+        <Setter Property="Height" Value="20"/>
+        <!--Alignment-->
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="ToolTip">
+            <Setter.Value>
+                <ToolTip Content="新建" Style="{DynamicResource ToolTipStyle}"/>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="ContentContainer">
+                        <TextBlock Text="{TemplateBinding Content}" TextAlignment="Center"
+                                       VerticalAlignment="Center" HorizontalAlignment="Center">
+                        </TextBlock>
+                        <Border.Background>
+                            <ImageBrush Opacity="0.5" ImageSource="/Resources/Icons/new_doc_48px.png"/>
+                        </Border.Background>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="ContentContainer">
+                                <Setter.Value>
+                                    <ImageBrush Opacity="0.7" ImageSource="/Resources/Icons/new_doc_48px.png"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="ContentContainer">
+                                <Setter.Value>
+                                    <ImageBrush Opacity="0.7" ImageSource="/Resources/Icons/new_doc_48px.png"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--Style of Button for editing doc-->
+    <Style x:Key="ButtonStyleForEditDoc" TargetType="{x:Type Button}">
+        <!--size-->
+        <Setter Property="Width" Value="19"/>
+        <Setter Property="Height" Value="19"/>
+        <!--Alignment-->
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="ToolTip">
+            <Setter.Value>
+                <ToolTip Content="编辑" Style="{DynamicResource ToolTipStyle}"/>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="ContentContainer">
+                        <TextBlock Text="{TemplateBinding Content}" TextAlignment="Center"
+                                       VerticalAlignment="Center" HorizontalAlignment="Center">
+                        </TextBlock>
+                        <Border.Background>
+                            <ImageBrush Opacity="0.7" ImageSource="/Resources/Icons/edit_doc_48px.png"/>
+                        </Border.Background>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="ContentContainer">
+                                <Setter.Value>
+                                    <ImageBrush Opacity="0.9" ImageSource="/Resources/Icons/edit_doc_48px.png"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="ContentContainer">
+                                <Setter.Value>
+                                    <ImageBrush Opacity="0.9" ImageSource="/Resources/Icons/edit_doc_48px.png"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--Style of Button for saving doc-->
+    <Style x:Key="ButtonStyleForDocSave" TargetType="{x:Type Button}">
+        <!--size-->
+        <Setter Property="Width" Value="16"/>
+        <Setter Property="Height" Value="19"/>
+        <!--Alignment-->
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="ToolTip">
+            <Setter.Value>
+                <ToolTip Content="保存" Style="{DynamicResource ToolTipStyle}"/>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="ContentContainer">
+                        <TextBlock Text="{TemplateBinding Content}" TextAlignment="Center"
+                                       VerticalAlignment="Center" HorizontalAlignment="Center">
+                        </TextBlock>
+                        <Border.Background>
+                            <ImageBrush Opacity="0.5" ImageSource="/Resources/Icons/save_edit_32px.png"/>
+                        </Border.Background>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="ContentContainer">
+                                <Setter.Value>
+                                    <ImageBrush Opacity="0.7" ImageSource="/Resources/Icons/save_edit_32px.png"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="ContentContainer">
+                                <Setter.Value>
+                                    <ImageBrush Opacity="0.7" ImageSource="/Resources/Icons/save_edit_32px.png"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--Style of Button for doc attached files-->
+    <Style x:Key="ButtonStyleForDocAttach" TargetType="{x:Type Button}">
+        <!--size-->
+        <Setter Property="Width" Value="18"/>
+        <Setter Property="Height" Value="21"/>
+        <!--Alignment-->
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="ToolTip">
+            <Setter.Value>
+                <ToolTip Content="添加附件" Style="{DynamicResource ToolTipStyle}"/>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="ContentContainer">
+                        <TextBlock Text="{TemplateBinding Content}" TextAlignment="Center"
+                                       VerticalAlignment="Center" HorizontalAlignment="Center">
+                        </TextBlock>
+                        <Border.Background>
+                            <ImageBrush Opacity="0.7" ImageSource="/Resources/Icons/attached_file_48px.png"/>
+                        </Border.Background>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="ContentContainer">
+                                <Setter.Value>
+                                    <ImageBrush Opacity="0.9" ImageSource="/Resources/Icons/attached_file_48px.png"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="ContentContainer">
+                                <Setter.Value>
+                                    <ImageBrush Opacity="0.9" ImageSource="/Resources/Icons/attached_file_48px.png"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--Style of Button for loan calc-->
+    <Style x:Key="ButtonStyleForLoanCalc" TargetType="{x:Type Button}">
+        <!--size-->
+        <Setter Property="Width" Value="50"/>
+        <Setter Property="Height" Value="50"/>
+        <!--Alignment-->
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="ToolTip">
+            <Setter.Value>
+                <ToolTip Content="Loan Calculator" Style="{DynamicResource ToolTipStyle}"/>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="ContentContainer">
+                        <TextBlock Text="{TemplateBinding Content}" TextAlignment="Center"
+                                       VerticalAlignment="Center" HorizontalAlignment="Center">
+                        </TextBlock>
+                        <Border.Background>
+                            <ImageBrush Opacity="0.8" ImageSource="/Resources/Icons/loan_calc_72px.png"/>
+                        </Border.Background>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="ContentContainer">
+                                <Setter.Value>
+                                    <ImageBrush Opacity="1.0" ImageSource="/Resources/Icons/loan_calc_72px.png"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="ContentContainer">
+                                <Setter.Value>
+                                    <ImageBrush Opacity="1.0" ImageSource="/Resources/Icons/loan_calc_72px.png"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+</ResourceDictionary>

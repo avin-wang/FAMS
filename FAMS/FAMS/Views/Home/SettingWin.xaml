@@ -1,0 +1,271 @@
+﻿<MyNamespace:PopupWindowBase x:Class="FAMS.Views.Home.SettingWin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FAMS.Views.Home"
+        xmlns:MyNamespace="clr-namespace:FAMS.Commons.BaseClasses"
+        xmlns:services="clr-namespace:FAMS.Services"
+        xmlns:attach="clr-namespace:FAMS.Commons.AttachedProperties"
+        mc:Ignorable="d" LogoPath="\res\icons\settings_32px.png"
+        WindowStartupLocation="CenterScreen" SizeToContent="Manual"
+        Title="设置" Height="600" Width="800">
+    <MyNamespace:PopupWindowBase.Resources>
+        <!--Bool to visibility converter-->
+        <services:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter" />
+
+        <!--ComboBox ItemContainerStyle with delete button-->
+        <Style x:Key="ComboBoxItemContainerStyleWithDeleteBtn" TargetType="{x:Type ComboBoxItem}">
+            <Setter Property="Padding" Value="5" />
+            <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+            <Setter Property="VerticalContentAlignment" Value="Center" />
+            <Setter Property="SnapsToDevicePixels" Value="true" />
+            <Setter Property="Focusable" Value="False" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type ComboBoxItem}">
+                        <Grid x:Name="grdItem" SnapsToDevicePixels="true" FocusVisualStyle="{x:Null}">
+                            <Rectangle Margin="-1" FocusVisualStyle="{x:Null}" Stroke="#A0FFFFFF"/>
+                            <ContentPresenter Margin="{TemplateBinding Padding}"
+                                              HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                              VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                                              SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"
+                                              FocusVisualStyle="{x:Null}"
+                                              x:Name="contentPresenter" />
+                            <Button Width="16" Height="16" HorizontalAlignment="Right" VerticalAlignment="Center" DataContext="{Binding}"
+                                    Background="Transparent" BorderThickness="0" Margin="0,0,10,0" Click="btnDeleteLogin_Click">
+                                <TextBlock Text="×" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                            </Button>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="grdItem" Property="Background" Value="#FFE5F3FB" />
+                            </Trigger>
+                            <Trigger Property="Selector.IsSelected" Value="True">
+                                <Setter TargetName="grdItem" Property="Background" Value="#FFF6F6F6" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!--ComboBox ItemContainerStyle-->
+        <Style x:Key="ComboBoxItemContainerStyle" TargetType="{x:Type ComboBoxItem}">
+            <Setter Property="Padding" Value="5" />
+            <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+            <Setter Property="VerticalContentAlignment" Value="Center" />
+            <Setter Property="SnapsToDevicePixels" Value="true" />
+            <Setter Property="Focusable" Value="False" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type ComboBoxItem}">
+                        <Grid x:Name="grdItem" SnapsToDevicePixels="true" FocusVisualStyle="{x:Null}">
+                            <Rectangle Margin="-1" FocusVisualStyle="{x:Null}" Stroke="#A0FFFFFF"/>
+                            <ContentPresenter Margin="{TemplateBinding Padding}"
+                                              HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                              VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                                              SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"
+                                              FocusVisualStyle="{x:Null}"
+                                              x:Name="contentPresenter" />
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="grdItem" Property="Background" Value="#FFE5F3FB" />
+                            </Trigger>
+                            <Trigger Property="Selector.IsSelected" Value="True">
+                                <Setter TargetName="grdItem" Property="Background" Value="#FFF6F6F6" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </MyNamespace:PopupWindowBase.Resources>
+
+    <!--上面LogoPath用反斜杠，是为了解决弹窗找不到图标资源奔溃的权益办法，该附加属性用处见PopupWindowBase类-->
+    <!--中PopupWindowBase_Loaded方法里的Define logo那一步，那里的绝对路径做法也是权益之策，具体绝对路径下的-->
+    <!--相应图标文件并不是代码编译生成的，而是人为拷到那里的，不可删除！任何时候，该图标文件都应随程序一起拷贝-->
+    <!--并放在exe所在目录下的Icons文件夹内-->
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <!--Navigation-->
+        <Border Grid.Column="0">
+            <StackPanel Margin="0,10">
+                <RadioButton Style="{DynamicResource RadioButtonStyleForExclusiveSelection}"
+                             Content="常规" x:Name="rbGeneral" IsChecked="True" />
+                <RadioButton Content="主题" Style="{DynamicResource RadioButtonStyleForExclusiveSelection}"/>
+            </StackPanel>
+        </Border>
+
+        <ScrollViewer Grid.Column="1" VerticalScrollBarVisibility="Auto">
+            <Border Background="White">
+                <!--General-->
+                <StackPanel Visibility="{Binding IsChecked,ElementName=rbGeneral,Converter={StaticResource BoolToVisibilityConverter}}" x:Name="spGeneral">
+                    <!--System-->
+                    <GroupBox Margin="10" Header="系统" FontSize="{StaticResource DefaultFontSizeNormal}">
+                        <!--Auto runs-->
+                        <Grid Margin="10">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="26" />
+                                <ColumnDefinition />
+                            </Grid.ColumnDefinitions>
+                            <CheckBox Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" x:Name="cbxAutoRuns" />
+                            <TextBlock Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="{StaticResource DefaultFontSizeNormal}">
+                                开机时自动运行
+                            </TextBlock>
+                        </Grid>
+                    </GroupBox>
+                    
+                    <!--Login-->
+                    <GroupBox Margin="10" Header="登录" FontSize="{StaticResource DefaultFontSizeNormal}">
+                        <Grid Margin="10">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="30" />
+                                <RowDefinition Height="10" />
+                                <RowDefinition Height="30" />
+                                <RowDefinition Height="10" />
+                                <RowDefinition Height="30" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="100" />
+                                <ColumnDefinition Width="10" />
+                                <ColumnDefinition Width="300" />
+                                <ColumnDefinition Width="10" />
+                                <ColumnDefinition />
+                            </Grid.ColumnDefinitions>
+
+                            <TextBlock Grid.Row="0" Grid.Column="0" Style="{StaticResource TextBlockStyle}" Text="用户名" />
+                            <ComboBox Grid.Row="0" Grid.Column="2" Style="{StaticResource ComboBoxEditableStyle}"
+                                      ItemContainerStyle="{StaticResource ComboBoxItemContainerStyleWithDeleteBtn}"
+                                      IsEnabled="False" SelectionChanged="cbxLoginUserName_SelectionChanged"
+                                      ItemsSource="{Binding}" DataContext="{Binding}"
+                                      x:Name="cbxLoginUserName" />
+
+                            <!--Modify login password buttons-->
+                            <Grid Grid.Row="0" Grid.Column="4">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="10" />
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition />
+                                </Grid.ColumnDefinitions>
+                                <Button Grid.Column="0" Style="{StaticResource ButtonStyleForEditing}" Click="btnModifyLoginInfo_Click">
+                                    <Button.ToolTip>
+                                        <ToolTip Content="修改/添加" Style="{StaticResource ToolTipStyle}" />
+                                    </Button.ToolTip>
+                                </Button>
+                                <Button Grid.Column="2" Style="{StaticResource ButtonStyleForSaving}" Click="btnSaveLoginInfo_Click" HorizontalAlignment="Right" Margin="0,6" />
+                            </Grid>
+
+                            <TextBlock Grid.Row="2" Grid.Column="0" Style="{StaticResource TextBlockStyle}" Text="密码" />
+                            <PasswordBox Grid.Row="2" Grid.Column="2" Height="26" IsEnabled="False"
+                                         attach:PasswordBoxAttachedProperty.Attach="True" x:Name="pwdLogin" />
+                            <TextBox Grid.Row="2" Grid.Column="2" Style="{StaticResource TextBoxStyle}" Visibility="Hidden"
+                                     Text="{Binding Path=(attach:PasswordBoxAttachedProperty.Password),ElementName=pwdLogin,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"
+                                     x:Name="tbxLoginPwd" />
+
+                            <Grid Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="3">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <CheckBox Grid.Column="1" Style="{StaticResource CheckBoxStyle}" IsEnabled="False" Content="保存该登录信息？" x:Name="ckbLoginSaved" />
+                                <CheckBox Grid.Column="3" Style="{StaticResource CheckBoxStyle}" IsEnabled="False" Content="自动登录？" x:Name="ckbLoginAuto" />
+                            </Grid>
+
+                            <Label Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="3" Visibility="Collapsed"
+                                   HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center"
+                                   FontSize="15" Foreground="Red" x:Name="lbLoginPrompt" />
+                        </Grid>
+                    </GroupBox>
+                    
+                    <!--Page-->
+                    <GroupBox Margin="10" Header="页面" FontSize="{StaticResource DefaultFontSizeNormal}">
+                        <Grid Margin="10">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="30" />
+                                <RowDefinition Height="10" />
+                                <RowDefinition Height="30" />
+                                <RowDefinition Height="10" />
+                                <RowDefinition Height="30" />
+                                <RowDefinition Height="10" />
+                                <RowDefinition Height="30" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="140" />
+                                <ColumnDefinition Width="10" />
+                                <ColumnDefinition Width="300" />
+                                <ColumnDefinition Width="10" />
+                                <ColumnDefinition />
+                            </Grid.ColumnDefinitions>
+
+                            <TextBlock Grid.Row="0" Grid.Column="0" Style="{StaticResource TextBlockStyle}" Text="用户名" />
+                            <ComboBox Grid.Row="0" Grid.Column="2" Style="{StaticResource ComboBoxEditableStyle}"
+                                      ItemContainerStyle="{StaticResource ComboBoxItemContainerStyle}"
+                                      IsEnabled="False" SelectionChanged="cbxPageUserName_SelectionChanged"
+                                      ItemsSource="{Binding}" DataContext="{Binding}"
+                                      x:Name="cbxPageUserName" />
+
+                            <!--Modify page unlock password buttons-->
+                            <Grid Grid.Row="0" Grid.Column="4">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="10" />
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition />
+                                </Grid.ColumnDefinitions>
+                                <Button Grid.Column="0" Style="{StaticResource ButtonStyleForEditing}" Click="btnModifyPageUnlockInfo_Click">
+                                    <Button.ToolTip>
+                                        <ToolTip Content="修改" Style="{StaticResource ToolTipStyle}" />
+                                    </Button.ToolTip>
+                                </Button>
+                                <Button Grid.Column="2" Style="{StaticResource ButtonStyleForSaving}" Click="btnSavePageUnlockInfo_Click" />
+                            </Grid>
+
+                            <TextBlock Grid.Row="2" Grid.Column="0" Style="{StaticResource TextBlockStyle}" Text="解锁密码" />
+                            <PasswordBox Grid.Row="2" Grid.Column="2" Height="26" IsEnabled="False"
+                                         attach:PasswordBoxAttachedProperty.Attach="True" x:Name="pwdPage" />
+                            <TextBox Grid.Row="2" Grid.Column="2" Style="{StaticResource TextBoxStyle}" Visibility="Hidden"
+                                     Text="{Binding Path=(attach:PasswordBoxAttachedProperty.Password),ElementName=pwdPage,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"
+                                     x:Name="tbxPagePwd" />
+
+                            <TextBlock Grid.Row="4" Grid.Column="0" Style="{StaticResource TextBlockStyle}" Text="锁定延时（s）" />
+                            <TextBox Grid.Row="4" Grid.Column="2" Style="{StaticResource TextBoxStyle}" IsEnabled="False" x:Name="tbxLockDelay" />
+
+                            <Grid Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="3">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <CheckBox Grid.Column="1" Style="{StaticResource CheckBoxStyle}" IsEnabled="False" Content="保存该锁定信息？" x:Name="ckbPageUnlockSaved" />
+                                <CheckBox Grid.Column="3" Style="{StaticResource CheckBoxStyle}" IsEnabled="False" Content="自动解锁？" x:Name="ckbPageUnlockAuto" />
+                            </Grid>
+
+                            <Label Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="3" Visibility="Collapsed"
+                                   HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center"
+                                   FontSize="15" Foreground="Red" x:Name="lbPagePrompt" />
+
+
+                        </Grid>
+                    </GroupBox>
+
+                </StackPanel>
+
+            </Border>
+        </ScrollViewer>
+    </Grid>
+</MyNamespace:PopupWindowBase>

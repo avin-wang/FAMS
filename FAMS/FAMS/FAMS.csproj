@@ -1,0 +1,545 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{81887CBC-F883-4F84-8037-61F4866DFA4E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FAMS</RootNamespace>
+    <AssemblyName>FAMS</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>FAMS-logo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FAMS.CustomWindow, Version=1.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\FAMS.CustomWindow\bin\x64\Release\FAMS.CustomWindow.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Commons\AttachedProperties\ControlAttachedProperty.cs" />
+    <Compile Include="Commons\AttachedProperties\PasswordBoxAttachedProperty.cs" />
+    <Compile Include="Commons\BaseClasses\LoginWindowBase.cs" />
+    <Compile Include="Commons\BaseClasses\PopupWindowBase.cs" />
+    <Compile Include="Commons\AttachedProperties\ScrollViewerAttachedProperties.cs" />
+    <Compile Include="Data\Home\Weather.cs" />
+    <Compile Include="LoginWin.xaml.cs">
+      <DependentUpon>LoginWin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Accounts\AccountsModel.cs" />
+    <Compile Include="Models\Documents\DocModel.cs" />
+    <Compile Include="Models\Home\HomeModel.cs" />
+    <Compile Include="Models\Home\LogModel.cs" />
+    <Compile Include="Models\Toolkit\LoanCalculatorModel.cs" />
+    <Compile Include="Services\AccessHelper.cs" />
+    <Compile Include="Services\CFamsFileHelper.cs" />
+    <Compile Include="Services\ChineseCalendar.cs" />
+    <Compile Include="Services\Converters.cs" />
+    <Compile Include="Services\Encryptor.cs" />
+    <Compile Include="Services\IniFile.cs" />
+    <Compile Include="Services\LogWriter.cs" />
+    <Compile Include="Services\RegEditor.cs" />
+    <Compile Include="ViewModels\Accounts\AccountViewModel.cs" />
+    <Compile Include="ViewModels\Accounts\AdvancedSearchViewModel.cs" />
+    <Compile Include="ViewModels\Documents\DocViewModel.cs" />
+    <Compile Include="ViewModels\Home\EnvironmentViewModel.cs" />
+    <Compile Include="ViewModels\Home\LifeIndexViewModel.cs" />
+    <Compile Include="ViewModels\Home\LogViewModel.cs" />
+    <Compile Include="ViewModels\Home\RealtimeWeatherViewModel.cs" />
+    <Compile Include="ViewModels\Home\WeatherViewModel.cs" />
+    <Compile Include="ViewModels\Toolkit\LoanCalculatorViewModel.cs" />
+    <Compile Include="ViewModels\UserInfoViewModel.cs" />
+    <Compile Include="Views\Accounts\Accounts.xaml.cs">
+      <DependentUpon>Accounts.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Accounts\AdvancedSearchWin.xaml.cs">
+      <DependentUpon>AdvancedSearchWin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Accounts\EditWin.xaml.cs">
+      <DependentUpon>EditWin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Contacts\Contacts.xaml.cs">
+      <DependentUpon>Contacts.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Documents\Documents.xaml.cs">
+      <DependentUpon>Documents.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Finance\Finance.xaml.cs">
+      <DependentUpon>Finance.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Home\AboutWin.xaml.cs">
+      <DependentUpon>AboutWin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Home\Home.xaml.cs">
+      <DependentUpon>Home.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Home\SettingWin.xaml.cs">
+      <DependentUpon>SettingWin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Locker.xaml.cs">
+      <DependentUpon>Locker.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Mails\Mails.xaml.cs">
+      <DependentUpon>Mails.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Pictures\Pictures.xaml.cs">
+      <DependentUpon>Pictures.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Toolkit\LoanCalculatorWin.xaml.cs">
+      <DependentUpon>LoanCalculatorWin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Toolkit\Toolkit.xaml.cs">
+      <DependentUpon>Toolkit.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Videos\Videos.xaml.cs">
+      <DependentUpon>Videos.xaml</DependentUpon>
+    </Compile>
+    <Page Include="LoginWin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\Accounts\Account.cs" />
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Styles\ButtonStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\CheckBoxStyle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Styles\Colors.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\ComboBoxStyle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Styles\GeneralStyles.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\ImageStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\ListBoxStyle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Styles\ListViewStyle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Styles\MenuStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\PasswordBoxStyle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Styles\RadioButtonStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\ScrollBarStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\ScrollViewerStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\TextBlockStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\TextBoxStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\ToolTipStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\WindowStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Accounts\Accounts.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Accounts\AdvancedSearchWin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Accounts\EditWin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Contacts\Contacts.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Documents\Documents.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Finance\Finance.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Home\AboutWin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Home\Home.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Home\SettingWin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Locker.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Mails\Mails.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Pictures\Pictures.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Toolkit\LoanCalculatorWin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Toolkit\Toolkit.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Videos\Videos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\FontFamilies\iconfont.ttf" />
+    <Resource Include="Resources\FontFamilies\iconfont_locate.ttf" />
+    <Resource Include="Resources\Icons\advanced_search_32px.png" />
+    <Resource Include="Resources\Icons\txt_file_48px.png" />
+    <Resource Include="Xmls\WeatherForecastCityCodes.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\account_48px.png" />
+    <Resource Include="Resources\Icons\contact_48px.png" />
+    <Resource Include="Resources\Icons\document_48px.png" />
+    <Resource Include="Resources\Icons\email_48px.png" />
+    <Resource Include="Resources\Icons\finance_48px.png" />
+    <Resource Include="Resources\Icons\home_48px.png" />
+    <Resource Include="Resources\Icons\picture_48px.png" />
+    <Resource Include="Resources\Icons\toolkit_48px.png" />
+    <Resource Include="Resources\Icons\video_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="FAMS-logo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\edit_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\delete_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\merge_into_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\add_new_account_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\Weather\cloudy_b.gif" />
+    <Resource Include="Resources\Icons\Weather\cloudy_m.gif" />
+    <Resource Include="Resources\Icons\Weather\cloudy_s.gif" />
+    <Resource Include="Resources\Icons\Weather\drizzle_b.gif" />
+    <Resource Include="Resources\Icons\Weather\drizzle_m.gif" />
+    <Resource Include="Resources\Icons\Weather\drizzle_s.gif" />
+    <Resource Include="Resources\Icons\Weather\dust_blowing_b.gif" />
+    <Resource Include="Resources\Icons\Weather\dust_blowing_m.gif" />
+    <Resource Include="Resources\Icons\Weather\dust_blowing_s.gif" />
+    <Resource Include="Resources\Icons\Weather\floating_dust_b.gif" />
+    <Resource Include="Resources\Icons\Weather\floating_dust_m.gif" />
+    <Resource Include="Resources\Icons\Weather\floating_dust_s.gif" />
+    <Resource Include="Resources\Icons\Weather\foggy_b.gif" />
+    <Resource Include="Resources\Icons\Weather\foggy_m.gif" />
+    <Resource Include="Resources\Icons\Weather\foggy_s.gif" />
+    <Resource Include="Resources\Icons\Weather\freezing_rain_b.gif" />
+    <Resource Include="Resources\Icons\Weather\freezing_rain_m.gif" />
+    <Resource Include="Resources\Icons\Weather\freezing_rain_s.gif" />
+    <Resource Include="Resources\Icons\Weather\heavy_rain_to_storm_b.gif" />
+    <Resource Include="Resources\Icons\Weather\heavy_rain_to_storm_m.gif" />
+    <Resource Include="Resources\Icons\Weather\heavy_rain_to_storm_s.gif" />
+    <Resource Include="Resources\Icons\Weather\heavy_sandstorm_b.gif" />
+    <Resource Include="Resources\Icons\Weather\heavy_sandstorm_m.gif" />
+    <Resource Include="Resources\Icons\Weather\heavy_sandstorm_s.gif" />
+    <Resource Include="Resources\Icons\Weather\heavy_snow_b.gif" />
+    <Resource Include="Resources\Icons\Weather\heavy_snow_m.gif" />
+    <Resource Include="Resources\Icons\Weather\heavy_snow_s.gif" />
+    <Resource Include="Resources\Icons\Weather\heavy_storm_b.gif" />
+    <Resource Include="Resources\Icons\Weather\heavy_storm_m.gif" />
+    <Resource Include="Resources\Icons\Weather\heavy_storm_s.gif" />
+    <Resource Include="Resources\Icons\Weather\heavy_to_severe_snow_b.gif" />
+    <Resource Include="Resources\Icons\Weather\heavy_to_severe_snow_m.gif" />
+    <Resource Include="Resources\Icons\Weather\heavy_to_severe_snow_s.gif" />
+    <Resource Include="Resources\Icons\Weather\heavy_to_severe_storm_b.gif" />
+    <Resource Include="Resources\Icons\Weather\heavy_to_severe_storm_m.gif" />
+    <Resource Include="Resources\Icons\Weather\heavy_to_severe_storm_s.gif" />
+    <Resource Include="Resources\Icons\Weather\light_snow_b.gif" />
+    <Resource Include="Resources\Icons\Weather\light_snow_m.gif" />
+    <Resource Include="Resources\Icons\Weather\light_snow_s.gif" />
+    <Resource Include="Resources\Icons\Weather\light_to_moderate_rain_b.gif" />
+    <Resource Include="Resources\Icons\Weather\light_to_moderate_rain_m.gif" />
+    <Resource Include="Resources\Icons\Weather\light_to_moderate_rain_s.gif" />
+    <Resource Include="Resources\Icons\Weather\moderate_rain_b.gif" />
+    <Resource Include="Resources\Icons\Weather\moderate_rain_m.gif" />
+    <Resource Include="Resources\Icons\Weather\moderate_rain_s.gif" />
+    <Resource Include="Resources\Icons\Weather\moderate_snow_b.gif" />
+    <Resource Include="Resources\Icons\Weather\moderate_snow_m.gif" />
+    <Resource Include="Resources\Icons\Weather\moderate_snow_s.gif" />
+    <Resource Include="Resources\Icons\Weather\moderate_to_heavy_rain_b.gif" />
+    <Resource Include="Resources\Icons\Weather\moderate_to_heavy_rain_m.gif" />
+    <Resource Include="Resources\Icons\Weather\moderate_to_heavy_rain_s.gif" />
+    <Resource Include="Resources\Icons\Weather\moderate_to_heavy_snow_b.gif" />
+    <Resource Include="Resources\Icons\Weather\moderate_to_heavy_snow_m.gif" />
+    <Resource Include="Resources\Icons\Weather\moderate_to_heavy_snow_s.gif" />
+    <Resource Include="Resources\Icons\Weather\overcast_b.gif" />
+    <Resource Include="Resources\Icons\Weather\overcast_m.gif" />
+    <Resource Include="Resources\Icons\Weather\overcast_s.gif" />
+    <Resource Include="Resources\Icons\Weather\pour_b.gif" />
+    <Resource Include="Resources\Icons\Weather\pour_m.gif" />
+    <Resource Include="Resources\Icons\Weather\pour_s.gif" />
+    <Resource Include="Resources\Icons\Weather\sandstorm_b.gif" />
+    <Resource Include="Resources\Icons\Weather\sandstorm_m.gif" />
+    <Resource Include="Resources\Icons\Weather\sandstorm_s.gif" />
+    <Resource Include="Resources\Icons\Weather\severe_snow_b.gif" />
+    <Resource Include="Resources\Icons\Weather\severe_snow_m.gif" />
+    <Resource Include="Resources\Icons\Weather\severe_snow_s.gif" />
+    <Resource Include="Resources\Icons\Weather\severe_storm_b.gif" />
+    <Resource Include="Resources\Icons\Weather\severe_storm_m.gif" />
+    <Resource Include="Resources\Icons\Weather\severe_storm_s.gif" />
+    <Resource Include="Resources\Icons\Weather\shower_b.gif" />
+    <Resource Include="Resources\Icons\Weather\shower_m.gif" />
+    <Resource Include="Resources\Icons\Weather\shower_s.gif" />
+    <Resource Include="Resources\Icons\Weather\sleet_b.gif" />
+    <Resource Include="Resources\Icons\Weather\sleet_m.gif" />
+    <Resource Include="Resources\Icons\Weather\sleet_s.gif" />
+    <Resource Include="Resources\Icons\Weather\slight_to_moderate_snow_b.gif" />
+    <Resource Include="Resources\Icons\Weather\slight_to_moderate_snow_m.gif" />
+    <Resource Include="Resources\Icons\Weather\slight_to_moderate_snow_s.gif" />
+    <Resource Include="Resources\Icons\Weather\snow_shower_b.gif" />
+    <Resource Include="Resources\Icons\Weather\snow_shower_m.gif" />
+    <Resource Include="Resources\Icons\Weather\snow_shower_s.gif" />
+    <Resource Include="Resources\Icons\Weather\storm_b.gif" />
+    <Resource Include="Resources\Icons\Weather\storm_m.gif" />
+    <Resource Include="Resources\Icons\Weather\storm_s.gif" />
+    <Resource Include="Resources\Icons\Weather\storm_to_heavy_storm_b.gif" />
+    <Resource Include="Resources\Icons\Weather\storm_to_heavy_storm_m.gif" />
+    <Resource Include="Resources\Icons\Weather\storm_to_heavy_storm_s.gif" />
+    <Resource Include="Resources\Icons\Weather\sunny_b.gif" />
+    <Resource Include="Resources\Icons\Weather\sunny_m.gif" />
+    <Resource Include="Resources\Icons\Weather\sunny_s.gif" />
+    <Resource Include="Resources\Icons\Weather\thundery_shower_b.gif" />
+    <Resource Include="Resources\Icons\Weather\thundery_shower_m.gif" />
+    <Resource Include="Resources\Icons\Weather\thundery_shower_s.gif" />
+    <Resource Include="Resources\Icons\Weather\thundery_shower_with_hail_b.gif" />
+    <Resource Include="Resources\Icons\Weather\thundery_shower_with_hail_m.gif" />
+    <Resource Include="Resources\Icons\Weather\thundery_shower_with_hail_s.gif" />
+    <Resource Include="Resources\Icons\Weather\unknown_b.gif" />
+    <Resource Include="Resources\Icons\Weather\unknown_m.gif" />
+    <Resource Include="Resources\Icons\Weather\unknown_s.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\view_32px.png" />
+    <Resource Include="Resources\Icons\save_32px.png" />
+    <Resource Include="Resources\Icons\save_edit_32px.png" />
+    <Resource Include="Resources\Icons\export_32px.png" />
+    <Resource Include="Resources\Icons\delete_words_32px.png" />
+    <Resource Include="Resources\Icons\add_words_32px.png" />
+    <Resource Include="Resources\Icons\ppw_close_button_48px.png" />
+    <Resource Include="Resources\Icons\attachment_32px.png" />
+    <Resource Include="Resources\Icons\search_48px.png" />
+    <Resource Include="Resources\Icons\cancel_48px.png" />
+    <Resource Include="Resources\Icons\login_48px.png" />
+    <Resource Include="Resources\Icons\attached_file_48px.png" />
+    <Resource Include="Resources\Icons\edit_doc_48px.png" />
+    <Resource Include="Resources\Icons\new_doc_48px.png" />
+    <Resource Include="Resources\Icons\refresh_48px.png" />
+    <Resource Include="Resources\Icons\database_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="ADODB">
+      <Guid>{2A75196C-D9EB-4129-B803-931327F72D5C}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="ADOX">
+      <Guid>{00000600-0000-0010-8000-00AA006D2EA4}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="IWshRuntimeLibrary">
+      <Guid>{F935DC20-1CF0-11D0-ADB9-00C04FD58A0B}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\refresh_weather_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\loan_calc_72px.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

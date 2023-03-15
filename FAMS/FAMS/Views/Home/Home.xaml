@@ -1,0 +1,531 @@
+﻿<Page x:Class="FAMS.Views.Home.Home"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:sys="clr-namespace:System;assembly=mscorlib"
+      xmlns:local="clr-namespace:FAMS.Views.Home"
+      xmlns:services="clr-namespace:FAMS.Services"
+      mc:Ignorable="d" 
+      d:DesignHeight="800" d:DesignWidth="1000"
+      Title="Home" FontFamily="{StaticResource DefaultFontFamily}">
+    <Page.Resources>
+        <Style x:Key="TextBlockStyleForWeatherTitle" TargetType="{x:Type TextBlock}">
+            <Setter Property="FontFamily" Value="{StaticResource DefaultFontFamily}" />
+            <Setter Property="FontSize" Value="{StaticResource DefaultFontSizeNormal}" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="HorizontalAlignment" Value="Right" />
+        </Style>
+
+        <Style x:Key="TextBlockStyleForWeatherContent" TargetType="{x:Type TextBlock}">
+            <Setter Property="Width" Value="110" />
+            <Setter Property="FontFamily" Value="{StaticResource DefaultFontFamily}" />
+            <Setter Property="FontSize" Value="{StaticResource DefaultFontSizeNormal}" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="HorizontalAlignment" Value="Left" />
+            <Setter Property="TextWrapping" Value="WrapWithOverflow" />
+        </Style>
+
+        <Style x:Key="TextBlockStyleForWeatherForecast" TargetType="{x:Type TextBlock}">
+            <Setter Property="FontFamily" Value="{StaticResource DefaultFontFamily}" />
+            <Setter Property="FontSize" Value="{StaticResource DefaultFontSizeNormal}" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="HorizontalAlignment" Value="Center" />
+        </Style>
+
+        <services:WeatherToSourceConverter x:Key="WeatherToSourceConverter" />
+    </Page.Resources>
+
+    <Grid Margin="10,0,10,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="3*" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <!--Clock & calendar-->
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition Height="Auto" />
+                <RowDefinition />
+                <RowDefinition Height="Auto" />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <!--Analog clock-->
+            <Canvas Grid.Row="1" Width="500" Height="500" x:Name="_analogClk">
+                <!--hour hand-->
+                <Line Canvas.Left="250" Canvas.Top="250" Stroke="Black" StrokeThickness="16" X1="0" Y1="0" X2="0" Y2="-150">
+                    <Line.RenderTransform>
+                        <RotateTransform CenterX="0" CenterY="0" Angle="0" x:Name="rtHourHand" />
+                    </Line.RenderTransform>
+                </Line>
+                <!--minute hand-->
+                <Line Canvas.Left="250" Canvas.Top="250" Stroke="Yellow" StrokeThickness="4" X1="0" Y1="0" X2="0" Y2="-200">
+                    <Line.RenderTransform>
+                        <RotateTransform CenterX="0" CenterY="0" Angle="0" x:Name="rtMinHand" />
+                    </Line.RenderTransform>
+                </Line>
+                <!--second hand-->
+                <Line Canvas.Left="250" Canvas.Top="250" Stroke="Red" StrokeThickness="4" X1="0" Y1="70" X2="0" Y2="-210">
+                    <Line.RenderTransform>
+                        <RotateTransform CenterX="0" CenterY="0" Angle="0" x:Name="rtSecHand" />
+                    </Line.RenderTransform>
+                </Line>
+                <!--center circle-->
+                <Ellipse Canvas.Left="235" Canvas.Top="235" Width="30" Height="30" Fill="DarkGray" />
+            </Canvas>
+        </Grid>
+
+        <!--Weather forecast-->
+        <Grid Grid.Column="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="50" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="50" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition Height="300" />
+                <RowDefinition />
+                <RowDefinition Height="300" />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+
+            <!--Realtime weather-->
+            <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto">
+                <Grid x:Name="grdRW">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="2" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="2" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="2" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="2" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="2" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="2" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="2" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="2" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock VerticalAlignment="Center" FontSize="{StaticResource DefaultFontSizeNormal}" Text="{Binding District}" />
+                        <Menu Margin="10,0,0,0">
+                            <MenuItem Icon="&#xe61e;" Style="{StaticResource TopLevelMenuItemStyleForWeatherMenu}" x:Name="miDistrict" >
+                                <MenuItem.ToolTip>
+                                    <ToolTip Content="切换地区" Style="{StaticResource ToolTipStyle}"/>
+                                </MenuItem.ToolTip>
+                            </MenuItem>
+                        </Menu>
+                        <TextBlock VerticalAlignment="Center" FontSize="{StaticResource DefaultFontSizeNormal}" FontStyle="Italic" Text="{Binding UpdateTime}" />
+                        <Button Margin="15,0,0,0" Style="{StaticResource ButtonStyleForRefreshWeather}" Click="BtnRefreshWeather_Click" />
+                    </StackPanel>
+                    <TextBlock Grid.Row="2" VerticalAlignment="Center" FontSize="{StaticResource DefaultFontSizeNormal}" Text="{Binding LunarCalendarDate}" />
+                    <TextBlock Grid.Row="4" VerticalAlignment="Center" HorizontalAlignment="Center" FontFamily="{StaticResource DefaultFontFamily}" FontSize="{StaticResource FontSizeExtremeLarge}" Text="{Binding Temperature}" />
+                    <TextBlock Grid.Row="6" Style="{DynamicResource TextBlockStyleForWeatherForecast}" Text="{Binding TemperatureRange}" />
+                    <TextBlock Grid.Row="8" Style="{DynamicResource TextBlockStyleForWeatherForecast}" Text="{Binding WeatherChange}" />
+                    <TextBlock Grid.Row="10" Style="{DynamicResource TextBlockStyleForWeatherForecast}" Text="{Binding Wind}" />
+                    <TextBlock Grid.Row="12" Style="{DynamicResource TextBlockStyleForWeatherForecast}" Text="{Binding Humidity}" />
+                    <TextBlock Grid.Row="14" Style="{DynamicResource TextBlockStyleForWeatherForecast}" Text="{Binding Sunrise}" />
+                    <TextBlock Grid.Row="16" Style="{DynamicResource TextBlockStyleForWeatherForecast}" Text="{Binding Sunset}" />
+                </Grid>
+            </ScrollViewer>
+
+            <!--Environment-->
+            <Grid Grid.Row="1" Grid.Column="2" x:Name="grdEv">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30" />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+
+                <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="2" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="2" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="2" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="2" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="2" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="2" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="2" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="2" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="2" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="2" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition />
+                        </Grid.RowDefinitions>
+
+                        <TextBlock Grid.Row="0" Grid.Column="0" Style="{DynamicResource TextBlockStyleForWeatherTitle}" Text="空气质量:" />
+                        <TextBlock Grid.Row="0" Grid.Column="2" Style="{DynamicResource TextBlockStyleForWeatherContent}" Text="{Binding AirQuality}" />
+
+                        <TextBlock Grid.Row="2" Grid.Column="0" Style="{DynamicResource TextBlockStyleForWeatherTitle}" VerticalAlignment="Top" Text="建议:" />
+                        <TextBlock Grid.Row="2" Grid.Column="2" Style="{DynamicResource TextBlockStyleForWeatherContent}" Text="{Binding Suggest}" />
+
+                        <TextBlock Grid.Row="4" Grid.Column="0" Style="{DynamicResource TextBlockStyleForWeatherTitle}" VerticalAlignment="Top" Text="主要污染物:" />
+                        <TextBlock Grid.Row="4" Grid.Column="2" Style="{DynamicResource TextBlockStyleForWeatherContent}" Text="{Binding MajorPollutants}" />
+
+                        <TextBlock Grid.Row="6" Grid.Column="0" Style="{DynamicResource TextBlockStyleForWeatherTitle}" Text="AQI:" />
+                        <TextBlock Grid.Row="6" Grid.Column="2" Style="{DynamicResource TextBlockStyleForWeatherContent}" Text="{Binding AQI}" />
+
+                        <TextBlock Grid.Row="8" Grid.Column="0" Style="{DynamicResource TextBlockStyleForWeatherTitle}" Text="PM2.5:" />
+                        <TextBlock Grid.Row="8" Grid.Column="2" Style="{DynamicResource TextBlockStyleForWeatherContent}" Text="{Binding PM25}" />
+
+                        <TextBlock Grid.Row="10" Grid.Column="0" Style="{DynamicResource TextBlockStyleForWeatherTitle}" Text="PM10:" />
+                        <TextBlock Grid.Row="10" Grid.Column="2" Style="{DynamicResource TextBlockStyleForWeatherContent}" Text="{Binding PM10}" />
+
+                        <TextBlock Grid.Row="12" Grid.Column="0" Style="{DynamicResource TextBlockStyleForWeatherTitle}" Text="O3:" />
+                        <TextBlock Grid.Row="12" Grid.Column="2" Style="{DynamicResource TextBlockStyleForWeatherContent}" Text="{Binding O3}" />
+
+                        <TextBlock Grid.Row="14" Grid.Column="0" Style="{DynamicResource TextBlockStyleForWeatherTitle}" Text="CO:" />
+                        <TextBlock Grid.Row="14" Grid.Column="2" Style="{DynamicResource TextBlockStyleForWeatherContent}" Text="{Binding CO}" />
+
+                        <TextBlock Grid.Row="16" Grid.Column="0" Style="{DynamicResource TextBlockStyleForWeatherTitle}" Text="SO2:" />
+                        <TextBlock Grid.Row="16" Grid.Column="2" Style="{DynamicResource TextBlockStyleForWeatherContent}" Text="{Binding SO2}" />
+
+                        <TextBlock Grid.Row="18" Grid.Column="0" Style="{DynamicResource TextBlockStyleForWeatherTitle}" Text="NO2:" />
+                        <TextBlock Grid.Row="18" Grid.Column="2" Style="{DynamicResource TextBlockStyleForWeatherContent}" Text="{Binding NO2}" />
+
+                        <TextBlock Grid.Row="20" Grid.Column="0" Style="{DynamicResource TextBlockStyleForWeatherTitle}" FontStyle="Italic" Text="最后更新:" />
+                        <TextBlock Grid.Row="20" Grid.Column="2" Style="{DynamicResource TextBlockStyleForWeatherContent}" FontStyle="Italic" Text="{Binding UpdateTime}" />
+                    </Grid>
+                </ScrollViewer>
+            </Grid>
+
+            <!--Life indexes-->
+            <Grid Grid.Row="1" Grid.Column="4" x:Name="grdLi">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30" />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+
+                <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="0" x:Name="hidedRow1"/>
+                            <RowDefinition Height="2" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="0" x:Name="hidedRow2" />
+                            <RowDefinition Height="2" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="0" x:Name="hidedRow3" />
+                            <RowDefinition Height="2" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="0" x:Name="hidedRow4" />
+                            <RowDefinition Height="2" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="0" x:Name="hidedRow5" />
+                            <RowDefinition Height="2" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="0" x:Name="hidedRow6" />
+                            <RowDefinition Height="2" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="0" x:Name="hidedRow7" />
+                            <RowDefinition Height="2" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="0" x:Name="hidedRow8" />
+                            <RowDefinition Height="2" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="0" x:Name="hidedRow9" />
+                            <RowDefinition Height="2" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="0" x:Name="hidedRow10" />
+                            <RowDefinition Height="2" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="0" x:Name="hidedRow11" />
+                            <RowDefinition />
+                        </Grid.RowDefinitions>
+                        <Grid.ContextMenu>
+                            <ContextMenu>
+                                <MenuItem Header="详细" IsCheckable="True" x:Name="miLifeIndexDetail" />
+                            </ContextMenu>
+                        </Grid.ContextMenu>
+
+                        <TextBlock Grid.Row="0" Grid.Column="0" Style="{DynamicResource TextBlockStyleForWeatherTitle}" Text="晨练指数:" />
+                        <TextBlock Grid.Row="0" Grid.Column="2" Style="{DynamicResource TextBlockStyleForWeatherContent}" Text="{Binding MorningExerciseIndex}" />
+                        <TextBlock Grid.Row="1" Grid.Column="2" Style="{DynamicResource TextBlockStyleForWeatherContent}" Text="{Binding MorningExerciseDetail}" />
+
+                        <TextBlock Grid.Row="3" Grid.Column="0" Style="{DynamicResource TextBlockStyleForWeatherTitle}" Text="舒适度:" />
+                        <TextBlock Grid.Row="3" Grid.Column="2" Style="{DynamicResource TextBlockStyleForWeatherContent}" Text="{Binding ComfortIndex}" />
+                        <TextBlock Grid.Row="4" Grid.Column="2" Style="{DynamicResource TextBlockStyleForWeatherContent}" Text="{Binding ComfortDetail}" />
+
+                        <TextBlock Grid.Row="6" Grid.Column="0" Style="{DynamicResource TextBlockStyleForWeatherTitle}" Text="穿衣指数:" />
+                        <TextBlock Grid.Row="6" Grid.Column="2" Style="{DynamicResource TextBlockStyleForWeatherContent}" Text="{Binding DressingIndex}" />
+                        <TextBlock Grid.Row="7" Grid.Column="2" Style="{DynamicResource TextBlockStyleForWeatherContent}" Text="{Binding DressingDetail}" />
+
+                        <TextBlock Grid.Row="9" Grid.Column="0" Style="{DynamicResource TextBlockStyleForWeatherTitle}" Text="感冒指数:" />
+                        <TextBlock Grid.Row="9" Grid.Column="2" Style="{DynamicResource TextBlockStyleForWeatherContent}" Text="{Binding CatchingColdIndex}" />
+                        <TextBlock Grid.Row="10" Grid.Column="2" Style="{DynamicResource TextBlockStyleForWeatherContent}" Text="{Binding CatchingColdDetail}" />
+
+                        <TextBlock Grid.Row="12" Grid.Column="0" Style="{DynamicResource TextBlockStyleForWeatherTitle}" Text="晾晒指数:" />
+                        <TextBlock Grid.Row="12" Grid.Column="2" Style="{DynamicResource TextBlockStyleForWeatherContent}" Text="{Binding SunDryingIndex}" />
+                        <TextBlock Grid.Row="13" Grid.Column="2" Style="{DynamicResource TextBlockStyleForWeatherContent}" Text="{Binding SunDryingDetail}" />
+
+                        <TextBlock Grid.Row="15" Grid.Column="0" Style="{DynamicResource TextBlockStyleForWeatherTitle}" Text="旅游指数:" />
+                        <TextBlock Grid.Row="15" Grid.Column="2" Style="{DynamicResource TextBlockStyleForWeatherContent}" Text="{Binding TravelIndex}" />
+                        <TextBlock Grid.Row="16" Grid.Column="2" Style="{DynamicResource TextBlockStyleForWeatherContent}" Text="{Binding TravelDetail}" />
+
+                        <TextBlock Grid.Row="18" Grid.Column="0" Style="{DynamicResource TextBlockStyleForWeatherTitle}" Text="紫外线强度:" />
+                        <TextBlock Grid.Row="18" Grid.Column="2" Style="{DynamicResource TextBlockStyleForWeatherContent}" Text="{Binding UVIndex}" />
+                        <TextBlock Grid.Row="19" Grid.Column="2" Style="{DynamicResource TextBlockStyleForWeatherContent}" Text="{Binding UVDetail}" />
+
+                        <TextBlock Grid.Row="21" Grid.Column="0" Style="{DynamicResource TextBlockStyleForWeatherTitle}" Text="洗车指数:" />
+                        <TextBlock Grid.Row="21" Grid.Column="2" Style="{DynamicResource TextBlockStyleForWeatherContent}" Text="{Binding CarWashingIndex}" />
+                        <TextBlock Grid.Row="22" Grid.Column="2" Style="{DynamicResource TextBlockStyleForWeatherContent}" Text="{Binding CarWashingDetail}" />
+
+                        <TextBlock Grid.Row="24" Grid.Column="0" Style="{DynamicResource TextBlockStyleForWeatherTitle}" Text="运动指数:" />
+                        <TextBlock Grid.Row="24" Grid.Column="2" Style="{DynamicResource TextBlockStyleForWeatherContent}" Text="{Binding SportIndex}" />
+                        <TextBlock Grid.Row="25" Grid.Column="2" Style="{DynamicResource TextBlockStyleForWeatherContent}" Text="{Binding SportDetail}" />
+
+                        <TextBlock Grid.Row="27" Grid.Column="0" Style="{DynamicResource TextBlockStyleForWeatherTitle}" Text="约会指数:" />
+                        <TextBlock Grid.Row="27" Grid.Column="2" Style="{DynamicResource TextBlockStyleForWeatherContent}" Text="{Binding DatingIndex}" />
+                        <TextBlock Grid.Row="28" Grid.Column="2" Style="{DynamicResource TextBlockStyleForWeatherContent}" Text="{Binding DatingDetail}" />
+
+                        <TextBlock Grid.Row="30" Grid.Column="0" Style="{DynamicResource TextBlockStyleForWeatherTitle}" Text="雨伞指数:" />
+                        <TextBlock Grid.Row="30" Grid.Column="2" Style="{DynamicResource TextBlockStyleForWeatherContent}" Text="{Binding UmbrellaIndex}" />
+                        <TextBlock Grid.Row="31" Grid.Column="2" Style="{DynamicResource TextBlockStyleForWeatherContent}" Text="{Binding UmbrellaDetail}" />
+                    </Grid>
+                </ScrollViewer>
+            </Grid>
+
+            <!--Weather forecasting in 5 days-->
+            <Grid Grid.Row="3" Grid.ColumnSpan="5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="30" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="30" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="30" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="30" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="30" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <!--Yesterday-->
+                <Grid Grid.Column="0" x:Name="grdYesterday">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="2" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="2" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="2" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="2" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="2" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="2" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="2" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="2" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <TextBlock Grid.Row="0" Style="{DynamicResource TextBlockStyleForWeatherForecast}" Text="{Binding Week}" />
+                    <TextBlock Grid.Row="2" Style="{DynamicResource TextBlockStyleForWeatherForecast}" Text="{Binding Date}" />
+                    <TextBlock Grid.Row="4" Style="{DynamicResource TextBlockStyleForWeatherForecast}" Text="{Binding TemperatureRange}" />
+                    <Image Grid.Row="6" Source="{Binding Path=DayWeather,Converter={StaticResource WeatherToSourceConverter}}" />
+                    <TextBlock Grid.Row="8" Style="{DynamicResource TextBlockStyleForWeatherForecast}" Text="{Binding DayWeather}" />
+                    <TextBlock Grid.Row="10" Style="{DynamicResource TextBlockStyleForWeatherForecast}" Text="{Binding DayWind}" />
+                    <Image Grid.Row="12" Source="{Binding Path=NightWeather,Converter={StaticResource WeatherToSourceConverter}}" />
+                    <TextBlock Grid.Row="14" Style="{DynamicResource TextBlockStyleForWeatherForecast}" Text="{Binding NightWeather}" />
+                    <TextBlock Grid.Row="16" Style="{DynamicResource TextBlockStyleForWeatherForecast}" Text="{Binding NightWind}" />
+                </Grid>
+                <!--Today-->
+                <Grid Grid.Column="2" x:Name="grdToday">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="2" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="2" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="2" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="2" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="2" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="2" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="2" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="2" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <TextBlock Grid.Row="0" Style="{DynamicResource TextBlockStyleForWeatherForecast}" Text="{Binding Week}" />
+                    <TextBlock Grid.Row="2" Style="{DynamicResource TextBlockStyleForWeatherForecast}" Text="{Binding Date}" />
+                    <TextBlock Grid.Row="4" Style="{DynamicResource TextBlockStyleForWeatherForecast}" Text="{Binding TemperatureRange}" />
+                    <Image Grid.Row="6" Source="{Binding Path=DayWeather,Converter={StaticResource WeatherToSourceConverter}}" />
+                    <TextBlock Grid.Row="8" Style="{DynamicResource TextBlockStyleForWeatherForecast}" Text="{Binding DayWeather}" />
+                    <TextBlock Grid.Row="10" Style="{DynamicResource TextBlockStyleForWeatherForecast}" Text="{Binding DayWind}" />
+                    <Image Grid.Row="12" Source="{Binding Path=NightWeather,Converter={StaticResource WeatherToSourceConverter}}" />
+                    <TextBlock Grid.Row="14" Style="{DynamicResource TextBlockStyleForWeatherForecast}" Text="{Binding NightWeather}" />
+                    <TextBlock Grid.Row="16" Style="{DynamicResource TextBlockStyleForWeatherForecast}" Text="{Binding NightWind}" />
+                </Grid>
+                <!--Tomorrow-->
+                <Grid Grid.Column="4" x:Name="grdTomorrow">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="2" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="2" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="2" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="2" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="2" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="2" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="2" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="2" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <TextBlock Grid.Row="0" Style="{DynamicResource TextBlockStyleForWeatherForecast}" Text="{Binding Week}" />
+                    <TextBlock Grid.Row="2" Style="{DynamicResource TextBlockStyleForWeatherForecast}" Text="{Binding Date}" />
+                    <TextBlock Grid.Row="4" Style="{DynamicResource TextBlockStyleForWeatherForecast}" Text="{Binding TemperatureRange}" />
+                    <Image Grid.Row="6" Source="{Binding Path=DayWeather,Converter={StaticResource WeatherToSourceConverter}}" />
+                    <TextBlock Grid.Row="8" Style="{DynamicResource TextBlockStyleForWeatherForecast}" Text="{Binding DayWeather}" />
+                    <TextBlock Grid.Row="10" Style="{DynamicResource TextBlockStyleForWeatherForecast}" Text="{Binding DayWind}" />
+                    <Image Grid.Row="12" Source="{Binding Path=NightWeather,Converter={StaticResource WeatherToSourceConverter}}" />
+                    <TextBlock Grid.Row="14" Style="{DynamicResource TextBlockStyleForWeatherForecast}" Text="{Binding NightWeather}" />
+                    <TextBlock Grid.Row="16" Style="{DynamicResource TextBlockStyleForWeatherForecast}" Text="{Binding NightWind}" />
+                </Grid>
+                <!--The day after tomorrow-->
+                <Grid Grid.Column="6" x:Name="grdAfterTomorrow">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="2" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="2" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="2" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="2" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="2" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="2" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="2" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="2" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <TextBlock Grid.Row="0" Style="{DynamicResource TextBlockStyleForWeatherForecast}" Text="{Binding Week}" />
+                    <TextBlock Grid.Row="2" Style="{DynamicResource TextBlockStyleForWeatherForecast}" Text="{Binding Date}" />
+                    <TextBlock Grid.Row="4" Style="{DynamicResource TextBlockStyleForWeatherForecast}" Text="{Binding TemperatureRange}" />
+                    <Image Grid.Row="6" Source="{Binding Path=DayWeather,Converter={StaticResource WeatherToSourceConverter}}" />
+                    <TextBlock Grid.Row="8" Style="{DynamicResource TextBlockStyleForWeatherForecast}" Text="{Binding DayWeather}" />
+                    <TextBlock Grid.Row="10" Style="{DynamicResource TextBlockStyleForWeatherForecast}" Text="{Binding DayWind}" />
+                    <Image Grid.Row="12" Source="{Binding Path=NightWeather,Converter={StaticResource WeatherToSourceConverter}}" />
+                    <TextBlock Grid.Row="14" Style="{DynamicResource TextBlockStyleForWeatherForecast}" Text="{Binding NightWeather}" />
+                    <TextBlock Grid.Row="16" Style="{DynamicResource TextBlockStyleForWeatherForecast}" Text="{Binding NightWind}" />
+                </Grid>
+                <!--Three days from now-->
+                <Grid Grid.Column="8" x:Name="grdThreeDays">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="2" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="2" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="2" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="2" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="2" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="2" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="2" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="2" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <TextBlock Grid.Row="0" Style="{DynamicResource TextBlockStyleForWeatherForecast}" Text="{Binding Week}" />
+                    <TextBlock Grid.Row="2" Style="{DynamicResource TextBlockStyleForWeatherForecast}" Text="{Binding Date}" />
+                    <TextBlock Grid.Row="4" Style="{DynamicResource TextBlockStyleForWeatherForecast}" Text="{Binding TemperatureRange}" />
+                    <Image Grid.Row="6" Source="{Binding Path=DayWeather,Converter={StaticResource WeatherToSourceConverter}}" />
+                    <TextBlock Grid.Row="8" Style="{DynamicResource TextBlockStyleForWeatherForecast}" Text="{Binding DayWeather}" />
+                    <TextBlock Grid.Row="10" Style="{DynamicResource TextBlockStyleForWeatherForecast}" Text="{Binding DayWind}" />
+                    <Image Grid.Row="12" Source="{Binding Path=NightWeather,Converter={StaticResource WeatherToSourceConverter}}" />
+                    <TextBlock Grid.Row="14" Style="{DynamicResource TextBlockStyleForWeatherForecast}" Text="{Binding NightWeather}" />
+                    <TextBlock Grid.Row="16" Style="{DynamicResource TextBlockStyleForWeatherForecast}" Text="{Binding NightWind}" />
+                </Grid>
+                <!--Four days from now-->
+                <Grid Grid.Column="10" x:Name="grdFourDays">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="2" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="2" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="2" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="2" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="2" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="2" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="2" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="2" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <TextBlock Grid.Row="0" Style="{DynamicResource TextBlockStyleForWeatherForecast}" Text="{Binding Week}" />
+                    <TextBlock Grid.Row="2" Style="{DynamicResource TextBlockStyleForWeatherForecast}" Text="{Binding Date}" />
+                    <TextBlock Grid.Row="4" Style="{DynamicResource TextBlockStyleForWeatherForecast}" Text="{Binding TemperatureRange}" />
+                    <Image Grid.Row="6" Source="{Binding Path=DayWeather,Converter={StaticResource WeatherToSourceConverter}}" />
+                    <TextBlock Grid.Row="8" Style="{DynamicResource TextBlockStyleForWeatherForecast}" Text="{Binding DayWeather}" />
+                    <TextBlock Grid.Row="10" Style="{DynamicResource TextBlockStyleForWeatherForecast}" Text="{Binding DayWind}" />
+                    <Image Grid.Row="12" Source="{Binding Path=NightWeather,Converter={StaticResource WeatherToSourceConverter}}" />
+                    <TextBlock Grid.Row="14" Style="{DynamicResource TextBlockStyleForWeatherForecast}" Text="{Binding NightWeather}" />
+                    <TextBlock Grid.Row="16" Style="{DynamicResource TextBlockStyleForWeatherForecast}" Text="{Binding NightWind}" />
+                </Grid>
+            </Grid>
+        </Grid>
+    </Grid>
+</Page>

@@ -1,0 +1,44 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <SolidColorBrush x:Key="RadioButtonMouseOverForeground" Color="Black" />
+    <SolidColorBrush x:Key="RadioButtonIsCheckedForeground" Color="Black" />
+    <SolidColorBrush x:Key="RadioButtonMouseOverBackground" Color="#FF5E79D3" Opacity="0.2" />
+    <SolidColorBrush x:Key="RadioButtonMouseOverBackground2" Color="#FFE5F3FB" />
+    <SolidColorBrush x:Key="RadioButtonIsCheckedBackground" Color="White" />
+    <SolidColorBrush x:Key="RadioButtonIsCheckedBackground2" Color="#FFAAD0FD" />
+
+    <!--Style of RadioButton for exclusive selection-->
+    <Style x:Key="RadioButtonStyleForExclusiveSelection" TargetType="{x:Type RadioButton}">
+        <Setter Property="FontFamily" Value="{StaticResource DefaultFontFamily}" />
+        <Setter Property="FontSize" Value="{StaticResource DefaultFontSizeNormal}" />
+        <Setter Property="MinWidth" Value="100" />
+        <Setter Property="Height" Value="30" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type RadioButton}">
+                    <Border x:Name="bd" Width="{Binding Width}" Height="{Binding Height}">
+                        <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center" />
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="true">
+                            <Setter TargetName="bd" Property="Background" Value="{StaticResource RadioButtonMouseOverBackground}" />
+                        </Trigger>
+                        <Trigger Property="IsChecked" Value="true">
+                            <Setter TargetName="bd" Property="Background" Value="{StaticResource RadioButtonIsCheckedBackground}" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Foreground" Value="{StaticResource RadioButtonMouseOverForeground}" />
+            </Trigger>
+            <Trigger Property="IsChecked" Value="True">
+                <Setter Property="Foreground" Value="{StaticResource RadioButtonIsCheckedForeground}" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+</ResourceDictionary>
